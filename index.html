@@ -2,118 +2,246 @@
 <html lang="es-AR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Zabala Automotores · Intermediación y reventa de vehículos en Paraná</title>
 <meta name="description" content="Zabala Automotores en Paraná, Entre Ríos: intermediación y reventa de vehículos. Consultá por WhatsApp o mirá los autos publicados.">
-<meta name="theme-color" content="#101216">
+<meta name="theme-color" content="#002060">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2")}
 @font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/instrument-sans-latin.woff2) format("woff2")}
-:root{--bg:#101216;--bg2:#171a20;--ink:#eef0f3;--plata:#c9ced6;--mute:#9aa1ab;--line:#2a2f38;--h:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--b:"Instrument Sans",system-ui,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
-a{color:var(--plata)}:focus-visible{outline:3px solid var(--plata);outline-offset:3px}
-.w{width:min(960px,100% - 40px);margin-inline:auto}
-.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px 12px;z-index:9}
-header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-header .w{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
-.mark{font:800 18px var(--h);letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none}.mark small{display:block;font:600 9px var(--b);letter-spacing:.42em;color:var(--mute)}
-nav{display:flex;gap:20px;align-items:center}nav a{color:var(--plata);text-decoration:none;font:700 14px var(--h);letter-spacing:.05em;text-transform:uppercase}nav a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;background:var(--plata);color:var(--bg);font:800 15px var(--h);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:2px}.btn:hover{background:#fff;color:#000}
-.btn.s{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--plata)}.btn.s:hover{background:var(--plata);color:var(--bg)}
-.row{display:flex;flex-wrap:wrap;gap:12px}
-h1,h2{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
-h1{font-size:clamp(40px,8vw,76px);text-transform:uppercase}h2{font-size:clamp(26px,4.5vw,38px);margin-bottom:12px}
-.hero{padding:clamp(56px,12vw,120px) 0 clamp(48px,9vw,96px)}.lead{font-size:clamp(18px,2.4vw,22px);color:var(--plata);max-width:34em;margin:20px 0 28px}
-section{padding:clamp(40px,7vw,72px) 0;border-top:1px solid var(--line)}section p{max-width:40em;color:var(--plata);margin:0 0 20px}
-.note{background:var(--bg2);border:1px solid var(--line);border-left:4px solid var(--plata);padding:14px 16px;font-size:15px;color:var(--mute);max-width:40em}
-ul{padding-left:22px;color:var(--plata)}li{margin-bottom:6px}
-footer{border-top:1px solid var(--line);padding:28px 0 56px;font-size:14px;color:var(--mute)}footer a{color:var(--plata)}
-.demo-note{margin-top:8px}
-.cars{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.car{background:var(--bg2);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:6px}.car b{font:700 17px/1.25 var(--h)}.car span{color:var(--mute);font-size:15px}.car a{margin-top:auto;padding-top:6px;font:700 14px var(--h);letter-spacing:.04em;text-transform:uppercase;text-decoration:none}.car a:hover{text-decoration:underline}
-dl{margin:0 0 20px;color:var(--plata)}dt{font:700 13px var(--h);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-top:14px}dd{margin:2px 0 0}
-@media(max-width:560px){nav a.hide-s{display:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root{--navy:#002060;--deep:#01143b;--blue:#0A2C8C;--red:#C1121F;--redd:#9d0e18;--paper:#F3F5F6;--bar:#cdd1d2;--ink:#0E1B26;--mute:#566570;--line:#d5dade;--h:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--b:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--cut:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%);--cut-s:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);--hdr:60px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 12px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--b);-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0)}
+a{color:var(--blue)}:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px 12px;z-index:99}
+.w{width:min(1180px,100% - 40px);margin-inline:auto}
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--bar);border-bottom:1px solid rgba(0,0,0,.18)}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:var(--hdr);width:min(1560px,100% - 32px)}
+.mark{font:800 21px/1 var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);text-decoration:none;display:block}
+.mark small{display:block;margin-top:3px;font:700 8.5px/1 var(--b);letter-spacing:.5em;color:var(--blue)}
+header nav{display:flex;gap:34px;align-items:center}
+header nav a{color:#2b3944;text-decoration:none;font:500 15px var(--b);letter-spacing:.01em}header nav a:hover{color:var(--red)}
+.hc{display:flex;align-items:center;gap:14px}
+.ic{display:grid;place-items:center;width:34px;height:34px;color:#1b2630}.ic svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8}.ic:hover{color:var(--red)}
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border:0;background:transparent;color:#fff;font:700 16px/1.1 var(--b);text-decoration:none;cursor:pointer;text-align:center;transition:background-color .2s,color .2s}
+.btn.p{background:var(--red);color:#fff}.btn.p:hover{background:var(--redd)}
+.btn.cut{clip-path:var(--cut)}
+.btn.o{box-shadow:inset 0 0 0 2px #fff;color:#fff}.btn.o:hover{background:#fff;color:var(--navy)}
+.btn.o.d{box-shadow:inset 0 0 0 2px var(--navy);color:var(--navy)}.btn.o.d:hover{background:var(--navy);color:#fff}
+header .btn{min-height:42px;padding:0 20px;font-size:15px}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14.5px;clip-path:var(--cut-s)}
+.row{display:flex;flex-wrap:wrap;gap:12px}.row.mt{margin-top:34px}
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center;min-height:calc(100svh - var(--hdr));min-height:min(720px,calc(100svh - var(--hdr)));padding:clamp(24px,5vw,64px) max(20px,calc((100vw - 1560px)/2 + 16px));color:#fff;overflow:hidden;
+background:linear-gradient(115deg,rgba(1,20,59,.55),rgba(1,20,59,0) 60%),repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.035) 46px 47px),linear-gradient(135deg,#01143b 0%,#002060 52%,#0A2C8C 100%)}
+.hero::before{content:"";position:absolute;right:-6%;top:-10%;width:34%;height:130%;background:linear-gradient(115deg,transparent 0 46%,var(--red) 46% 49%,transparent 49% 100%);opacity:.9;pointer-events:none}
+.hero::after{content:"";position:absolute;left:38%;bottom:-6%;width:3px;height:44%;background:#fff;opacity:.16;transform:rotate(28deg);pointer-events:none}
+.hx-copy{position:relative;z-index:2;max-width:640px;padding:clamp(24px,3.2vw,48px);background:rgba(1,20,59,.9);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+h1,h2,h3{font-family:var(--h);margin:0}
+h1{font-weight:500;font-size:clamp(42px,5.6vw,76px);line-height:1.02;letter-spacing:-.018em;text-wrap:balance}
+h1 em{display:block;width:max-content;max-width:100%;margin-top:.1em;padding:.02em .3em .08em .14em;background:var(--red);color:#fff;font-style:normal;font-weight:600;font-size:1.05em;clip-path:polygon(0 0,calc(100% - .32em) 0,100% .32em,100% 100%,0 100%);text-shadow:0 4px 14px rgba(0,0,0,.35)}
+.lead{margin:26px 0 28px;max-width:30em;font-size:clamp(17px,1.5vw,20px);line-height:1.45;color:#e8edf6}
+.proof{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:10px 20px 10px 0;background:#fff;color:var(--ink);text-decoration:none;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);border-left:22px solid var(--blue)}
+.proof b{margin-left:14px;font:600 clamp(34px,3vw,46px)/1 var(--h);color:var(--red);letter-spacing:-.02em}
+.proof span{font:600 13px/1.25 var(--b);color:#3a4650;max-width:11em;padding-right:14px}
+.proof:hover b{color:var(--redd)}
+/* columna derecha: vitrina de datos */
+.hx-side{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px;align-self:stretch;max-height:640px}
+.vit{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-auto-rows:1fr}
+.vt{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 16px 38px;background:linear-gradient(160deg,#0a2c8c,#01143b);clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%);overflow:hidden;min-height:150px}
+.vt::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red)}
+.vt-y{font:800 clamp(40px,4.4vw,62px)/.9 var(--h);color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.75);letter-spacing:-.02em}
+.vt-n{margin-top:8px;font:600 14px/1.25 var(--b);color:#fff}
+.vt-l,.big-l,.car-tag{position:absolute;left:0;bottom:0;padding:6px 14px 6px 16px;background:#0b0f1a;color:#fff;font:600 11.5px/1 var(--b);font-style:normal;letter-spacing:.02em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 100%,0 100%)}
+.big{position:relative;padding:26px 22px 46px;background:#101a33;border-left:6px solid var(--red);clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%);display:flex;flex-direction:column;justify-content:center}
+.big-t{margin:0 0 14px;font:800 clamp(28px,3vw,46px)/1 var(--h);color:#fff;letter-spacing:-.01em;text-transform:uppercase}
+.big ul{list-style:none;margin:0;padding:0}.big li{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-top:1px solid rgba(255,255,255,.22);font:600 18px var(--b)}
+.big li span{font:700 22px var(--h);color:#ff4b57}
+/* secciones */
+section{padding:clamp(52px,7vw,96px) 0}
+.ey{display:inline-block;margin-bottom:10px;padding:4px 12px 4px 10px;background:var(--red);color:#fff;font:700 12px/1.3 var(--b);letter-spacing:.14em;text-transform:uppercase;clip-path:polygon(0 0,calc(100% - 7px) 0,100% 7px,100% 100%,0 100%)}
+h2{font-weight:600;font-size:clamp(32px,4.2vw,56px);line-height:1.02;letter-spacing:-.018em;color:var(--navy)}
+h2 em{font-style:normal;color:var(--red)}
+.sec-p{max-width:46em;margin:16px 0 28px;color:var(--mute);font-size:18px}
+/* filtros */
+.flt{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 0 26px;padding:14px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--navy)}
+.flt[hidden]{display:none}
+.flt input,.flt select{height:44px;border:1.5px solid #b8c1c8;background:#fff;padding:0 12px;font:500 15.5px var(--b);color:var(--ink);border-radius:0;min-width:0}
+.flt input{width:230px}.flt input:focus,.flt select:focus{outline:3px solid var(--red);outline-offset:1px}
+.f-c{display:flex;gap:6px}
+.chip{height:44px;padding:0 16px;border:1.5px solid var(--navy);background:#fff;color:var(--navy);font:700 14.5px var(--b);cursor:pointer;border-radius:0}
+.chip:hover{background:#e6ebf5}.chip.on{background:var(--navy);color:#fff}
+.f-n{margin:0 0 0 auto;font:600 14px var(--b);color:var(--mute)}
+/* tarjetas */
+.cars{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.car{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.car:hover{transform:translateY(-3px);box-shadow:0 18px 30px -18px rgba(1,20,59,.5)}
+.car[hidden]{display:none}
+.car-art{position:relative;height:132px;display:flex;align-items:center;padding:0 18px;background:linear-gradient(135deg,#01143b,#0A2C8C);clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);overflow:hidden}
+.car-art::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
+.car-art::after{content:"";position:absolute;right:30px;top:-20%;width:3px;height:140%;background:#fff;opacity:.14;transform:rotate(28deg)}
+.car-y{font:800 58px/1 var(--h);color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.8);letter-spacing:-.02em}
+.car-b{display:flex;flex-direction:column;gap:6px;padding:16px 18px 20px;flex:1}
+.car-b h3{font:700 18.5px/1.25 var(--h);color:var(--navy)}
+.car-meta{margin:0;color:var(--mute);font-size:15px}
+.car-b .btn{margin-top:auto;align-self:flex-start}.car-b h3+.car-meta+.btn{margin-top:12px}
+.vacio{padding:24px;background:#fff;border:1px dashed #9aa6b0;color:var(--mute)}
+/* contacto */
+.ct{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.ct::before{content:"";position:absolute;right:-4%;top:-20%;width:30%;height:150%;background:linear-gradient(115deg,transparent 0 46%,var(--red) 46% 49%,transparent 49%);opacity:.8}
+.ct .w{position:relative}.ct h2{color:#fff}.ct h2 em{color:#ff4b57}
+.ct-g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:26px;align-items:start}
+dl{margin:0}dt{font:700 12.5px var(--b);letter-spacing:.14em;text-transform:uppercase;color:#9fb2d8;margin-top:20px}dt:first-child{margin-top:0}
+dd{margin:4px 0 0;font-size:19px;color:#fff}dd a{color:#fff;text-decoration-thickness:2px;text-underline-offset:4px}
+.ct-c{padding:28px;background:rgba(255,255,255,.07);border-left:6px solid var(--red);clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,0 100%)}
+.ct-t{margin:0 0 8px;font:600 28px/1.1 var(--h)}.ct-c p{margin:0 0 20px;color:#dbe3f3}.ct-c .ct-t{color:#fff}
+footer{background:#000a1f;color:#a9b6cf;padding:28px 0 calc(48px + env(safe-area-inset-bottom,0));font-size:14px}
+footer p{margin:4px 0}footer a{color:#fff}
+/* responsive */
+@media(max-width:1000px){
+ .hero{grid-template-columns:1fr;min-height:0;padding:20px 16px 36px}
+ .hero::before{width:60%;right:-20%}
+ .hx-side{max-height:none}
+ header nav{gap:20px}
+}
+@media(max-width:700px){
+ header nav a:not(:first-child){display:none}
+ .hx-side{grid-template-columns:1fr}.vit{grid-template-columns:repeat(3,minmax(0,1fr))}.vt{min-height:130px;padding:12px 10px 34px}.vt-y{font-size:34px}.vt-n{font-size:12px}
+ .ct-g{grid-template-columns:1fr}
+ .flt input{width:100%}.f-c{flex:1 1 100%}.chip{flex:1}.f-n{margin:0;flex:1 1 100%}
+ .btn.cut{flex:1 1 auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.car,.btn{transition:none}.car:hover{transform:none}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoDealer", "name": "Zabala Automotores", "description": "Intermediación y reventa de vehículos.", "telephone": "+543434732110", "address": {"@type": "PostalAddress", "addressLocality": "Paraná", "addressRegion": "Entre Ríos", "addressCountry": "AR"}, "openingHours": "Mo-Sa 08:00-21:30", "sameAs": ["https://www.instagram.com/zabala_automotores/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoDealer","name":"Zabala Automotores","description":"Intermediación y reventa de vehículos.","telephone":"+543434732110","address":{"@type":"PostalAddress","addressLocality":"Paraná","addressRegion":"Entre Ríos","addressCountry":"AR"},"openingHours":"Mo-Sa 08:00-21:30","sameAs":["https://www.instagram.com/zabala_automotores/"]}</script>
 </head>
 <body>
 <a class="skip" href="#autos">Saltar al contenido</a>
 <header><div class="w"><a class="mark" href="./" aria-label="Zabala Automotores, inicio">Zabala<small>Automotores</small></a>
-<nav aria-label="Principal"><a class="hide-s" href="./#autos">Autos</a><a class="hide-s" href="./#contacto">Contacto</a><a class="btn" href="https://wa.me/5493434732110?text=Hola%21%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos</a></nav></div></header>
+<nav aria-label="Principal"><a href="#autos">Autos</a><a href="#contacto">Horarios y contacto</a><a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
+<div class="hc"><a class="ic" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Zabala Automotores"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos</a></div></div></header>
 <main id="top">
-<div class="hero"><div class="w">
-<h1>Zabala Automotores</h1>
-<p class="lead">Nos dedicamos a la intermediación y reventa de vehículos. Paraná, Entre Ríos.</p>
-<div class="row"><a class="btn" href="https://wa.me/5493434732110?text=Hola%21%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a><a class="btn s" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Ver autos en Instagram</a></div>
-</div></div>
+<div class="hero"><div class="hx-copy">
+<h1><span class="sr">Zabala Automotores: </span>Autos y utilitarios <em>en Paraná</em></h1>
+<p class="lead">Intermediación y reventa de vehículos en Paraná, Entre Ríos. Mirá los autos publicados y consultanos por WhatsApp.</p>
+<div class="row"><a class="btn p cut" href="#autos">Ver autos</a><a class="btn o" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
+<a class="proof" href="#autos"><b>47</b><span>autos y utilitarios publicados</span></a></div>
+<div class="hx-side" aria-hidden="true"><ul class="vit"><li class="vt"><b class="vt-y">2017</b><span class="vt-n">Volkswagen Up! 1.0 MPI Move 3P</span><i class="vt-l">Publicado</i></li><li class="vt"><b class="vt-y">2017</b><span class="vt-n">Peugeot 308 1.6 Allure Nav</span><i class="vt-l">Publicado</i></li><li class="vt"><b class="vt-y">2017</b><span class="vt-n">Fiat Toro 2.0 TDI Freedom 4x2</span><i class="vt-l">Publicado</i></li></ul>
+<div class="big"><p class="big-t">Marcas en stock</p><ul><li><b>Volkswagen</b><span>15</span></li><li><b>Toyota</b><span>11</span></li><li><b>Honda</b><span>5</span></li><li><b>Fiat</b><span>3</span></li></ul><i class="big-l">Autos publicados en Clasionce</i></div></div>
+</div>
+
 <section id="autos" aria-labelledby="autos-t"><div class="w">
-<h2 id="autos-t">Nuestros autos</h2>
-<p>Autos y utilitarios publicados por Zabala Automotores en Clasionce (Elonce), según su tienda al 11/10/2026. El stock cambia: escribinos por el que te interese y te confirmamos disponibilidad, precio y detalles.</p>
-<ul class="cars">
-<li class="car"><b>Volkswagen Up! 1.0 MPI Move 3P</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1168048" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Up! 1.0 MPI Move 3P en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Peugeot 308 1.6 Allure Nav</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1165274" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot 308 1.6 Allure Nav en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Fiat Toro 2.0 TDI Freedom 4x2</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1142198" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Toro 2.0 TDI Freedom 4x2 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Suran 1.6 MSI Highline</b><span>2019 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1168498" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 MSI Highline en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota SW4 2.8 TDI SRX 4x4 AT 7AS</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1168476" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota SW4 2.8 TDI SRX 4x4 AT 7AS en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Fiat Doblo 1.4 Active 16V Family 7AS</b><span>2014 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1168363" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Doblo 1.4 Active 16V Family 7AS en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen T-Cross 1.0 200TSI Highline AT L/24</b><span>2025 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1168350" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen T-Cross 1.0 200TSI Highline AT L/24 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Yaris 1.5 XLS Pack CVT</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1168258" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Yaris 1.5 XLS Pack CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Suran 1.6 Highline</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1167888" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 Highline en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Nissan Frontier 2.3 S DC 4x4</b><span>2019 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1167685" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan Frontier 2.3 S DC 4x4 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Suran 1.6 Trendline L/15 Manual</b><span>2016 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1167667" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 Trendline L/15 Manual en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Etios 1.5 Platinum 4P 6MT</b><span>2015 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1167171" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Etios 1.5 Platinum 4P 6MT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Audi A1 1.2 T FSI Attraction Manual</b><span>2012 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1162959" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Audi A1 1.2 T FSI Attraction Manual en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4</b><span>2026 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1167106" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1164467" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Taos 250 TSI Comfortline AT L/24</b><span>2025 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1166714" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Taos 250 TSI Comfortline AT L/24 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Chevrolet S10 2.8TD DC 4x2 DLX Electronic</b><span>2012 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1166713" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Chevrolet S10 2.8TD DC 4x2 DLX Electronic en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Etios Cross 1.5 M/T</b><span>2014 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1166453" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Etios Cross 1.5 M/T en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T</b><span>2015 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1166228" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Corolla Cross 1.8 SEG HEV E-CVT</b><span>2022 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1166080" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Corolla Cross 1.8 SEG HEV E-CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1166077" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Hilux 2.8 TDI DC SRX 4x4 Aut</b><span>2017 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1165540" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux 2.8 TDI DC SRX 4x4 Aut en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Honda HR-V 1.8 EXL CVT</b><span>2018 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1165353" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Golf 1.4 TSI Comfortline</b><span>2016 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1164887" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Golf 1.4 TSI Comfortline en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Ford Focus 1.6 S L/14 5P</b><span>Manual</span><a href="https://clasificados.elonce.com/aviso/N1164752" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Ford Focus 1.6 S L/14 5P en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG</b><span>2018 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1164715" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Nissan Versa 1.6 Advance Pure Drive F2 M/T</b><span>2018 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1164426" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan Versa 1.6 Advance Pure Drive F2 M/T en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Taos 1.4 TSI Comfortline Tip</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1163973" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Taos 1.4 TSI Comfortline Tip en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Fiat Qubo Fiorino 1.4 Dynamic</b><span>2013 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1163971" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Qubo Fiorino 1.4 Dynamic en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Peugeot 408 1.6 THP Allure Plus</b><span>2017 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1162994" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot 408 1.6 THP Allure Plus en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS</b><span>2021 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1162742" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen T-Cross 1.0 200TSI Highline AT L/24</b><span>2025 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1158048" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen T-Cross 1.0 200TSI Highline AT L/24 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Corolla Cross 1.8 XEI HEV E-CVT</b><span>2024 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1157845" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Corolla Cross 1.8 XEI HEV E-CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Honda Civic EXL 2.0 L/17</b><span>2017 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1137128" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda Civic EXL 2.0 L/17 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Hyundai i10 1.2 GLS Seguridad L/11</b><span>2013 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1136911" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Hyundai i10 1.2 GLS Seguridad L/11 en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Ford Focus 1.6 S L/16 4P</b><span>2018 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1137119" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Ford Focus 1.6 S L/16 4P en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1136912" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Peugeot Partner Patagonica 1.6 16V</b><span>2015 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1141275" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot Partner Patagonica 1.6 16V en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Toyota Yaris 1.5 XLS Pack CVT</b><span>2021 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1137120" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Yaris 1.5 XLS Pack CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Honda HR-V 1.8 EX CVT</b><span>2016 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1137121" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EX CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Honda HR-V 1.8 EXL CVT</b><span>2016 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1162559" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Amarok 2.0TD 4x4 DC Highline</b><span>2010 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1162557" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD 4x4 DC Highline en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>VW Passat 2.0 FSI Exclusive Tip</b><span>2008 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1140083" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de VW Passat 2.0 FSI Exclusive Tip en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>BMW X3 xDrive 3.0 35i Executive 306 cv AT</b><span>2012 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1140481" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de BMW X3 xDrive 3.0 35i Executive 306 cv AT en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Mercedes-Benz C250 Coupe BlueEfficiency AT Sport</b><span>2014 · Automático</span><a href="https://clasificados.elonce.com/aviso/N1138064" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Mercedes-Benz C250 Coupe BlueEfficiency AT Sport en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP</b><span>2013 · Manual</span><a href="https://clasificados.elonce.com/aviso/N1157909" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP en Clasionce">Ver aviso ↗</a></li>
-<li class="car"><b>Honda HR-V 1.8 EXL CVT</b><span>2020 · Automático</span><a href="https://clasificados.elonce.com/aviso/2146368" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT en Clasionce">Ver aviso ↗</a></li>
+<span class="ey">Autos</span><h2 id="autos-t">Nuestros <em>autos</em></h2>
+<p class="sec-p">Autos y utilitarios publicados por Zabala Automotores en Clasionce (Elonce), según su tienda al 11/10/2026. El stock cambia: escribinos por el que te interese y te confirmamos disponibilidad, precio y detalles.</p>
+<div class="flt" id="flt" hidden>
+<label class="f-q"><span class="sr">Buscar por marca o modelo</span><input id="fq" type="search" placeholder="Buscar marca o modelo" autocomplete="off"></label>
+<label class="f-s"><span class="sr">Marca</span><select id="fm"><option value="">Todas las marcas</option><option value="Audi">Audi (1)</option><option value="BMW">BMW (1)</option><option value="Chevrolet">Chevrolet (1)</option><option value="Fiat">Fiat (3)</option><option value="Ford">Ford (2)</option><option value="Honda">Honda (5)</option><option value="Hyundai">Hyundai (1)</option><option value="Mercedes-Benz">Mercedes-Benz (1)</option><option value="Nissan">Nissan (3)</option><option value="Peugeot">Peugeot (3)</option><option value="Toyota">Toyota (11)</option><option value="Volkswagen">Volkswagen (15)</option></select></label>
+<div class="f-c" role="group" aria-label="Transmisión"><button type="button" class="chip on" data-tr="" aria-pressed="true">Todos</button><button type="button" class="chip" data-tr="Automático" aria-pressed="false">Automático</button><button type="button" class="chip" data-tr="Manual" aria-pressed="false">Manual</button></div>
+<label class="f-s"><span class="sr">Ordenar</span><select id="fo"><option value="i">Orden de publicación</option><option value="yd">Año: mayor a menor</option><option value="ya">Año: menor a mayor</option></select></label>
+<p class="f-n" id="fn" role="status" aria-live="polite"></p></div>
+<ul class="cars" id="cars">
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2017" data-i="0" data-q="volkswagen up! 1.0 mpi move 3p 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Up! 1.0 MPI Move 3P</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168048" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Up! 1.0 MPI Move 3P 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Peugeot" data-tr="Manual" data-y="2017" data-i="1" data-q="peugeot 308 1.6 allure nav 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Peugeot</i></div><div class="car-b"><h3>Peugeot 308 1.6 Allure Nav</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1165274" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot 308 1.6 Allure Nav 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Fiat" data-tr="Manual" data-y="2017" data-i="2" data-q="fiat toro 2.0 tdi freedom 4x2 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Fiat</i></div><div class="car-b"><h3>Fiat Toro 2.0 TDI Freedom 4x2</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1142198" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Toro 2.0 TDI Freedom 4x2 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2019" data-i="3" data-q="volkswagen suran 1.6 msi highline 2019"><div class="car-art" aria-hidden="true"><span class="car-y">2019</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Suran 1.6 MSI Highline</h3><p class="car-meta">2019 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168498" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 MSI Highline 2019 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2021" data-i="4" data-q="toyota sw4 2.8 tdi srx 4x4 at 7as 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota SW4 2.8 TDI SRX 4x4 AT 7AS</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168476" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota SW4 2.8 TDI SRX 4x4 AT 7AS 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Fiat" data-tr="Manual" data-y="2014" data-i="5" data-q="fiat doblo 1.4 active 16v family 7as 2014"><div class="car-art" aria-hidden="true"><span class="car-y">2014</span><i class="car-tag">Fiat</i></div><div class="car-b"><h3>Fiat Doblo 1.4 Active 16V Family 7AS</h3><p class="car-meta">2014 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168363" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Doblo 1.4 Active 16V Family 7AS 2014 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2025" data-i="6" data-q="volkswagen t-cross 1.0 200tsi highline at l/24 2025"><div class="car-art" aria-hidden="true"><span class="car-y">2025</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen T-Cross 1.0 200TSI Highline AT L/24</h3><p class="car-meta">2025 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168350" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen T-Cross 1.0 200TSI Highline AT L/24 2025 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2021" data-i="7" data-q="toyota yaris 1.5 xls pack cvt 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Yaris 1.5 XLS Pack CVT</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1168258" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Yaris 1.5 XLS Pack CVT 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2017" data-i="8" data-q="volkswagen suran 1.6 highline 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Suran 1.6 Highline</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1167888" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 Highline 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Nissan" data-tr="Manual" data-y="2019" data-i="9" data-q="nissan frontier 2.3 s dc 4x4 2019"><div class="car-art" aria-hidden="true"><span class="car-y">2019</span><i class="car-tag">Nissan</i></div><div class="car-b"><h3>Nissan Frontier 2.3 S DC 4x4</h3><p class="car-meta">2019 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1167685" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan Frontier 2.3 S DC 4x4 2019 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2016" data-i="10" data-q="volkswagen suran 1.6 trendline l/15 manual 2016"><div class="car-art" aria-hidden="true"><span class="car-y">2016</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Suran 1.6 Trendline L/15 Manual</h3><p class="car-meta">2016 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1167667" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Suran 1.6 Trendline L/15 Manual 2016 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Manual" data-y="2015" data-i="11" data-q="toyota etios 1.5 platinum 4p 6mt 2015"><div class="car-art" aria-hidden="true"><span class="car-y">2015</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Etios 1.5 Platinum 4P 6MT</h3><p class="car-meta">2015 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1167171" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Etios 1.5 Platinum 4P 6MT 2015 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Audi" data-tr="Manual" data-y="2012" data-i="12" data-q="audi a1 1.2 t fsi attraction manual 2012"><div class="car-art" aria-hidden="true"><span class="car-y">2012</span><i class="car-tag">Audi</i></div><div class="car-b"><h3>Audi A1 1.2 T FSI Attraction Manual</h3><p class="car-meta">2012 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1162959" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Audi A1 1.2 T FSI Attraction Manual 2012 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Nissan" data-tr="Automático" data-y="2026" data-i="13" data-q="nissan x-trail 1.5 e-power exclusive cvt 4x4 2026"><div class="car-art" aria-hidden="true"><span class="car-y">2026</span><i class="car-tag">Nissan</i></div><div class="car-b"><h3>Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4</h3><p class="car-meta">2026 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1167106" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4 2026 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2021" data-i="14" data-q="volkswagen amarok 2.0td confort 4x2 at 180hp 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1164467" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2025" data-i="15" data-q="volkswagen taos 250 tsi comfortline at l/24 2025"><div class="car-art" aria-hidden="true"><span class="car-y">2025</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Taos 250 TSI Comfortline AT L/24</h3><p class="car-meta">2025 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166714" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Taos 250 TSI Comfortline AT L/24 2025 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Chevrolet" data-tr="Manual" data-y="2012" data-i="16" data-q="chevrolet s10 2.8td dc 4x2 dlx electronic 2012"><div class="car-art" aria-hidden="true"><span class="car-y">2012</span><i class="car-tag">Chevrolet</i></div><div class="car-b"><h3>Chevrolet S10 2.8TD DC 4x2 DLX Electronic</h3><p class="car-meta">2012 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166713" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Chevrolet S10 2.8TD DC 4x2 DLX Electronic 2012 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Manual" data-y="2014" data-i="17" data-q="toyota etios cross 1.5 m/t 2014"><div class="car-art" aria-hidden="true"><span class="car-y">2014</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Etios Cross 1.5 M/T</h3><p class="car-meta">2014 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166453" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Etios Cross 1.5 M/T 2014 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Manual" data-y="2015" data-i="18" data-q="toyota hilux l/12 3.0 dc 4x2 tdi sr m/t 2015"><div class="car-art" aria-hidden="true"><span class="car-y">2015</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T</h3><p class="car-meta">2015 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166228" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T 2015 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2022" data-i="19" data-q="toyota corolla cross 1.8 seg hev e-cvt 2022"><div class="car-art" aria-hidden="true"><span class="car-y">2022</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Corolla Cross 1.8 SEG HEV E-CVT</h3><p class="car-meta">2022 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166080" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Corolla Cross 1.8 SEG HEV E-CVT 2022 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Manual" data-y="2017" data-i="20" data-q="toyota hilux 2.8 tdi dc srv pack cuero 4x2 m/t 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166077" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2017" data-i="21" data-q="toyota hilux 2.8 tdi dc srx 4x4 aut 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Hilux 2.8 TDI DC SRX 4x4 Aut</h3><p class="car-meta">2017 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1165540" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Hilux 2.8 TDI DC SRX 4x4 Aut 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Honda" data-tr="Automático" data-y="2018" data-i="22" data-q="honda hr-v 1.8 exl cvt 2018"><div class="car-art" aria-hidden="true"><span class="car-y">2018</span><i class="car-tag">Honda</i></div><div class="car-b"><h3>Honda HR-V 1.8 EXL CVT</h3><p class="car-meta">2018 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1165353" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT 2018 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2016" data-i="23" data-q="volkswagen golf 1.4 tsi comfortline 2016"><div class="car-art" aria-hidden="true"><span class="car-y">2016</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Golf 1.4 TSI Comfortline</h3><p class="car-meta">2016 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1164887" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Golf 1.4 TSI Comfortline 2016 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Ford" data-tr="Manual" data-y="0" data-i="24" data-q="ford focus 1.6 s l/14 5p "><div class="car-art" aria-hidden="true"><span class="car-y">—</span><i class="car-tag">Ford</i></div><div class="car-b"><h3>Ford Focus 1.6 S L/14 5P</h3><p class="car-meta">Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1164752" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Ford Focus 1.6 S L/14 5P en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2018" data-i="25" data-q="volkswagen tiguan allspace 2.0 tsi comfortline dsg 2018"><div class="car-art" aria-hidden="true"><span class="car-y">2018</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG</h3><p class="car-meta">2018 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1164715" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG 2018 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Nissan" data-tr="Manual" data-y="2018" data-i="26" data-q="nissan versa 1.6 advance pure drive f2 m/t 2018"><div class="car-art" aria-hidden="true"><span class="car-y">2018</span><i class="car-tag">Nissan</i></div><div class="car-b"><h3>Nissan Versa 1.6 Advance Pure Drive F2 M/T</h3><p class="car-meta">2018 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1164426" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Nissan Versa 1.6 Advance Pure Drive F2 M/T 2018 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2021" data-i="27" data-q="volkswagen taos 1.4 tsi comfortline tip 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Taos 1.4 TSI Comfortline Tip</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1163973" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Taos 1.4 TSI Comfortline Tip 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Fiat" data-tr="Manual" data-y="2013" data-i="28" data-q="fiat qubo fiorino 1.4 dynamic 2013"><div class="car-art" aria-hidden="true"><span class="car-y">2013</span><i class="car-tag">Fiat</i></div><div class="car-b"><h3>Fiat Qubo Fiorino 1.4 Dynamic</h3><p class="car-meta">2013 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1163971" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Fiat Qubo Fiorino 1.4 Dynamic 2013 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Peugeot" data-tr="Manual" data-y="2017" data-i="29" data-q="peugeot 408 1.6 thp allure plus 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Peugeot</i></div><div class="car-b"><h3>Peugeot 408 1.6 THP Allure Plus</h3><p class="car-meta">2017 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1162994" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot 408 1.6 THP Allure Plus 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Manual" data-y="2021" data-i="30" data-q="toyota sw4 2.8 tdi 4x4 srx l/21 manual 7as 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS</h3><p class="car-meta">2021 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1162742" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2025" data-i="31" data-q="volkswagen t-cross 1.0 200tsi highline at l/24 2025"><div class="car-art" aria-hidden="true"><span class="car-y">2025</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen T-Cross 1.0 200TSI Highline AT L/24</h3><p class="car-meta">2025 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1158048" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen T-Cross 1.0 200TSI Highline AT L/24 2025 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2024" data-i="32" data-q="toyota corolla cross 1.8 xei hev e-cvt 2024"><div class="car-art" aria-hidden="true"><span class="car-y">2024</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Corolla Cross 1.8 XEI HEV E-CVT</h3><p class="car-meta">2024 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1157845" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Corolla Cross 1.8 XEI HEV E-CVT 2024 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Honda" data-tr="Automático" data-y="2017" data-i="33" data-q="honda civic exl 2.0 l/17 2017"><div class="car-art" aria-hidden="true"><span class="car-y">2017</span><i class="car-tag">Honda</i></div><div class="car-b"><h3>Honda Civic EXL 2.0 L/17</h3><p class="car-meta">2017 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1137128" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda Civic EXL 2.0 L/17 2017 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Hyundai" data-tr="Manual" data-y="2013" data-i="34" data-q="hyundai i10 1.2 gls seguridad l/11 2013"><div class="car-art" aria-hidden="true"><span class="car-y">2013</span><i class="car-tag">Hyundai</i></div><div class="car-b"><h3>Hyundai i10 1.2 GLS Seguridad L/11</h3><p class="car-meta">2013 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1136911" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Hyundai i10 1.2 GLS Seguridad L/11 2013 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Ford" data-tr="Manual" data-y="2018" data-i="35" data-q="ford focus 1.6 s l/16 4p 2018"><div class="car-art" aria-hidden="true"><span class="car-y">2018</span><i class="car-tag">Ford</i></div><div class="car-b"><h3>Ford Focus 1.6 S L/16 4P</h3><p class="car-meta">2018 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1137119" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Ford Focus 1.6 S L/16 4P 2018 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2021" data-i="36" data-q="volkswagen amarok v6 3.0td 4x4 dc at 224hp extreme 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1136912" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Peugeot" data-tr="Manual" data-y="2015" data-i="37" data-q="peugeot partner patagonica 1.6 16v 2015"><div class="car-art" aria-hidden="true"><span class="car-y">2015</span><i class="car-tag">Peugeot</i></div><div class="car-b"><h3>Peugeot Partner Patagonica 1.6 16V</h3><p class="car-meta">2015 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1141275" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Peugeot Partner Patagonica 1.6 16V 2015 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Toyota" data-tr="Automático" data-y="2021" data-i="38" data-q="toyota yaris 1.5 xls pack cvt 2021"><div class="car-art" aria-hidden="true"><span class="car-y">2021</span><i class="car-tag">Toyota</i></div><div class="car-b"><h3>Toyota Yaris 1.5 XLS Pack CVT</h3><p class="car-meta">2021 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1137120" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Toyota Yaris 1.5 XLS Pack CVT 2021 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Honda" data-tr="Automático" data-y="2016" data-i="39" data-q="honda hr-v 1.8 ex cvt 2016"><div class="car-art" aria-hidden="true"><span class="car-y">2016</span><i class="car-tag">Honda</i></div><div class="car-b"><h3>Honda HR-V 1.8 EX CVT</h3><p class="car-meta">2016 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1137121" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EX CVT 2016 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Honda" data-tr="Automático" data-y="2016" data-i="40" data-q="honda hr-v 1.8 exl cvt 2016"><div class="car-art" aria-hidden="true"><span class="car-y">2016</span><i class="car-tag">Honda</i></div><div class="car-b"><h3>Honda HR-V 1.8 EXL CVT</h3><p class="car-meta">2016 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1162559" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT 2016 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2010" data-i="41" data-q="volkswagen amarok 2.0td 4x4 dc highline 2010"><div class="car-art" aria-hidden="true"><span class="car-y">2010</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Amarok 2.0TD 4x4 DC Highline</h3><p class="car-meta">2010 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1162557" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD 4x4 DC Highline 2010 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Automático" data-y="2008" data-i="42" data-q="vw passat 2.0 fsi exclusive tip 2008"><div class="car-art" aria-hidden="true"><span class="car-y">2008</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>VW Passat 2.0 FSI Exclusive Tip</h3><p class="car-meta">2008 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1140083" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de VW Passat 2.0 FSI Exclusive Tip 2008 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="BMW" data-tr="Automático" data-y="2012" data-i="43" data-q="bmw x3 xdrive 3.0 35i executive 306 cv at 2012"><div class="car-art" aria-hidden="true"><span class="car-y">2012</span><i class="car-tag">BMW</i></div><div class="car-b"><h3>BMW X3 xDrive 3.0 35i Executive 306 cv AT</h3><p class="car-meta">2012 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1140481" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de BMW X3 xDrive 3.0 35i Executive 306 cv AT 2012 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Mercedes-Benz" data-tr="Automático" data-y="2014" data-i="44" data-q="mercedes-benz c250 coupe blueefficiency at sport 2014"><div class="car-art" aria-hidden="true"><span class="car-y">2014</span><i class="car-tag">Mercedes-Benz</i></div><div class="car-b"><h3>Mercedes-Benz C250 Coupe BlueEfficiency AT Sport</h3><p class="car-meta">2014 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1138064" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Mercedes-Benz C250 Coupe BlueEfficiency AT Sport 2014 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Volkswagen" data-tr="Manual" data-y="2013" data-i="45" data-q="volkswagen amarok 2.0td 4x2 dc highline 180hp 2013"><div class="car-art" aria-hidden="true"><span class="car-y">2013</span><i class="car-tag">Volkswagen</i></div><div class="car-b"><h3>Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP</h3><p class="car-meta">2013 · Manual</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1157909" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP 2013 en Clasionce">Ver aviso ↗</a></div></li>
+<li class="car" data-m="Honda" data-tr="Automático" data-y="2020" data-i="46" data-q="honda hr-v 1.8 exl cvt 2020"><div class="car-art" aria-hidden="true"><span class="car-y">2020</span><i class="car-tag">Honda</i></div><div class="car-b"><h3>Honda HR-V 1.8 EXL CVT</h3><p class="car-meta">2020 · Automático</p><a class="btn p sm" href="https://clasificados.elonce.com/aviso/2146368" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Honda HR-V 1.8 EXL CVT 2020 en Clasionce">Ver aviso ↗</a></div></li>
 </ul>
-<div class="row" style="margin-top:24px"><a class="btn" href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Ver la tienda en Clasionce</a><a class="btn s" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a></div>
+<p class="vacio" id="vac" hidden>No hay autos con ese filtro. Probá con otra marca o escribinos por WhatsApp.</p>
+<div class="row mt"><a class="btn p cut" href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Ver la tienda en Clasionce</a><a class="btn o d" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a></div>
 </div></section>
-<section id="contacto" aria-labelledby="contacto-t"><div class="w">
-<h2 id="contacto-t">Contacto</h2>
-<dl><dt>Ubicación</dt><dd>Paraná, Entre Ríos. La dirección exacta la coordinamos por WhatsApp.</dd>
+
+<section id="contacto" class="ct" aria-labelledby="contacto-t"><div class="w">
+<span class="ey">Contacto</span><h2 id="contacto-t">Horarios y <em>contacto</em></h2>
+<div class="ct-g"><dl><dt>Ubicación</dt><dd>Paraná, Entre Ríos. La dirección exacta la coordinamos por WhatsApp.</dd>
 <dt>Horario</dt><dd>Lunes a sábados de 8:00 a 21:30 (según nuestro perfil en Clasionce).</dd>
 <dt>Teléfono y WhatsApp</dt><dd><a href="tel:+543434732110">343 473-2110</a></dd></dl>
-<div class="row"><a class="btn" href="https://wa.me/5493434732110?text=Hola%21%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn s" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+<div class="ct-c"><p class="ct-t">¿Te gustó alguno?</p><p>Escribinos y te contamos disponibilidad, precio y detalles del auto que te interese.</p><div class="row"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn o" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></div>
 </div></section>
 </main>
 <footer><div class="w"><p>© 2026 Zabala Automotores</p><p class="demo-note" data-demo-note>Versión de demostración · No es el sitio oficial · Datos pendientes de confirmación</p><p><a href="privacidad.html">Privacidad y avisos</a></p></div></footer>
+<script>
+(function () {
+  var list = document.getElementById('cars'), flt = document.getElementById('flt');
+  if (!list || !flt) return;
+  var items = [].slice.call(list.children), q = document.getElementById('fq'), fm = document.getElementById('fm'),
+    fo = document.getElementById('fo'), fn = document.getElementById('fn'), vac = document.getElementById('vac'),
+    chips = [].slice.call(flt.querySelectorAll('.chip')), tr = '';
+  flt.hidden = false; /* sin JavaScript los filtros no se muestran y la lista queda completa */
+  function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  function apply() {
+    var t = norm(q.value.trim()), m = fm.value, n = 0, o = fo.value;
+    var sorted = items.slice().sort(function (a, b) {
+      if (o === 'yd') return (b.dataset.y - a.dataset.y) || (a.dataset.i - b.dataset.i);
+      if (o === 'ya') return ((a.dataset.y || 9999) - (b.dataset.y || 9999)) || (a.dataset.i - b.dataset.i);
+      return a.dataset.i - b.dataset.i;
+    });
+    sorted.forEach(function (li) {
+      var ok = (!m || li.dataset.m === m) && (!tr || li.dataset.tr === tr) && (!t || norm(li.dataset.q).indexOf(t) > -1);
+      li.hidden = !ok; if (ok) n++; list.appendChild(li);
+    });
+    fn.textContent = 'Mostrando ' + n + ' de ' + items.length;
+    vac.hidden = n > 0;
+  }
+  q.addEventListener('input', apply); fm.addEventListener('change', apply); fo.addEventListener('change', apply);
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      tr = c.dataset.tr;
+      chips.forEach(function (x) { var on = x === c; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
 </body>
 </html>
