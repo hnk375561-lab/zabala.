@@ -1,169 +1,1082 @@
 {
-  "checkedAt": "2026-10-11",
-  "sources": [
-    {
-      "fact": "Nombre comercial",
-      "value": "Zabala Automotores",
-      "source": "Instagram @zabala_automotores y tienda en Clasionce",
-      "sourceType": "red social del negocio + plataforma de clasificados",
-      "url": "https://www.instagram.com/zabala_automotores/",
-      "accessed": "2026-10-11",
-      "evidence": "Captura del perfil (usuario, nombre, logo) y título de la tienda ZABALA AUTOMOTORES en Clasionce, con el mismo usuario de Instagram enlazado.",
-      "confidence": "alta",
-      "status": "publicado",
-      "conflicts": [],
-      "decision": "Se publica. Instagram y Clasionce se enlazan entre sí: son dos fuentes del mismo negocio, no confirmaciones independientes de un registro."
-    },
-    {
-      "fact": "Rubro",
-      "value": "Intermediación y reventa de vehículos",
-      "source": "Bio de Instagram y descripción de la tienda en Clasionce",
-      "sourceType": "red social del negocio + plataforma",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Mismo texto en ambas: \"Nos dedicamos a la intermediación y reventa de vehículos.\"",
-      "confidence": "alta",
-      "status": "publicado",
-      "conflicts": [],
-      "decision": "Se publica solo la primera oración. La segunda (\"servicio transparente y confiable\") es autodescripción comercial y no se afirma."
-    },
-    {
-      "fact": "Ciudad",
-      "value": "Paraná, Entre Ríos",
-      "source": "Perfil de la tienda en Clasionce",
-      "sourceType": "plataforma de clasificados (datos cargados por el negocio)",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Línea de ubicación del perfil y localidad Paraná en 51 de 53 avisos; el prefijo 343 del teléfono coincide con Paraná.",
-      "confidence": "media",
-      "status": "publicado",
-      "conflicts": [
-        "Google Maps: la URL de búsqueda de Maps del listado es solo por ciudad, no una ficha del negocio."
-      ],
-      "decision": "Se publica ciudad y provincia. Sin calle ni número: no hay fuente."
-    },
-    {
-      "fact": "Horario",
-      "value": "Lunes a sábados de 8:00 a 21:30",
-      "source": "Perfil de la tienda en Clasionce",
-      "sourceType": "plataforma de clasificados (datos cargados por el negocio)",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Texto original: \"Lunes a Sabados de 08.00hs a 21.30hs\".",
-      "confidence": "media",
-      "status": "publicado con atribución",
-      "conflicts": [],
-      "decision": "Se publica indicando que es el horario de su perfil en Clasionce. Fuente única; sin cruce con Maps ni Instagram. No se afirma nada sobre domingos y feriados."
-    },
-    {
-      "fact": "Teléfono / WhatsApp",
-      "value": "343 473-2110 / 5493434732110",
-      "source": "Perfil de Clasionce e Instagram",
-      "sourceType": "plataforma + red social del negocio",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Clasionce: tel:3434732110 y wa.me/5493434732110. Instagram: wa.me/3434732110.",
-      "confidence": "alta",
-      "status": "publicado",
-      "conflicts": [],
-      "decision": "Se publica. Resuelve el pendiente anterior sobre el formato internacional del WhatsApp."
-    },
-    {
-      "fact": "Instagram",
-      "value": "@zabala_automotores",
-      "source": "Captura y enlace desde Clasionce",
-      "sourceType": "red social del negocio",
-      "url": "https://www.instagram.com/zabala_automotores/",
-      "accessed": "2026-10-11",
-      "evidence": "Perfil con 311 publicaciones y 296 seguidores (captura). El acceso automatizado está bloqueado por robots.",
-      "confidence": "alta",
-      "status": "publicado",
-      "conflicts": [],
-      "decision": "Se publica el enlace. Cifras de seguidores no se publican."
-    },
-    {
-      "fact": "Listado de vehículos",
-      "value": "53 avisos (36 autos y SUV, 14 camionetas y utilitarios, 2 embarcaciones, 1 moto); 3 marcados Vendido",
-      "source": "Tienda de Zabala en Clasionce, páginas 1 y 2",
-      "sourceType": "plataforma de clasificados (avisos del negocio)",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Cada tarjeta: título, año, transmisión, localidad, precio y estado.",
-      "confidence": "media",
-      "status": "publicado parcialmente",
-      "conflicts": [
-        "Ford Focus 1.6 S L/14 5P (N1164752): título 2014, ficha 2011.",
-        "Toyota Yaris 1.5 XLS Pack CVT 2021: dos avisos (N1168258 y N1137120) con precio distinto."
-      ],
-      "decision": "Se publican 47 autos y utilitarios no vendidos con título, año y transmisión y enlace al aviso. Sin precio ni km. El Focus L/14 se publica sin año. Moto y lanchas quedan solo en datos internos."
-    },
-    {
-      "fact": "Ficha completa de aviso (muestra)",
-      "value": "VW Up! 1.0 MPI Move 3P 2017: 65.000 km, nafta, manual, 3 puertas, blanco; sin permuta",
-      "source": "Aviso N1168048 en Clasionce",
-      "sourceType": "publicación del negocio en plataforma",
-      "url": "https://clasificados.elonce.com/index.php/aviso/N1168048",
-      "accessed": "2026-10-11",
-      "evidence": "Ficha técnica y descripción del aviso.",
-      "confidence": "media",
-      "status": "solo datos internos",
-      "conflicts": [],
-      "decision": "Único aviso individual abierto. Se guarda en vehicles.json; el sitio no publica km para mantener tarjetas homogéneas."
-    },
-    {
-      "fact": "Precios listados",
-      "value": "ver data/vehicles.json (listedPrice)",
-      "source": "Tienda en Clasionce",
-      "sourceType": "plataforma de clasificados (avisos del negocio)",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Precios en pesos y en dólares, algunos con oferta y otros \"negociable\".",
-      "confidence": "media",
-      "status": "no publicado",
-      "conflicts": [],
-      "decision": "No se publican: cambian con frecuencia y no hay forma de confirmar vigencia. Solo documentación interna."
-    },
-    {
-      "fact": "Insignia \"Identidad verificada\"",
-      "value": "Insignia de Clasionce",
-      "source": "Tienda en Clasionce",
-      "sourceType": "plataforma",
-      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "accessed": "2026-10-11",
-      "evidence": "Texto \"Concesionaria Verificada · Identidad verificada\".",
-      "confidence": "media",
-      "status": "no publicado",
-      "conflicts": [],
-      "decision": "Es una insignia de la plataforma, sin criterio explicado. No se replica la palabra \"verificado\" en el sitio."
-    },
-    {
-      "fact": "Datos sin fuente",
-      "value": null,
-      "source": "Todas las consultadas",
-      "sourceType": "—",
-      "url": null,
-      "accessed": "2026-10-11",
-      "evidence": "Sin dirección exacta, ficha de Maps, email, razón social, CUIT, antigüedad, financiación, garantía, reseñas ni sitio web propio.",
-      "confidence": "n/a",
-      "status": "no verificado",
-      "conflicts": [
-        "Zabala Automotriz (@zabala_automotriz) y Omar Zabala (Red Vialis): homónimos sin vínculo probado; descartados."
-      ],
-      "decision": "No se publican."
-    }
-  ],
-  "coverage": {
-    "opened": [
-      "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-      "https://clasificados.elonce.com/concesionarias/zabala-automotores?page=2",
-      "https://clasificados.elonce.com/index.php/aviso/N1168048"
-    ],
-    "blocked": [
-      "https://www.instagram.com/zabala_automotores/ (robots: acceso automatizado no permitido; solo la captura aportada)"
-    ],
-    "notOpened": "Los otros 35 avisos individuales de la lista, los de facebook.com y google.com (búsquedas y Maps) y las demás páginas de listados de Clasionce no se abrieron: las búsquedas de Google no son consultables desde esta herramienta y los avisos se cubrieron a través del listado de la tienda (que trae título, año, transmisión, localidad, precio y estado). Los datos que solo están en cada ficha (km, combustible, color, descripción) quedan pendientes.",
-    "idsInListNotInStore": [
-      "N1164716 (figura en la lista pero no en las páginas 1 y 2 de la tienda)"
-    ]
+ "generado": "2026-10-11",
+ "nota": "Registro de evidencia. 'estado': leida = abierta y leída; listada = visible solo en el listado de la tienda; equivalente = misma información que otra fuente; bloqueada = el sitio impide el acceso automático; muerta = HTTP 410; descartada = no es Zabala.",
+ "conflictos": [
+  {
+   "tema": "Año del Ford Focus N1164752",
+   "detalle": "El título dice 2014 y la ficha técnica dice 2011.",
+   "resolucion": "No resuelto. El sitio no muestra año."
+  },
+  {
+   "tema": "Precio Hilux SRX N1165540",
+   "detalle": "El listado muestra «Oferta $44M $29.000» (dos monedas).",
+   "resolucion": "No resuelto. El sitio dice «Consultar precio»."
+  },
+  {
+   "tema": "Descripción de la tienda",
+   "detalle": "Texto con error de tipeo y frase final cortada.",
+   "resolucion": "Se usan solo las dos primeras oraciones, corregidas."
+  },
+  {
+   "tema": "Clasificación por tipo",
+   "detalle": "Clasionce cuenta 36 autos/SUV y 14 camionetas/utilitarios, pero no indica cuál aviso es cuál.",
+   "resolucion": "El sitio los agrupa como «autos y utilitarios»."
   }
+ ],
+ "historico": [
+  {
+   "dato": "Sitio anterior de Zabala (repo): 47 avisos activos al 11/10/2026",
+   "nota": "Hoy son 53 (incluye 3 vendidos, 1 moto, 2 lanchas)."
+  },
+  {
+   "dato": "Avisos vendidos al 11/10/2026",
+   "detalle": [
+    "Jeep Compass Limited T270 2025 US$30.000 (N1166231)",
+    "Mercedes-Benz Sprinter 411 CDI/3250 2018 $36,5M (N1166145)",
+    "Ford Ranger 2.3 DC 4x2 2010 $14,5M (2110116)"
+   ]
+  },
+  {
+   "dato": "Aviso eliminado (410)",
+   "detalle": "N1164716: sin datos."
+  },
+  {
+   "dato": "Rebajas visibles (precio anterior → actual)",
+   "detalle": "ver precio.anterior en data/autos.json (16 avisos con oferta)"
+  }
+ ],
+ "fuentes": [
+  {
+   "id": "S01",
+   "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+   "estado": "leida",
+   "tipo": "tienda",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: coincide teléfono/WhatsApp/Instagram del listado de investigación",
+   "aporta": "Perfil comercial y listado (pág. 1)",
+   "datos": [
+    "descripción",
+    "Paraná, Entre Ríos",
+    "horario Lunes a Sábados 08:00–21:30",
+    "tel. 3434732110",
+    "WhatsApp 5493434732110",
+    "Instagram @zabala_automotores",
+    "53 avisos",
+    "30 avisos con precio, año y transmisión",
+    "identidad verificada por Clasionce"
+   ]
+  },
+  {
+   "id": "S02",
+   "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores?page=2",
+   "estado": "leida",
+   "tipo": "tienda",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada (misma tienda)",
+   "aporta": "Listado pág. 2 (23 avisos)",
+   "datos": [
+    "avisos 31 a 53 con precio, año, transmisión y localidad"
+   ]
+  },
+  {
+   "id": "S03",
+   "url": "https://clasificados.elonce.com/index.php/concesionarias/zabala-automotores?ciudad=todas",
+   "estado": "equivalente",
+   "tipo": "tienda",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada (la cifra se leyó en S01)",
+   "aporta": "Misma tienda, filtro «Toda la región»",
+   "datos": [
+    "localidades: Paraná 51, Federal 1, María Grande 1"
+   ]
+  },
+  {
+   "id": "S04",
+   "url": "(4 URL con ?subcategoria=…)",
+   "estado": "equivalente",
+   "tipo": "tienda",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada; los conteos se leyeron en S01. No se abrió cada filtro: no se sabe qué aviso es de cada tipo.",
+   "aporta": "Filtros por tipo de la misma tienda",
+   "datos": [
+    "Autos y SUV 36, Camionetas y Utilitarios 14, Embarcaciones 2, Motos 1"
+   ]
+  },
+  {
+   "id": "S05",
+   "url": "https://clasificados.elonce.com/aviso/N1164752",
+   "estado": "leida",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso de la tienda Zabala",
+   "aporta": "Ficha Ford Focus",
+   "datos": [
+    "km 87.996",
+    "año ficha 2011 vs título 2014 (CONFLICTO)",
+    "gris plata",
+    "nafta",
+    "tren delantero y correa de distribución recién hechos, batería nueva, service con 5.000 km",
+    "US$10.600 negociable"
+   ]
+  },
+  {
+   "id": "S06",
+   "url": "https://clasificados.elonce.com/aviso/N1166231",
+   "estado": "leida",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": false,
+   "identidad": "Confirmada",
+   "aporta": "Ficha Jeep Compass (VENDIDO)",
+   "datos": [
+    "18.000 km",
+    "beige",
+    "techo panorámico, sonido Beats, cadenero",
+    "US$30.000",
+    "«posibilidad de financiación»",
+    "visitas 86"
+   ]
+  },
+  {
+   "id": "S07",
+   "url": "https://clasificados.elonce.com/index.php/aviso/2110116",
+   "estado": "leida",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": false,
+   "identidad": "Confirmada",
+   "aporta": "Ficha Ford Ranger (VENDIDO)",
+   "datos": [
+    "217.000 km",
+    "Nafta/GNC",
+    "rojo",
+    "batería nueva, cubiertas con 5.000 km",
+    "$14.500.000 solo venta, no permuto",
+    "visitas 547"
+   ]
+  },
+  {
+   "id": "S08",
+   "url": "https://clasificados.elonce.com/index.php/aviso/N1164716",
+   "estado": "muerta",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": false,
+   "identidad": "No verificable: el aviso ya no existe. No se atribuye ningún dato.",
+   "aporta": "HTTP 410 (aviso eliminado)",
+   "datos": []
+  },
+  {
+   "id": "S09",
+   "url": "https://www.instagram.com/zabala_automotores/",
+   "estado": "bloqueada",
+   "tipo": "red social",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Enlazada desde el perfil de Clasionce (S01); sin contenido leído.",
+   "aporta": "Robots.txt impide el acceso automático",
+   "datos": []
+  },
+  {
+   "id": "S10",
+   "url": "https://www.facebook.com/search/top?q=Zabala%20Automotores",
+   "estado": "bloqueada",
+   "tipo": "red social",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Sin verificar",
+   "aporta": "Acceso automático no permitido",
+   "datos": []
+  },
+  {
+   "id": "S11",
+   "url": "https://wa.me/5493434732110",
+   "estado": "no-aplica",
+   "tipo": "contacto",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Coincide con S01",
+   "aporta": "Enlace de contacto; el número coincide con S01",
+   "datos": [
+    "WhatsApp 5493434732110"
+   ]
+  },
+  {
+   "id": "S12",
+   "url": "google.com/maps y 24 URL de búsqueda de Google",
+   "estado": "no-leidas",
+   "tipo": "busqueda",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "—",
+   "aporta": "No se pueden abrir resultados de Google de forma automática; se reemplazaron por búsquedas web generales",
+   "datos": []
+  },
+  {
+   "id": "S13",
+   "url": "dnb.com (varias páginas) / indicadores.ar/empresa/30716685574 / indicadores.ar/empresa/30718034376",
+   "estado": "descartada",
+   "tipo": "directorio",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "DESCARTADAS: PARANA AUTOMOTORES SRL (Corrientes) y GANAUTO SAS (Paraná) son otras empresas; no se les atribuye nada a Zabala",
+   "aporta": "Resultados de búsqueda sobre «Zabala Automotores Paraná»: ninguno nombra a Zabala",
+   "datos": []
+  },
+  {
+   "id": "A-N1168048",
+   "url": "https://clasificados.elonce.com/aviso/N1168048",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1165274",
+   "url": "https://clasificados.elonce.com/aviso/N1165274",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1142198",
+   "url": "https://clasificados.elonce.com/aviso/N1142198",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168498",
+   "url": "https://clasificados.elonce.com/aviso/N1168498",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168476",
+   "url": "https://clasificados.elonce.com/aviso/N1168476",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168420",
+   "url": "https://clasificados.elonce.com/aviso/N1168420",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168363",
+   "url": "https://clasificados.elonce.com/aviso/N1168363",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168350",
+   "url": "https://clasificados.elonce.com/aviso/N1168350",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1168258",
+   "url": "https://clasificados.elonce.com/aviso/N1168258",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1167888",
+   "url": "https://clasificados.elonce.com/aviso/N1167888",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1167685",
+   "url": "https://clasificados.elonce.com/aviso/N1167685",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1167667",
+   "url": "https://clasificados.elonce.com/aviso/N1167667",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1167171",
+   "url": "https://clasificados.elonce.com/aviso/N1167171",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1162959",
+   "url": "https://clasificados.elonce.com/aviso/N1162959",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1167106",
+   "url": "https://clasificados.elonce.com/aviso/N1167106",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1164467",
+   "url": "https://clasificados.elonce.com/aviso/N1164467",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166714",
+   "url": "https://clasificados.elonce.com/aviso/N1166714",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166713",
+   "url": "https://clasificados.elonce.com/aviso/N1166713",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166453",
+   "url": "https://clasificados.elonce.com/aviso/N1166453",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166228",
+   "url": "https://clasificados.elonce.com/aviso/N1166228",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166145",
+   "url": "https://clasificados.elonce.com/aviso/N1166145",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166080",
+   "url": "https://clasificados.elonce.com/aviso/N1166080",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1166077",
+   "url": "https://clasificados.elonce.com/aviso/N1166077",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1165540",
+   "url": "https://clasificados.elonce.com/aviso/N1165540",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio (ambiguo)"
+   ]
+  },
+  {
+   "id": "A-N1165353",
+   "url": "https://clasificados.elonce.com/aviso/N1165353",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1164887",
+   "url": "https://clasificados.elonce.com/aviso/N1164887",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1164715",
+   "url": "https://clasificados.elonce.com/aviso/N1164715",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1164426",
+   "url": "https://clasificados.elonce.com/aviso/N1164426",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1163973",
+   "url": "https://clasificados.elonce.com/aviso/N1163973",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1163971",
+   "url": "https://clasificados.elonce.com/aviso/N1163971",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1162994",
+   "url": "https://clasificados.elonce.com/aviso/N1162994",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1162742",
+   "url": "https://clasificados.elonce.com/aviso/N1162742",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1158048",
+   "url": "https://clasificados.elonce.com/aviso/N1158048",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1157845",
+   "url": "https://clasificados.elonce.com/aviso/N1157845",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1137128",
+   "url": "https://clasificados.elonce.com/aviso/N1137128",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1136911",
+   "url": "https://clasificados.elonce.com/aviso/N1136911",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1137119",
+   "url": "https://clasificados.elonce.com/aviso/N1137119",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1139461",
+   "url": "https://clasificados.elonce.com/aviso/N1139461",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1136912",
+   "url": "https://clasificados.elonce.com/aviso/N1136912",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1141275",
+   "url": "https://clasificados.elonce.com/aviso/N1141275",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1137120",
+   "url": "https://clasificados.elonce.com/aviso/N1137120",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1137121",
+   "url": "https://clasificados.elonce.com/aviso/N1137121",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1136617",
+   "url": "https://clasificados.elonce.com/aviso/N1136617",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1162559",
+   "url": "https://clasificados.elonce.com/aviso/N1162559",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1162557",
+   "url": "https://clasificados.elonce.com/aviso/N1162557",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1140083",
+   "url": "https://clasificados.elonce.com/aviso/N1140083",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1140481",
+   "url": "https://clasificados.elonce.com/aviso/N1140481",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1138064",
+   "url": "https://clasificados.elonce.com/aviso/N1138064",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-N1157909",
+   "url": "https://clasificados.elonce.com/aviso/N1157909",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  },
+  {
+   "id": "A-2146368",
+   "url": "https://clasificados.elonce.com/aviso/2146368",
+   "estado": "listada",
+   "tipo": "aviso",
+   "consultado": "2026-10-11",
+   "datosActuales": true,
+   "identidad": "Confirmada: aviso listado en la tienda de Zabala",
+   "aporta": "Dato leído en el listado de la tienda (S01/S02); ficha individual NO abierta",
+   "datos": [
+    "título",
+    "año",
+    "transmisión",
+    "localidad",
+    "precio"
+   ]
+  }
+ ]
 }

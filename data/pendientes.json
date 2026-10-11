@@ -1,29 +1,74 @@
-{
-  "_ayuda": "Completá solo lo que el responsable confirmó. Los campos en null se ignoran.",
-  "ubicacion": {
-    "direccion": null,
-    "mapsUrl": null
-  },
-  "horarios": {
-    "confirmado": null
-  },
-  "contacto": {
-    "email": null
-  },
-  "identidad": {
-    "razonSocial": null,
-    "cuit": null
-  },
-  "fotos": {
-    "autorizadas": null
-  },
-  "vehiculos": {
-    "kmYDetallePorUnidad": null,
-    "preciosPublicables": null,
-    "disponibilidadActual": null
-  },
-  "produccion": {
-    "dominio": null,
-    "confirmar": false
-  }
-}
+[
+ {
+  "responsable": "dueño",
+  "pendiente": "Razón social, CUIT y titular",
+  "detalle": "Ninguna fuente los vincula con Zabala. No publicar hasta tener documento o confirmación escrita.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Dirección exacta y ficha de Google Maps",
+  "detalle": "Hoy solo figura «Paraná, Entre Ríos».",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Horario real (¿domingos y feriados?)",
+  "detalle": "Única fuente: perfil de Clasionce, lunes a sábados 8:00–21:30.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Servicios: financiación, recepción de usados/permuta, consignación, gestoría",
+  "detalle": "Solo hay menciones sueltas dentro de avisos (ver data/dealership.json › services).",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Autorización para usar las fotos de los avisos",
+  "detalle": "El sitio no usa imágenes. Sin autorización no se incorporan.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Año del Ford Focus N1164752 (2011 o 2014) y precio de la Hilux SRX N1165540",
+  "detalle": "Ver conflictos en data/sources.json.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Facebook y otros canales",
+  "detalle": "No se encontró una página verificada.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Contenido de Instagram @zabala_automotores",
+  "detalle": "El sitio bloquea el acceso automático. Hace falta copiar manualmente bio, ubicación y publicaciones.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Búsquedas en Google, Facebook y Mercado Libre del listado",
+  "detalle": "No se pueden abrir de forma automática; las búsquedas web generales no devolvieron nada de Zabala.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Ficha individual de 50 de los 53 avisos (km, color, combustible, descripción)",
+  "detalle": "Solo se leyeron 3 fichas completas; el resto está en el listado. Cada ficha cuesta una consulta.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Qué avisos son «Acepta permuta» y a cuál tipo pertenece cada uno",
+  "detalle": "No visible en el listado.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "técnico",
+  "pendiente": "Revisar el sitio en navegador y celular",
+  "detalle": "No pude abrirlo en un navegador al generarlo.",
+  "estado": "abierto"
+ }
+]

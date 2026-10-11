@@ -107,3 +107,12 @@ footer p{margin:4px 0}footer a{color:#fff}
  .btn.cut{flex:1 1 auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.car,.btn{transition:none}.car:hover{transform:none}}
+/* v2: precios, etiquetas, vendidos */
+.bds{display:flex;gap:6px;min-height:0}.bds:empty{display:none}
+.bd{font-style:normal;font:700 11.5px/1 var(--b);letter-spacing:.04em;text-transform:uppercase;padding:5px 8px;background:#e6ebf5;color:var(--navy)}
+.bd.o{background:var(--red);color:#fff}.bd.v{background:#2b3944;color:#fff}
+.car-p{margin:2px 0 0;font:600 15px var(--b);color:var(--ink)}.car-p b{font:700 21px/1.1 var(--h);color:var(--navy)}.car-p s{color:var(--mute);font-size:14px;margin-left:6px}
+.car-n{margin:2px 0 6px;font-size:14px;line-height:1.4;color:var(--mute)}
+.car.vend{opacity:.62}.car.vend .car-art{background:linear-gradient(135deg,#2b3944,#44525d)}
+.fin{margin:18px 0 0;font-size:14px;color:var(--mute)}
+.src{display:block;margin-top:4px;font-size:13.5px;color:#9fb2d8}
