@@ -1,0 +1,35 @@
+/* ===== 2) SIN NUMERACIÓN ===== */
+/* títulos de sección «N° 01» / «N° 13·B» */
+html body main>section h2::before,
+html body main>section h2[data-sub]::before{content:none!important;display:none!important}
+/* entregas: se conserva solo el dato real (mes) cuando existe, sin «E·01» */
+html body .eg li::after{content:none!important;display:none!important}
+html body #entregas .eg li[data-m]::after,
+html body #entregas .eg li[data-m]:nth-child(1)::after{content:attr(data-m)!important;display:block!important}
+/* unidades «U·01», preguntas «P·01», operaciones «O·01», financiación «F·01», guía «G·01»/«Paso», «T·01», «R·01», «TALÓN N°» */
+html body #stockGrid .car::after,
+html body #operaciones .oc::after,
+html body :is(#financiacion,#guia,#visita) .xt::after,
+html body #preguntas .fa summary::before,
+html body #financiacion .pdg .pdc::before,
+html body #guia .gd summary::before,
+html body #guia#guia#guia .gd summary::before,
+html body #operaciones .stp li::before,
+html body #contacto .rgl li::before,
+html body #como-comprar .stp li::before,
+html body #como-comprar .stp li:hover::before{content:none!important;display:none!important}
+/* «cómo comprar»: sin la columna del número gigante */
+html body #como-comprar .stp li{grid-template-columns:minmax(0,1fr)!important}
+/* índice de modelos (si está presente) */
+html body #mdl a::before{content:none!important;display:none!important}
+/* contadores de fotos «1/6» */
+html body .g-c{display:none!important}
+
+
+
+/* Objetivos táctiles de al menos 32px sin mover el diseño */
+/* chevron del menú: más ancho, con márgenes que compensan para que el ícono no se corra */
+html body header .nvc{width:32px;min-height:32px;margin:0 -3px 0 -5px}
+@media(max-width:899px){html body header .nvc{width:32px;min-height:40px;margin:0 -1px 0 -7px}}
+/* título de cada tarjeta de auto (botón que abre la ficha) */
+@media(max-width:899px),(pointer:coarse){html body #unidades button.st{min-height:32px}}

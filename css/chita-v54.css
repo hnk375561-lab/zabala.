@@ -1,0 +1,77 @@
+/* CHITA v54 · financiación más transparente · "playa de maniobras" en Operaciones · plano de revisión en Guía */
+/* 1 · Financiación: texto legible sobre la foto más visible */
+html body #financiacion#financiacion#financiacion .pdl :is(h2,p){text-shadow:0 1px 16px rgba(70,0,10,.6)!important}
+
+/* 2 · Operaciones: piso de hormigón + plazas pintadas (CSS estático, sin animación por scroll) */
+html body #operaciones#operaciones#operaciones{background-color:#d6d9d5!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .2 0 0 0 0 .24 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(70% 45% at 12% 0,rgba(255,255,255,.7),transparent 70%),linear-gradient(180deg,#e0e2de,#cdd0cc)!important}
+html body #operaciones#operaciones#operaciones .og{position:relative;margin-top:clamp(56px,6vw,84px)}
+@media(min-width:1000px){
+html body #operaciones#operaciones#operaciones .og{column-gap:34px}
+html body #operaciones#operaciones#operaciones .og::before{content:"";position:absolute;z-index:0;pointer-events:none;left:-17px;right:-17px;top:-44px;bottom:-20px;background:linear-gradient(90deg,var(--rojo) 0 6px,transparent 6px) left top/25% 100% repeat-x,linear-gradient(var(--rojo),var(--rojo)) right top/6px 100% no-repeat,linear-gradient(var(--rojo),var(--rojo)) left bottom/100% 6px no-repeat;opacity:.9}
+html body #operaciones#operaciones#operaciones .og .oc{position:relative;z-index:1;box-shadow:0 18px 30px -18px rgba(11,18,32,.45)}
+}
+html body #operaciones#operaciones#operaciones .oc{will-change:auto}
+
+/* 3 · Guía y Visita: mosaico de unidades como en el hero de Financiación */
+html body :is(#guia,#visita)#guia#guia .chita-section-backdrop,html body #visita#visita#visita .chita-section-backdrop{display:none!important}
+html body #guia#guia#guia{background:#0a1630!important;background-image:none!important}
+html body #visita#visita#visita{background:#0b2c8c!important;background-image:none!important}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .fin-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:1fr}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .fin-bg img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.04)}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .fin-bg::before{content:"";position:absolute;inset:0;z-index:2;background:repeating-linear-gradient(90deg,var(--chapa) 0 8px,transparent 8px 25%)}
+html body #guia#guia#guia .fin-bg::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,22,48,.8),rgba(10,22,48,.66) 45%,rgba(10,22,48,.88))}
+html body #visita#visita#visita .fin-bg::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,44,140,.74),rgba(11,44,140,.6) 45%,rgba(7,28,96,.86))}
+@media(max-width:899px){html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .fin-bg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Legibilidad */
+html body #visita#visita#visita .xt .xl em{color:var(--ink)!important;background:#fff!important;border-color:var(--ink)!important}
+html body #guia#guia#guia .gd{background:rgba(8,16,36,.82)!important}
+html body #guia#guia#guia .gd summary small{font-size:14px!important;font-weight:500!important;line-height:1.3!important;text-transform:none!important;letter-spacing:0!important;text-decoration:none!important;color:rgba(255,255,255,.82)!important;font-family:inherit!important}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) :is(.pdl,.xb) :is(h2,p,.xp){text-shadow:0 1px 14px rgba(0,0,0,.55)!important}
+
+/* 4 · Guía general: 4 pasos en orden, planilla a la izquierda, pasos a la derecha */
+html body #guia#guia#guia .pdl::after{content:none!important}
+html body #guia#guia#guia .gcount::before{content:none!important}
+html body #guia#guia#guia .gd summary::before{content:"Paso " counter(g)!important;display:inline-block!important;flex:none;padding:.5em .9em .5em .7em;background:var(--rojo);color:#fff;font:800 11px/1 var(--font-display);letter-spacing:.1em!important;text-transform:uppercase;white-space:nowrap}
+html body #guia#guia#guia .gd summary>span{display:block;min-width:0}
+html body #guia#guia#guia .gd summary small{display:block;margin-top:6px;font:500 14px/1.3 var(--font-body,inherit);letter-spacing:0;text-transform:none;opacity:.78}
+html body #guia#guia#guia .gd details{transform:none!important}
+html body #guia#guia#guia .gtools{flex-direction:column;align-items:flex-start;gap:12px}
+html body #guia#guia#guia .gquestions{margin:0;font-size:13px;line-height:1.5;opacity:.85}
+@media(min-width:1000px){
+html body #guia#guia#guia .w{display:grid!important;grid-template-columns:minmax(280px,5fr) minmax(0,7fr);column-gap:clamp(28px,4vw,64px);align-items:start}
+html body #guia#guia#guia .w>.xt{grid-column:1/-1;grid-row:1}
+html body #guia#guia#guia .w>.pdl{grid-column:1;grid-row:2;padding-right:0!important}
+html body #guia#guia#guia .w>.gtools{grid-column:1;grid-row:3;margin:24px 0 0!important;max-width:none!important}
+html body #guia#guia#guia .w>.gd{grid-column:2;grid-row:2/span 4;margin:clamp(28px,4vw,56px) 0 0!important;padding:0!important;max-width:none!important}
+html body #guia#guia#guia .w>.pdn{grid-column:1;grid-row:4;margin:24px 0 0!important}
+html body #guia#guia#guia .w>.pdr{grid-column:1;grid-row:5;margin:16px 0 0!important}
+html body #guia#guia#guia .w>.xb{grid-column:1/-1;grid-row:6}
+}
+@media(prefers-reduced-motion:reduce){html body #guia#guia#guia .gd details{transition:none}}
+
+/* Planilla: sin viñetas sueltas y casillas visibles */
+html body #guia#guia#guia .gd li{list-style:none!important;margin-left:0!important}
+html body #guia#guia#guia .gd ul{padding-left:clamp(16px,2vw,28px)!important;margin-left:0!important}
+html body #guia#guia#guia .gcheck input{border-color:#fff!important;background:rgba(255,255,255,.08)!important}
+html body #guia#guia#guia .gcheck input:checked{background:var(--rojo)!important;border-color:var(--rojo)!important}
+html body #guia#guia#guia .gcheck input{width:22px!important;height:22px!important;min-width:22px;align-self:flex-start;flex:none}
+html body #guia#guia#guia .gcheck input{min-height:22px!important;padding:0!important;box-sizing:border-box}
+html body #visita#visita#visita .xt .xl em,html body #visita#visita#visita .xt .xl em *{color:#0b1220!important;-webkit-text-fill-color:#0b1220!important;opacity:1!important}
+/* Titulares siempre legibles (sin palabras apagadas por el scroll) */
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .xt .xl,html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .xt .xl :not(em):not(em *){color:#fff!important;-webkit-text-fill-color:#fff!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important}
+html body #visita#visita#visita .xt .xl em,html body #visita#visita#visita .xt .xl em *{color:#0b1220!important;-webkit-text-fill-color:#0b1220!important;opacity:1!important}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .xt .xl,html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .xt .xl *{clip-path:none!important;overflow:visible!important}
+html body :is(#guia,#visita):is(#guia,#visita):is(#guia,#visita) .xt .xl *{font-weight:800!important;font-variation-settings:normal!important;font-size:inherit!important;letter-spacing:inherit!important;transform:none!important}
+
+/* Sin rótulos decorativos (talón N°, eyebrows, "Paso N", sellos) y fotos más livianas */
+html body :is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita) .xt::after{content:none!important;display:none!important}
+html body :is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita) :is(.xk,.pde,.pdt,.xb .xs){display:none!important}
+html body #guia#guia#guia .gd summary::before{content:none!important;display:none!important}
+html body #guia#guia#guia .gd summary{gap:0!important}
+html body :is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita) .fin-bg img{filter:none!important}
+html body :is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita):is(#financiacion,#guia,#visita) .w>.xt{padding-right:clamp(18px,3vw,48px)!important}
+
+/* Fondo de una sola imagen (mucho más liviano que 12 fotos sueltas) */
+html body #guia#guia#guia .fin-bg.mos{display:block!important;background:var(--bg-guia) center/cover no-repeat}
+html body #visita#visita#visita .fin-bg.mos{display:block!important;background:var(--bg-visita) center/cover no-repeat}
+html body #financiacion#financiacion#financiacion .fin-bg.mos{display:block!important;background:var(--bg-fin) center/cover no-repeat}
