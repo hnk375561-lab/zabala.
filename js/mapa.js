@@ -1,0 +1,233 @@
+/* CHITA · «Dónde estamos» — mapa propio (Leaflet) + botón «Copiar dirección».
+   Lag que resuelve: Leaflet (JS+CSS) y los mosaicos ya no se piden ni se arman mientras la persona hace scroll:
+   se espera a que el scroll se quede quieto (y al ratón libre del navegador). Sin filtros CSS sobre los mosaicos.
+   · Si la persona toca el mapa, carga al instante.
+   · En escritorio la rueda hace zoom solo después de hacer clic (no secuestra el scroll). En celular, un dedo mueve el mapa tras tocarlo.
+   · Si Leaflet o los mosaicos no cargan, vuelve al mapa de Google (data-fb) y la ficha estática queda a la vista.
+   · Cambiar de proveedor de mosaicos: editar TILES y ATTR.
+   v65 · Menos tirón al abrir el mapa:
+   - Cuando la sección está a ~2 pantallas y el scroll está quieto, se baja y ejecuta Leaflet (JS+CSS) y se abre la conexión con el servidor de
+     mosaicos. Todavía NO se arma el mapa ni se piden mosaicos: eso sigue siendo al tocar. Así el toque ya no paga descarga, interpretación del
+     script ni el recálculo de estilos por sumar la hoja de Leaflet.
+   - Los mosaicos no se pintan de a uno a medida que llegan: el panel de mosaicos queda oculto hasta que están todos los de la vista
+     (o pasan 2,5 s) y aparece de una vez. Una sola pasada de pintura en vez de decenas. */
+(function () {
+"use strict";
+
+/* Copiar dirección: no depende del mapa */
+var cb = document.querySelector("#contacto [data-copy]");
+if (cb) {
+  var t0 = cb.textContent;
+  var say = function (m, ok) { cb.textContent = m; cb.classList.toggle("is-ok", !!ok); setTimeout(function () { cb.textContent = t0; cb.classList.remove("is-ok"); }, 1800); };
+  cb.addEventListener("click", function () {
+    var txt = cb.getAttribute("data-copy");
+    var fb = function () {
+      var a = document.createElement("textarea"); a.value = txt; a.setAttribute("readonly", ""); a.style.cssText = "position:fixed;opacity:0";
+      document.body.appendChild(a); a.select(); var r = false; try { r = document.execCommand("copy"); } catch (e) {} a.remove();
+      say(r ? "Copiada ✓" : "No se pudo copiar", r);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function () { say("Copiada ✓", true); }, fb); else fb();
+  });
+}
+
+var mp = document.querySelector("#contacto .dn-map");
+if (!mp) return;
+
+var CHITA = [-32.486865, -58.250318];           // Gral. Galarza 1712
+var ZOOM = 17;
+var TILES = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+var ATTR = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>';
+var RM = matchMedia("(prefers-reduced-motion:reduce)").matches;
+var touch = matchMedia("(pointer:coarse)").matches || "ontouchstart" in window && !matchMedia("(pointer:fine)").matches;
+var iframe = mp.querySelector("iframe");
+var started = false, map = null, el = null, moved = false, dead = false, btnC = null, lastScroll = 0;
+
+addEventListener("scroll", function () { lastScroll = performance.now(); }, { passive: true });
+/* Ejecuta fn cuando el scroll lleva ≥180 ms quieto y el navegador está libre */
+function calm(fn) {
+  (function chk() {
+    if (performance.now() - lastScroll < 180) { setTimeout(chk, 120); return; }
+    (window.requestIdleCallback || function (f) { setTimeout(f, 1); })(fn, { timeout: 1200 });
+  })();
+}
+
+function fallback() {
+  dead = true;
+  if (map) { try { map.remove(); } catch (e) {} map = null; }
+  mp.classList.remove("lf", "lf-touch", "on");
+  [].forEach.call(mp.querySelectorAll(".mp-lf,.mp-ctl"), function (n) { n.remove(); });
+  if (iframe && iframe.getAttribute("data-fb")) {
+    iframe.addEventListener("load", function () { mp.classList.add("rd"); }, { once: true });
+    iframe.src = iframe.getAttribute("data-fb");
+    iframe.removeAttribute("data-fb");
+  }
+}
+
+var assetState = 0, waiters = [], wantInit = false;   // 0 sin pedir · 1 cargando · 2 listo
+function loadAssets(done) {
+  if (window.L && window.L.map) { assetState = 2; return done(); }
+  waiters.push(done);
+  if (assetState === 1) return;
+  assetState = 1;
+  /* Leaflet posiciona cada mosaico con translate3d: con el mapa a todo el ancho son decenas de capas de GPU que se
+     componen, además, debajo del degradado del panel. Con L_DISABLE_3D los mosaicos van con left/top dentro de UNA sola
+     capa (el contenedor .dn-map ya tiene contain:paint). Debe definirse ANTES de cargar leaflet.js.
+     Para volver al comportamiento anterior: borrar esta línea. */
+  window.L_DISABLE_3D = true;
+  var css = document.createElement("link");
+  css.rel = "stylesheet"; css.href = "js/vendor/leaflet.css";
+  document.head.appendChild(css);
+  var s = document.createElement("script");
+  s.src = "js/vendor/leaflet.js"; s.async = true;
+  s.onload = function () { assetState = 2; var w = waiters.splice(0); w.forEach(function (f) { f(); }); };
+  s.onerror = function () { assetState = 0; waiters.length = 0; s.remove(); css.remove(); if (wantInit) fallback(); };
+  document.head.appendChild(s);
+}
+
+/* En escritorio el panel azul tapa la parte izquierda del mapa: Chita se centra en la parte libre (a la derecha del panel) */
+function offX() {
+  var info = document.querySelector("#contacto .dn-info");
+  if (!info || !matchMedia("(min-width:901px)").matches) return 0;
+  return Math.round(info.getBoundingClientRect().width / 2);
+}
+function homeCenter() {
+  return map.unproject(map.project(L.latLng(CHITA), ZOOM).subtract([offX(), 0]), ZOOM);
+}
+function goHome(animate) {
+  if (!map) return;
+  map.setView(homeCenter(), ZOOM, { animate: !!animate && !RM, duration: .6 });
+  moved = false; sync();
+}
+function sync() {
+  if (!btnC || !map) return;
+  var c = map.latLngToContainerPoint(L.latLng(CHITA)).distanceTo(map.getSize().divideBy(2).add([offX(), 0]));
+  var away = c > 24 || Math.abs(map.getZoom() - ZOOM) > .01;
+  btnC.classList.toggle("off", away);
+  btnC.setAttribute("aria-label", away ? "Volver a Chita" : "Mapa centrado en Chita");
+}
+
+function init() {
+  if (dead || map) return;
+  el = document.createElement("div");
+  el.className = "mp-lf";
+  el.setAttribute("role", "region");
+  el.setAttribute("aria-label", "Mapa de Chita Automotores, Gral. Galarza 1712. Con el mapa enfocado, las flechas lo mueven y + o − acercan y alejan.");
+  el.tabIndex = 0;
+  mp.insertBefore(el, mp.firstChild);
+
+  map = L.map(el, {
+    center: CHITA, zoom: ZOOM, minZoom: 12, maxZoom: 19,
+    zoomControl: false, attributionControl: false,
+    scrollWheelZoom: false, doubleClickZoom: true, boxZoom: false,
+    zoomSnap: 1, wheelPxPerZoomLevel: 90, inertia: false, fadeAnimation: false, zoomAnimation: false, markerZoomAnimation: false, bounceAtZoomLimits: false,
+    keyboard: true, tap: false
+  });
+  L.control.attribution({ position: "bottomright", prefix: false }).addAttribution(ATTR).addTo(map);
+
+  var ok = 0, bad = 0;
+  var tiles = L.tileLayer(TILES, { maxZoom: 19, attribution: ATTR, keepBuffer: 1, updateInterval: 300, updateWhenZooming: false, crossOrigin: false,
+    /* si un mosaico no llega (el servidor limita pedidos, red lenta) queda un hueco transparente en vez de una imagen rota */
+    errorTileUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" });
+  var shown = false;
+  function reveal() { if (shown || !map) return; shown = true; clearTimeout(rvT); mp.classList.add("rd"); }
+  var rvT = setTimeout(reveal, 2500);                 // si algún mosaico tarda, se muestra igual
+  tiles.on("tileload", function () { ok++; });
+  tiles.on("load", function () { requestAnimationFrame(reveal); });   // llegaron todos los de la vista: una sola pintura
+  tiles.on("tileerror", function () { bad++; if (!ok && bad >= 6) fallback(); });
+  /* decodificar los PNG fuera del hilo principal (Leaflet no lo hace) */
+  tiles.on("tileloadstart", function (e) { try { e.tile.decoding = "async"; } catch (_) {} });
+  /* centrar YA en la parte libre (a la derecha del panel) ANTES de pedir mosaicos: antes se pedían los de Chita centrada
+     y enseguida los del desplazamiento, o sea el doble de pedidos y decodificaciones justo al cargar */
+  goHome(false);
+  tiles.addTo(map);
+
+  /* Ficha: marcador del mapa. La punta de la flecha (9 px bajo la ficha) toca exactamente la coordenada. */
+  var icon = L.divIcon({ className: "chita-pin", iconSize: null, iconAnchor: [0, 0], html: '<span class="cp"><i>Chita</i><b>1712</b></span>' });
+  var mk = L.marker(CHITA, { icon: icon, interactive: false, keyboard: false, zIndexOffset: 1000 }).addTo(map);
+  function anchor() {
+    var n = mk.getElement(); if (!n) return;
+    n.style.marginLeft = (-(n.offsetWidth || 102) / 2) + "px"; n.style.marginTop = (-(n.offsetHeight || 96) - 9) + "px";
+  }
+  anchor();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(anchor);
+
+  var ctl = document.createElement("div");
+  ctl.className = "mp-ctl";
+  ctl.innerHTML =
+    '<button type="button" class="mp-z" data-z="1" aria-label="Acercar">+</button>' +
+    '<button type="button" class="mp-z" data-z="-1" aria-label="Alejar">−</button>' +
+    '<button type="button" class="mp-c" aria-label="Mapa centrado en Chita"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg><span>Centrar</span></button>';
+  mp.appendChild(ctl);
+  btnC = ctl.querySelector(".mp-c");
+  ["click", "dblclick", "pointerdown", "touchstart", "wheel"].forEach(function (ev) {
+    ctl.addEventListener(ev, function (e) { e.stopPropagation(); }, { passive: true });
+  });
+  ctl.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b || !map) return;
+    if (b.classList.contains("mp-c")) goHome(true);
+    else map.setZoom(map.getZoom() + (+b.getAttribute("data-z")));
+  });
+
+  /* Activación: el mapa no atrapa el scroll hasta que la persona lo toca */
+  mp.classList.add("lf");
+  if (touch) { mp.classList.add("lf-touch"); map.dragging.disable(); map.touchZoom.disable(); }
+  function on() {
+    if (!map || dead) return;
+    mp.classList.add("on"); el.setAttribute("data-lenis-prevent", "");
+    if (touch) { map.dragging.enable(); map.touchZoom.enable(); } else map.scrollWheelZoom.enable();
+  }
+  function off() {
+    if (!map || dead) return;
+    mp.classList.remove("on"); el.removeAttribute("data-lenis-prevent");
+    if (touch) { map.dragging.disable(); map.touchZoom.disable(); } else map.scrollWheelZoom.disable();
+  }
+  el.addEventListener("click", on);
+  el.addEventListener("focus", function () { if (!touch) on(); });
+  mp.addEventListener("mouseleave", function () { if (!touch) off(); });
+  el.addEventListener("blur", function () { if (!touch) off(); });
+  document.addEventListener("touchstart", function (e) { if (touch && !mp.contains(e.target)) off(); }, { passive: true });
+
+  map.on("dragstart zoomstart", function () { moved = true; });
+  map.on("moveend zoomend", sync);
+  goHome(false);
+
+  /* Un solo observador de tamaño (reemplaza al listener de resize): recalcula el mapa y, si no se movió, lo recentra */
+  if ("ResizeObserver" in window) {
+    var rt = 0;
+    new ResizeObserver(function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () { if (!map) return; map.invalidateSize(); if (!moved) goHome(false); else sync(); }, 120);
+    }).observe(mp);
+  }
+}
+
+function start(now) {
+  if (started) return; started = true; wantInit = true;
+  if (now) loadAssets(init); else calm(function () { loadAssets(function () { calm(init); }); });
+}
+
+/* Precalentamiento (sin armar el mapa): cerca de la sección, con el scroll quieto y sin ahorro de datos */
+(function () {
+  var nc = navigator.connection || {};
+  if (!("IntersectionObserver" in window) || nc.saveData || /(^|-)2g$/.test(nc.effectiveType || "")) return;
+  var io = new IntersectionObserver(function (es) {
+    if (!es.some(function (e) { return e.isIntersecting; })) return;
+    io.disconnect();
+    calm(function () {
+      if (started || dead) return;
+      var pc = document.createElement("link"); pc.rel = "preconnect"; pc.href = "https://tile.openstreetmap.org"; document.head.appendChild(pc);
+      loadAssets(function () {});
+    });
+  }, { rootMargin: "1800px 0px" });
+  io.observe(mp);
+})();
+
+/* El mapa NO carga solo al llegar a la sección: Leaflet, los mosaicos y las capas de GPU cuestan justo cuando la
+   persona está scrolleando. Se arma al tocar el botón (o el mapa). Mientras tanto se ve la ficha con el pin y los
+   enlaces a Google Maps / Waze / Apple Maps. */
+var go = document.createElement("button");
+go.type = "button"; go.className = "mp-go"; go.textContent = "Ver mapa interactivo";
+mp.appendChild(go);
+go.addEventListener("click", function (e) { e.stopPropagation(); go.remove(); start(true); });
+mp.addEventListener("pointerdown", function () { if (go.parentNode) go.remove(); start(true); }, { passive: true });
+})();
