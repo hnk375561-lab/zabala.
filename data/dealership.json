@@ -110,5 +110,12 @@
     "clasionce": "Aún sin valoraciones",
     "google": null,
     "note": "Sin reseñas verificadas. No se publica puntaje."
+  },
+  "coverage": {
+    "text": "Toda la región",
+    "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+    "checkedAt": "2026-10-11",
+    "confidence": "A",
+    "note": "Cobertura declarada en la ficha de Clasionce (dossier del 11/10/2026). Es una frase del perfil, no una lista de localidades ni de sucursales."
   }
 }

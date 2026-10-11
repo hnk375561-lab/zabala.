@@ -70,5 +70,23 @@
   "pendiente": "Revisar el sitio en navegador y celular",
   "detalle": "No pude abrirlo en un navegador al generarlo.",
   "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Abrir los 11 avisos de data/historial.json y decidir si siguen publicados",
+  "detalle": "Vistos en capturas anteriores; no están en el listado del 11/10/2026.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Confirmar que el número recibe WhatsApp y aprobar los botones de consulta por unidad",
+  "detalle": "El dossier no pudo inspeccionar el enlace de WhatsApp de la ficha de Clasionce.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Autorización para usar logotipo, nombre comercial y textos",
+  "detalle": "El logotipo ya está en el sitio de demostración; falta la autorización para la versión pública.",
+  "estado": "abierto"
  }
 ]

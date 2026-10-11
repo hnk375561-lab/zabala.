@@ -21,6 +21,31 @@
    "tema": "Clasificación por tipo",
    "detalle": "Clasionce cuenta 36 autos/SUV y 14 camionetas/utilitarios, pero no indica cuál aviso es cuál.",
    "resolucion": "El sitio los agrupa como «autos y utilitarios»."
+  },
+  {
+   "tema": "Precio Honda HR-V 1.8 EXL 2018 (N1165353)",
+   "detalle": "$25.900.000 en el listado; otra captura indexada mostró $26.000.000.",
+   "resolucion": "Se publica el del listado con aviso en la tarjeta."
+  },
+  {
+   "tema": "Precio Honda HR-V 1.8 EXL 2020 (2146368)",
+   "detalle": "$31.800.000 en el listado; otra captura mostró $32.000.000.",
+   "resolucion": "Se publica el del listado con aviso en la tarjeta."
+  },
+  {
+   "tema": "Precio Hilux SRX 4x4 (N1165540)",
+   "detalle": "Una captura indexada muestra oferta US$30.000 (antes US$32.000); el listado leído mostraba $44M y $29.000.",
+   "resolucion": "No resuelto. La tarjeta dice «Consultar precio» y menciona la diferencia."
+  },
+  {
+   "tema": "Estado de Versa 2018 (N1164426), Taos 1.4 2021 (N1163973) y Focus (N1164752)",
+   "detalle": "El listado del 11/10/2026 los muestra disponibles; capturas indexadas los mostraron «Vendido».",
+   "resolucion": "Se muestran disponibles con aviso de confirmar por WhatsApp."
+  },
+  {
+   "tema": "Localidad Fiorino Furgón 2019",
+   "detalle": "El dossier dice Crespo; el listado actual no incluye ese aviso.",
+   "resolucion": "Va a historial (data/historial.json), sin enlace."
   }
  ],
  "historico": [
@@ -1076,6 +1101,25 @@
     "transmisión",
     "localidad",
     "precio"
+   ]
+  },
+  {
+   "id": "S-DOS",
+   "url": "ZABALA_DOSSIER_VERIFICADO.txt",
+   "estado": "leida",
+   "tipo": "dossier",
+   "consultado": "2026-10-11",
+   "datosActuales": false,
+   "identidad": "Mismos datos de contacto que la tienda (S01)",
+   "aporta": "Cobertura «Toda la región», 38 tarjetas indexadas (11 no figuran en el listado actual), discrepancias de precio y de estado entre capturas, recomendaciones para la demo",
+   "datos": [
+    "cobertura Toda la región",
+    "Aún sin valoraciones en la ficha de Clasionce",
+    "11 avisos solo vistos en capturas anteriores (data/historial.json)",
+    "HR-V 2018: $25,9 M vs $26 M",
+    "HR-V 2020: $31,8 M vs $32 M",
+    "Hilux SRX 4x4: US$30.000 (ant. US$32.000) en una captura",
+    "Versa 2018, Taos 1.4 2021 y Focus: «Vendido» en una captura"
    ]
   }
  ]
