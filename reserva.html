@@ -1,56 +1,49 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es-AR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Elegí un día y un horario y armá la consulta para ir a ver un auto. Se envía por WhatsApp y te confirmamos por ahí.">
-  <title>Coordiná tu visita · Chita Automotores</title>
-  <link rel="stylesheet" href="css/reserva.css"><link rel="stylesheet" href="css/motion.css">
-<link rel="canonical" href="https://hnk375561-lab.github.io/chita/reserva.html"><meta name="theme-color" content="#0A1020"><meta property="og:type" content="website"><meta property="og:site_name" content="Chita Automotores"><meta property="og:locale" content="es_AR"><meta property="og:title" content="Coordiná tu visita · Chita Automotores"><meta property="og:description" content="Elegí un día y un horario y armá la consulta para ir a ver un auto. Se envía por WhatsApp y te confirmamos por ahí."><meta property="og:url" content="https://hnk375561-lab.github.io/chita/reserva.html"><meta property="og:image" content="https://hnk375561-lab.github.io/chita/og-chita.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Coordiná tu visita · Zabala Automotores</title>
+<meta name="description" content="Coordiná por WhatsApp para ver un auto.">
+<meta name="theme-color" content="#101216">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/instrument-sans-latin.woff2) format("woff2")}
+:root{--bg:#101216;--bg2:#171a20;--ink:#eef0f3;--plata:#c9ced6;--mute:#9aa1ab;--line:#2a2f38;--h:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--b:"Instrument Sans",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+a{color:var(--plata)}:focus-visible{outline:3px solid var(--plata);outline-offset:3px}
+.w{width:min(960px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px 12px;z-index:9}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.mark{font:800 18px var(--h);letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none}.mark small{display:block;font:600 9px var(--b);letter-spacing:.42em;color:var(--mute)}
+nav{display:flex;gap:20px;align-items:center}nav a{color:var(--plata);text-decoration:none;font:700 14px var(--h);letter-spacing:.05em;text-transform:uppercase}nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;background:var(--plata);color:var(--bg);font:800 15px var(--h);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:2px}.btn:hover{background:#fff;color:#000}
+.btn.s{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--plata)}.btn.s:hover{background:var(--plata);color:var(--bg)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+h1,h2{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
+h1{font-size:clamp(40px,8vw,76px);text-transform:uppercase}h2{font-size:clamp(26px,4.5vw,38px);margin-bottom:12px}
+.hero{padding:clamp(56px,12vw,120px) 0 clamp(48px,9vw,96px)}.lead{font-size:clamp(18px,2.4vw,22px);color:var(--plata);max-width:34em;margin:20px 0 28px}
+section{padding:clamp(40px,7vw,72px) 0;border-top:1px solid var(--line)}section p{max-width:40em;color:var(--plata);margin:0 0 20px}
+.note{background:var(--bg2);border:1px solid var(--line);border-left:4px solid var(--plata);padding:14px 16px;font-size:15px;color:var(--mute);max-width:40em}
+ul{padding-left:22px;color:var(--plata)}li{margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:28px 0 56px;font-size:14px;color:var(--mute)}footer a{color:var(--plata)}
+.demo-note{margin-top:8px}
+@media(max-width:560px){nav a.hide-s{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
 <body>
-  <main id="booking" data-step="month">
-    <header class="booking-nav">
-      <a class="brand" href="index.html" aria-label="Volver a Chita Automotores"><img src="images/logo-chita-wordmark.webp" alt="" width="114" height="34"></a>
-      <p class="eyebrow">Coordiná tu visita <span aria-hidden="true">/</span> consulta por WhatsApp</p>
-      <button class="back" id="back" type="button" aria-label="Volver un paso" hidden>← Atrás</button>
-    </header>
-
-    <section class="scene scene--month" aria-labelledby="month-title">
-      <div class="scene__meta"><span>01 / MES</span><span id="month-status" aria-live="polite"></span></div>
-      <div class="month-copy"><p class="kicker">Chita Automotores</p><h1 id="month-title">Elegí<em>cuándo</em><em>venir.</em></h1><p class="intro">Elegí un día en el calendario y armá la consulta. Todavía no es un turno confirmado.</p></div>
-      <div class="calendar-shell">
-        <div class="calendar-head"><button id="prev-month" type="button" aria-label="Mes anterior">←</button><h2 id="month-label"></h2><button id="next-month" type="button" aria-label="Mes siguiente">→</button></div>
-        <div class="weekday" aria-hidden="true"><span>LU</span><span>MA</span><span>MI</span><span>JU</span><span>VI</span><span>SA</span><span>DO</span></div>
-        <div id="calendar" class="calendar" role="group" aria-label="Calendario de consulta"></div>
-      </div>
-      
-    </section>
-
-    <section class="scene scene--day" aria-labelledby="day-title" hidden>
-      <div class="scene__meta"><span>02 / DÍA</span><span id="day-status" aria-live="polite"></span></div>
-      <div class="giant-day" aria-hidden="true"><small id="day-month">—</small><span id="day-number">—</span><strong id="day-weekday">—</strong></div>
-      <div class="day-copy"><p class="kicker">Tu visita</p><h2 id="day-title">¿Qué día<br><em>te queda bien?</em></h2><p>Elegí el día y se arma el mensaje de consulta para WhatsApp.</p></div>
-      <button class="next-step" id="to-time" type="button" disabled>Elegir horario <span>→</span></button>
-    </section>
-
-    <section class="scene scene--time" aria-labelledby="time-title" hidden>
-      <div class="scene__meta"><span>03 / FRANJA</span><span id="time-status" aria-live="polite"></span></div>
-      <div class="time-copy"><p class="kicker">Franja del día</p><h2 id="time-title">¿Mañana<br><em>o tarde?</em></h2><p>Te confirmamos el horario exacto por WhatsApp.</p></div>
-      <div id="slots" class="slots" role="listbox" aria-label="Franja del día"></div>
-      <button class="next-step" id="to-confirm" type="button" disabled>Ver resumen <span>→</span></button>
-    </section>
-
-    <section class="scene scene--confirm" aria-labelledby="confirm-title" hidden>
-      <div class="diagonal-wipe" aria-hidden="true"></div>
-      <div class="scene__meta"><span>04 / CONFIRMAR</span><span>consulta de visita</span></div>
-      <div class="confirm-copy"><p class="kicker">Tu visita</p><h2 id="confirm-title"><span id="summary-day">DÍA</span><em id="summary-time">FRANJA</em></h2><p>Gral. Galarza 1712<br>Concepción del Uruguay</p></div>
-      <div class="confirm-actions"><a id="whatsapp" class="primary" href="https://wa.me/5493442647442" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp <span>↗</span></a><a class="secondary" href="https://www.google.com/maps/place/Chita+Automotores/@-32.486865,-58.2528928,17z/data=!3m1!4b1!4m6!3m5!1s0x95afdb005d0d92a1:0x34ebb9527a204cd0!8m2!3d-32.486865!4d-58.2503179!16s%2Fg%2F1v9lczf8?entry=ttu&amp;g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Abrir Maps</a><button id="restart" class="secondary" type="button">Elegir otro día</button></div>
-      <p id="send-state" class="send-state" role="status" aria-live="polite" data-state="ready">Listo para enviar · lo enviás vos por WhatsApp</p>
-      <p class="disclaimer">Con este mensaje consultás por una visita. Te confirmamos el día y el horario por WhatsApp.</p>
-    </section>
-    <div id="live" class="sr-only" aria-live="polite"></div>
-  </main>
-  <script type="module" src="js/reserva.js"></script><script type="module" src="js/motion.js"></script>
+<header><div class="w"><a class="mark" href="./" aria-label="Zabala Automotores, inicio">Zabala<small>Automotores</small></a>
+<nav aria-label="Principal"><a class="hide-s" href="./#autos">Autos</a><a class="hide-s" href="./#contacto">Contacto</a><a class="btn" href="https://wa.me/5493434732110?text=Hola%21%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos</a></nav></div></header>
+<main class="w" style="padding:64px 0"><h1 style="font-size:clamp(32px,6vw,52px)">Coordiná tu visita</h1>
+<p class="lead">Escribinos por WhatsApp con el auto que te interesa y coordinamos el día, el horario y el lugar.</p>
+<div class="row"><a class="btn" href="https://wa.me/5493434732110?text=Hola%21%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn s" href="./">Volver al inicio</a></div></main>
+<footer><div class="w"><p>© 2026 Zabala Automotores</p><p class="demo-note" data-demo-note>Versión de demostración · No es el sitio oficial · Datos pendientes de confirmación</p><p><a href="privacidad.html">Privacidad y avisos</a></p></div></footer>
 </body>
 </html>

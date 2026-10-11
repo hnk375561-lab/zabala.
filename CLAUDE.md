@@ -1,9 +1,9 @@
 # Guía de mantenimiento
 
-1. **Cero datos inventados.** Horarios, precios, marcas 0 km, servicios y fecha de fundación solo se cargan con confirmación escrita del dueño o fuente pública citada. Si falta, el dato no se publica (sin "a confirmar" ni "según").
-2. **Todo dato nuevo se registra** en `golive/AFIRMACIONES-A-CONFIRMAR.md` con fuente y fecha, y se refleja en `data/dealership.json`.
-3. Los datos del negocio viven en `data/dealership.json` **y** en el bloque `NEGOCIO` de `index.html`; deben coincidir. Comprobar con `npm test`. `404.html`, `privacidad.html` y `reserva.html` (constante `CONFIG.whatsapp` en `js/reserva.js`) repiten el WhatsApp y el teléfono: si cambian, actualizarlos también.
-4. Cambio mínimo: no reescribir secciones enteras. No cargar datos personales del dueño ni su familia.
-5. El sitio es el sitio oficial de Chita Automotores: sin avisos de demo, `sitemap.xml` y JSON-LD activos. **Mientras `publicacion.publicIndexing` sea `false` en `data/dealership.json` (demo temporal en github.io, T4 y T5 pendientes), las 4 páginas llevan `noindex, nofollow` y `robots.txt` lleva `Disallow: /`; al pasar a `true` (dominio final y autorización de imágenes), se quitan `noindex` y `Disallow`, se restaura la línea `Sitemap:` en `robots.txt` y `npm test` pasa a exigir lo contrario.** Al cambiar el dominio, actualizar `canonical`, `og:url`, `og:image`, el JSON-LD, `robots.txt`, `sitemap.xml` y el `<base href>` de `404.html`.
-6. Los archivos internos (`golive/`, `data/`, `docs/`, `scripts/`, notas) no se publican: ver `_config.yml` y `netlify.toml`.
-7. Conflictos entre fuentes (horarios, teléfonos, km del Palio, estado fiscal) viven en `data/sources.json` y `data/vehicles.json`. No se resuelven por cuenta propia: el sitio no muestra el dato. No publicar estado fiscal, titular ni antigüedad.
+1. **Cero datos inventados.** Dirección, horarios, precios, unidades, servicios, financiación, antigüedad y reseñas solo se cargan con fuente pública citada o confirmación escrita del responsable. Si falta, no se publica.
+2. Todo dato nuevo se registra en `data/sources.json` (fuente, URL, fecha de consulta, confianza) y en `data/dealership.json`.
+3. El WhatsApp se repite en los enlaces de `index.html`, `404.html`, `reserva.html` y `privacidad.html`. Si cambia, actualizar los cuatro y correr `npm test`.
+4. No cargar datos personales del dueño ni de su familia.
+5. Mientras `publicacion.publicIndexing` sea `false`, las páginas llevan `noindex, nofollow` y `robots.txt` lleva `Disallow: /`. Al pasar a `true` (dominio y autorizaciones confirmados): quitar `noindex` y `Disallow`, cargar `sitemap.xml`, `canonical`, `og:url` y JSON-LD con la URL real.
+6. Los archivos internos (`data/`, `docs/`, `scripts/`, notas) no se publican: ver `netlify.toml` y `_config.yml`.
+7. Las fotos y videos los aporta el responsable. Antes de referenciarlos, confirmar autorización (`photos.authorized`) y que el archivo exista.

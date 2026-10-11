@@ -1,26 +1,11 @@
 {
-  "name": "chita-web",
+  "name": "zabala-web",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "test": "node scripts/validate-dealership.mjs",
-    "test:prod": "node scripts/validate-dealership.mjs --prod",
-    "prerender": "node scripts/prerender.mjs",
-    "images": "node scripts/make-images.mjs",
-    "audit": "node scripts/audit-copy.mjs",
-    "rebrand": "node scripts/rebrand.mjs",
-    "check:all": "node scripts/check-all.mjs",
-    "check:mobile": "node scripts/check-all.mjs --mobile",
-    "check:desktop": "node scripts/check-all.mjs --desktop",
-    "debug:anchors": "node scripts/debug-anchors.mjs",
-    "check:safari": "node scripts/check-all.mjs --webkit",
-    "check:devices": "node scripts/check-all.mjs --all-devices",
-    "golive": "node scripts/golive.mjs"
-  },
-  "devDependencies": {
-    "sharp": "^0.33.5",
-    "playwright": "^1.48.0"
+    "test:prod": "node scripts/validate-dealership.mjs --prod"
   },
   "engines": {
     "node": ">=20"

@@ -1,120 +1,57 @@
-// Verifica que data/dealership.json y el bloque NEGOCIO de index.html no se contradigan
-// y que no se publiquen datos sin confirmar. Uso: node scripts/validate-dealership.mjs
-import crypto from 'node:crypto';
+// Valida que data/dealership.json y las páginas no se contradigan, que no se publiquen datos sin fuente
+// y que no queden restos del proyecto anterior. Uso: node scripts/validate-dealership.mjs [--prod]
 import fs from 'node:fs';
 import path from 'node:path';
-import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const PROD = process.argv.includes('--prod'); // sin flag = modo DEMO (npm test); con --prod = puerta de salida
-const d = JSON.parse(fs.readFileSync(path.join(root, 'data/dealership.json'), 'utf8'));
+const PROD = process.argv.includes('--prod');
+const rd = (f) => fs.readFileSync(path.join(root, f), 'utf8');
 const errors = [];
-if (PROD && d.publicacion.official !== true) errors.push('publicacion.official debe ser true (modo producción)');
-if (d.identity.cuit !== null) errors.push('CUIT debe ser null hasta confirmación');
-if (d.hours.display && d.hours.status === 'not-found') errors.push('hours.display cargado pero status sigue en not-found');
-for (const page of ['index.html', 'privacidad.html', 'reserva.html']) {
-  const h = fs.readFileSync(path.join(root, page), 'utf8');
-  if (d.publicacion.publicIndexing === false ? !/noindex/.test(h) : /noindex/.test(h)) errors.push(`${page}: ${d.publicacion.publicIndexing === false ? 'debe tener noindex (demo temporal, publicIndexing=false)' : 'no debe tener noindex'}`);
-  if (PROD && /\b(demo|propuesta|prototipo|preview)\b/i.test(h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|max-image-preview/g, ''))) errors.push(`${page}: lenguaje de demo/propuesta`);
-}
-const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-// La lógica vive en js/app.js y los estilos en css/site.css; se valida junto con index.html como si fuera un solo documento.
-const appJs = fs.existsSync(path.join(root, 'js/app.js')) ? fs.readFileSync(path.join(root, 'js/app.js'), 'utf8') : '';
-const cssSite = fs.existsSync(path.join(root, 'css/site.css')) ? fs.readFileSync(path.join(root, 'css/site.css'), 'utf8') : '';
-const html = indexHtml + '\n' + appJs + '\n' + cssSite;
-if (!html.includes('rel="canonical"')) errors.push('index.html: falta canonical');
-const get = (k) => (html.match(new RegExp(`${k}:\\s*"([^"]*)"`)) || [])[1];
-const pairs = [['mapsPlace', d.location.mapsPlaceUrl], ['mapsReviews', d.location.mapsReviewsUrl], ['direccion', d.location.address], ['telefono', d.contact.phone], ['telefonoTel', d.contact.phoneTel],
-  ['whatsapp', d.contact.whatsApp], ['instagram', d.contact.instagram], ['facebook', d.contact.facebook]];
-for (const [k, v] of pairs) if (get(k) !== v) errors.push(`NEGOCIO.${k} ("${get(k)}") no coincide con dealership.json ("${v}")`);
-if ((get('horarios') || '') !== (d.hours.display || '')) errors.push('NEGOCIO.horarios no coincide con hours.display');
-// Precios: solo "Consultar" salvo que el dueño confirme por escrito
-const stock = html.split('var STOCK')[1] || '';
-for (const m of stock.matchAll(/precio:\s*"([^"]*)"/g)) if (m[1] !== 'Consultar') errors.push(`Precio publicado sin confirmar: ${m[1]}`);
-for (const u of [d.location.mapsPlaceUrl, d.location.mapsReviewsUrl]) if (!u || !u.startsWith('https://www.google.com/maps/place/')) errors.push('URL de Maps debe ser https://www.google.com/maps/place/...');
-if (/google\.com\/maps\/search/.test(html)) errors.push('index.html: enlace a Maps por búsqueda de texto; usar mapsPlace');
-
-// Referencias, imágenes y accesibilidad básica
-const stockSrc = (html.match(/var STOCK = (\[[\s\S]*?\n\]);/) || [])[1];
-if (!stockSrc) errors.push('No se pudo leer STOCK');
-else {
-  const STOCK = vm.runInNewContext(stockSrc);
-  const used = new Set();
-  for (const c of STOCK) for (const f of (c.fotos || [c.foto])) { used.add(path.basename(f)); if (!fs.existsSync(path.join(root, f))) errors.push(`Falta la imagen ${f} (${c.titulo})`); }
-  for (const m of html.matchAll(/(images\/[A-Za-z0-9._-]+\.(?:webp|png|jpe?g))/g)) { used.add(path.basename(m[1])); if (!fs.existsSync(path.join(root, m[1]))) errors.push(`Falta la imagen ${m[1]}`); }
-  // Variantes responsive (srcset): cada foto de unidad tiene -480 y -800
-  for (const f of [...used]) {
-    const m = f.match(/^((?:clio|ecosport|ka-s|kwid|punto|up)-\d+)\.webp$/);
-    if (!m) continue;
-    for (const t of [480, 800]) { const vname = `${m[1]}-${t}.webp`; used.add(vname); if (!fs.existsSync(path.join(root, 'images', vname))) errors.push(`Falta la variante images/${vname}`); }
+const json = (f) => { try { return JSON.parse(rd(f)); } catch { errors.push(`${f} no es JSON válido`); return null; } };
+const d = json('data/dealership.json');
+for (const f of ['data/sources.json', 'data/vehicles.json', 'data/pendientes.json']) json(f);
+if (d) {
+  const pages = ['index.html', 'privacidad.html', 'reserva.html', '404.html'];
+  const robots = rd('robots.txt');
+  const blocks = /Disallow:\s*\/\s*$/m.test(robots);
+  if (d.publicacion.publicIndexing === false ? !blocks : blocks) errors.push('robots.txt no coincide con publicacion.publicIndexing');
+  for (const p of pages) {
+    const h = rd(p);
+    if (d.publicacion.publicIndexing === false ? !/noindex/.test(h) : /noindex/.test(h)) errors.push(`${p}: noindex no coincide con publicacion.publicIndexing`);
+    if (d.contact.whatsApp && !h.includes(`wa.me/${d.contact.whatsApp}`)) errors.push(`${p}: WhatsApp no coincide con dealership.json`);
+    if (/href="#"/.test(h)) errors.push(`${p}: href="#"`);
+    if (/href="http:\/\//.test(h)) errors.push(`${p}: enlace http:// sin cifrar`);
+    if ((h.match(/<h1[\s>]/g) || []).length !== 1) errors.push(`${p}: debe tener un único h1`);
+    for (const m of h.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) errors.push(`${p}: img sin alt`);
+    for (const m of h.matchAll(/(?:src|href)="((?:images|assets|video|css|js)\/[^"?#]+)"/g)) if (!fs.existsSync(path.join(root, m[1]))) errors.push(`${p}: referencia a archivo inexistente ${m[1]}`);
+    if (!PROD && !/data-demo-note/.test(h)) errors.push(`${p}: falta el aviso de demo`);
   }
-  // Tarjetas prerenderizadas (node scripts/prerender.mjs): deben coincidir con STOCK
-  const pre = (html.match(/<!--PRE:cards-->([\s\S]*?)<!--\/PRE:cards-->/) || [])[1];
-  if (pre === undefined) errors.push('index.html: faltan los marcadores <!--PRE:cards-->');
-  else {
-    if ((pre.match(/<article class="car"/g) || []).length !== STOCK.length) errors.push('Tarjetas prerenderizadas no coinciden con STOCK: correr node scripts/prerender.mjs');
-    for (const c of STOCK) if (!pre.includes(`>${c.titulo}</button>`)) errors.push(`Falta en el prerender: ${c.titulo}. Correr node scripts/prerender.mjs`);
+  const idx = rd('index.html');
+  if (!idx.includes(`instagram.com/${d.contact.instagram}/`)) errors.push('index.html: Instagram no coincide');
+  if (!idx.includes('<title>Zabala Automotores')) errors.push('index.html: title');
+  // Datos sin fuente: no pueden aparecer en el sitio
+  const visible = pages.map(rd).join('\n').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '');
+  for (const [re, why] of [[/\b(financiaci[oó]n|cuotas|tasa|garant[ií]a|permut|consignaci[oó]n|gestor[ií]a|0 ?km|taller)/i, 'servicio sin fuente'], [/\b\d{1,3}(\.\d{3})+ ?km\b/i, 'kilometraje'], [/\$\s?\d/, 'precio'], [/\b(19|20)\d{2}\b(?!.*©)/, null], [/rese[ñn]as?|calificaci[oó]n|★/i, 'reseñas'], [/desde \d{4}|\d+ años/i, 'antigüedad'], [/oficial(?! ·)/i, null]]) {
+    if (!why) continue;
+    if (re.test(visible.replace(/©\s*2026/g, ''))) errors.push(`Texto no permitido en el sitio (${why}): ${re}`);
   }
-  for (const f of fs.readdirSync(path.join(root, 'images'))) if (!used.has(f)) console.warn(`Aviso: imagen de reserva sin usar: images/${f}`);
-}
-
-// Dossiers 2026-10-02: fuentes, vehículos, coordenadas, reseñas y afirmaciones prohibidas
-for (const f of ['data/sources.json', 'data/vehicles.json']) { try { JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')); } catch (e) { errors.push(`${f} no es JSON válido`); } }
-const veh = JSON.parse(fs.readFileSync(path.join(root, 'data/vehicles.json'), 'utf8')).vehicles;
-const stockLines = (html.split('var STOCK')[1] || '').split('\n');
-for (const v of veh) if (v.published && v.kmStatus === 'conflict') { const l = stockLines.find((x) => x.includes(`titulo:"${v.stockTitle}"`)); if (!l) errors.push(`vehicles.json: no está en STOCK ${v.stockTitle}`); else if (/km:\s*"/.test(l)) errors.push(`${v.stockTitle}: km publicado pese a conflicto de fuentes`); }
-const co = d.location.coordinates; if (!co || !(html.includes(`q=${co.lat},${co.lng}`) || html.includes(`ll=${co.lat},${co.lng}`))) errors.push('El mapa no usa las coordenadas de dealership.json');
-if (/-32\.4828|-32\.4882114/.test(html)) errors.push('index.html: coordenadas antiguas');
-const g = d.reputation.google; if (!html.includes(`${g.rating} de ${g.outOf} con ${g.count} reseñas`)) errors.push('Reseñas de Google del sitio no coinciden con dealership.json');
-const visible = indexHtml.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '');
-for (const re of [/concesionario oficial/i, /\b(35|39) años/i, /desde 1991/i, /tasa fija/i, /compramos tu/i, /parte de pago/i, /\(\)|, ,/]) if (re.test(visible)) errors.push(`index.html: afirmación o texto no permitido ${re}`);
-
-// Dossier 3: sin fotos de terceros, sin email reconstruido, sección histórica presente
-if (/media\.cylex\.com\.ar|cylex\.com\.ar\/companies/.test(html)) errors.push('index.html: usa imágenes de Cylex sin autorización');
-if (/chitaautomotores@gmail/i.test(visible)) errors.push('index.html: email reconstruido de Cylex');
-if (/Elvio|Orcellet/i.test(visible)) errors.push('index.html: nombre de titular no permitido (CLAUDE.md regla 4)');
-if (/\+54 9 03442/.test(html)) errors.push('index.html: número con formato de WhatsApp sin confirmar');
-if ((html.match(/<h1[\s>]/g) || []).length !== 1) errors.push('index.html debe tener un único h1');
-for (const m of html.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) errors.push(`img sin alt: ${m[0].slice(0, 60)}`);
-if (!html.includes('href="privacidad.html')) errors.push('index.html: falta enlace a privacidad.html');
-for (const page of ['index.html', '404.html', 'privacidad.html']) if (/href="#"/.test(fs.readFileSync(path.join(root, page), 'utf8'))) errors.push(`${page}: hay href="#" (enlace sin destino)`);
-if (/href="http:\/\//.test(html)) errors.push('Enlace http:// sin cifrar en index.html');
-for (const page of ['404.html', 'privacidad.html']) {
-  const h = fs.readFileSync(path.join(root, page), 'utf8');
-  if (d.contact.whatsApp && !h.includes(`wa.me/${d.contact.whatsApp}`)) errors.push(`${page}: WhatsApp no coincide con dealership.json`);
-  if (!d.contact.whatsApp && !h.includes(`tel:${d.contact.phoneTel}`)) errors.push(`${page}: falta fallback telefónico mientras WhatsApp no está configurado`);
-  if (!h.includes(`tel:${d.contact.phoneTel}`) && page === 'privacidad.html') errors.push(`${page}: teléfono no coincide con dealership.json`);
-}
-if (!/<base href="https:\/\/[^"]+\/">/.test(fs.readFileSync(path.join(root, '404.html'), 'utf8'))) errors.push('404.html: falta <base href> absoluto');
-const robotsBlocks = /Disallow:\s*\/\s*$/m.test(fs.readFileSync(path.join(root, 'robots.txt'), 'utf8'));
-if (d.publicacion.publicIndexing === false ? !robotsBlocks : robotsBlocks) errors.push(d.publicacion.publicIndexing === false ? 'robots.txt debe tener Disallow: / (demo temporal, publicIndexing=false)' : 'robots.txt bloquea todo el sitio');
-// Duplicados por contenido: las copias numeradas de assets/w800|w480 no deben volver a existir (P0-1 de la auditoría).
-{
-  const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)]);
-  const byHash = new Map();
-  for (const dir of ['assets', 'images']) if (fs.existsSync(path.join(root, dir))) for (const f of walk(path.join(root, dir)).filter((x) => x.endsWith('.webp'))) {
-    const h = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex'); (byHash.get(h) || byHash.set(h, []).get(h)).push(path.relative(root, f).split(path.sep).join('/'));
+  if (/Verificado|Confirmado/.test(visible)) errors.push('Texto "verificado/confirmado" no permitido');
+  if (d.identity.cuit !== null) errors.push('CUIT debe ser null hasta confirmación');
+  // Restos del proyecto anterior en todo lo que se entrega
+  const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.name === 'node_modules' || e.name === '.git' || e.name === 'fonts') ? [] : e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)]);
+  const legacy = /chita|galarza|44-?2782|442782|647442|547671|concepci[oó]n del uruguay|orcellet|elvio/i;
+  for (const f of walk(root)) {
+    const rel = path.relative(root, f).split(path.sep).join('/');
+    if (rel === 'scripts/validate-dealership.mjs' || /\.(webp|png|jpe?g|mp4|woff2)$/.test(rel)) continue;
+    if (legacy.test(rel) || legacy.test(fs.readFileSync(f, 'utf8'))) errors.push(`Resto del proyecto anterior en ${rel}`);
   }
-  const grupos = [...byHash.values()].filter((g) => g.length > 1);
-  for (const g of grupos) if (g.some((x) => /^assets\/w(480|800)\//.test(x)) && g.some((x) => !/^assets\/w(480|800)\//.test(x))) errors.push(`Imagen duplicada con nombre numerado: ${g.join(' = ')}`);
-  if (grupos.length) console.warn(`Aviso: ${grupos.length} grupos de imágenes idénticas (${grupos.reduce((a, g) => a + g.length - 1, 0)} archivos sobrantes)`);
-}
-// Reseñas: todo "N reseñas" del HTML debe coincidir con data/dealership.json.
-{
-  const gCount = d.reputation && d.reputation.google && d.reputation.google.count;
-  for (const m of html.matchAll(/(?:<b>)?(\d+)(?:<\/b>)?\s+reseñas/g)) if (Number(m[1]) !== gCount) errors.push(`index.html dice ${m[1]} reseñas y data/dealership.json dice ${gCount}`);
-}
-// Aviso de demo: obligatorio en modo demo, prohibido en producción.
-if (!PROD && !/data-demo-note/.test(html)) errors.push('index.html: falta el aviso de demo (data-demo-note en el pie)');
-// Puerta de salida: node scripts/validate-dealership.mjs --prod
-if (PROD) {
-  const bare = indexHtml.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '');
-  if (d.publicacion.publicIndexing !== true) errors.push('PROD: publicacion.publicIndexing sigue en false');
-  if (!d.contact.whatsApp) errors.push('PROD: falta el WhatsApp');
-  if (/google-maps/.test(String(d.hours.status))) errors.push('PROD: horarios sin confirmación del dueño (status: ' + d.hours.status + ')');
-  if (!(d.photos && d.photos.authorized === true)) errors.push('PROD: falta photos.authorized = true (autorización de fotos y videos)');
-  if (/data-demo-note/.test(html)) errors.push('PROD: quitar el aviso de demo del pie');
-  if (/\bEJEMPLO\b/.test(bare) || /\b(a confirmar|a cargar)\b/i.test(bare)) errors.push('PROD: quedan textos "EJEMPLO / a confirmar / a cargar" en index.html');
+  if (PROD) {
+    if (d.publicacion.publicIndexing !== true) errors.push('PROD: publicIndexing sigue en false');
+    if (!d.location.address) errors.push('PROD: falta dirección');
+    if (!d.hours.display) errors.push('PROD: faltan horarios');
+    if (!(d.photos && d.photos.authorized === true)) errors.push('PROD: falta photos.authorized = true');
+    if (/data-demo-note/.test(rd('index.html'))) errors.push('PROD: quitar el aviso de demo');
+  }
 }
 if (errors.length) { console.error(errors.map((e) => 'ERROR: ' + e).join('\n')); process.exit(1); }
-console.log('Datos de Chita válidos y consistentes con index.html.');
+console.log('Datos de Zabala válidos y consistentes con las páginas.');

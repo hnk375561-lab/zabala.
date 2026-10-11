@@ -1,335 +1,72 @@
 {
-  "checkedAt": "2026-10-07",
+  "checkedAt": "2026-10-11",
   "sources": [
     {
-      "fact": "Dirección",
-      "value": "Gral. Galarza 1712, Concepción del Uruguay, CP 3260",
-      "source": "Registro, Google, 8+ directorios, Moovit",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
+      "fact": "Nombre comercial",
+      "value": "Zabala Automotores",
+      "source": "Perfil de Instagram (nombre y usuario)",
+      "sourceType": "red social del negocio",
+      "url": "https://www.instagram.com/zabala_automotores/",
+      "accessed": "2026-10-11",
+      "evidence": "Captura aportada por el usuario: usuario zabala_automotores, nombre \"Zabala Automotores\", logotipo con la Z y la leyenda ZABALA AUTOMOTORES.",
       "confidence": "alta",
       "status": "publicado",
-      "notes": ""
+      "conflicts": [],
+      "decision": "Se publica."
     },
     {
-      "fact": "Teléfono principal",
-      "value": "03442 44-2782",
-      "source": "Google Business, Páginas Amarillas, Entre Ríos Total, Licuo, Cylex",
-      "url": "https://www.paginasamarillas.com.ar/b/automotores-agencias/concepcion-del-uruguay-entre-rios",
-      "checkedAt": "2026-10-02",
+      "fact": "Rubro",
+      "value": "Intermediación y reventa de vehículos",
+      "source": "Bio de Instagram",
+      "sourceType": "red social del negocio",
+      "url": "https://www.instagram.com/zabala_automotores/",
+      "accessed": "2026-10-11",
+      "evidence": "Primera oración de la bio, visible en la captura.",
       "confidence": "alta",
       "status": "publicado",
-      "notes": ""
+      "conflicts": [],
+      "decision": "Se publica solo la primera oración; la segunda está truncada en la captura."
     },
     {
-      "fact": "Teléfono 03442 54-7671",
-      "value": "Gestoría (bio de Instagram) / general (ZonaAuto)",
-      "source": "ZonaAuto",
-      "url": "https://zonaauto.com.ar/concesionarios/chita-automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "conflicto",
-      "notes": "No se publica como principal."
-    },
-    {
-      "fact": "Horarios",
-      "value": "3 versiones (Google, GTM, ZonaAuto)",
-      "source": "Google/GTM/ZonaAuto",
-      "url": "https://gtm.com.ar/concesionario/chita-automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "conflicto",
-      "notes": "El sitio dice \"a confirmar\"."
-    },
-    {
-      "fact": "Estado registral",
-      "value": "ACTIVA vs CUIT inactivo (19/09/2026)",
-      "source": "Indicadores AR vs Datok",
-      "url": "https://datok.com.ar/empresa/30650697096",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "conflicto",
-      "notes": "No se publica."
-    },
-    {
-      "fact": "Fecha de constitución",
-      "value": "31/03/1991 vs 01/04/1991",
-      "source": "Indicadores AR vs Datok",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
+      "fact": "WhatsApp",
+      "value": "3434732110 (enlace de la bio: wa.me/3434732110)",
+      "source": "Enlace de la bio de Instagram",
+      "sourceType": "red social del negocio",
+      "url": "https://www.instagram.com/zabala_automotores/",
+      "accessed": "2026-10-11",
+      "evidence": "Enlace visible bajo la bio.",
       "confidence": "media",
-      "status": "conflicto",
-      "notes": "No se usa \"35 años\" ni \"desde 1991\"; se retiró \"39 años de confianza\"."
+      "status": "publicado con aviso",
+      "conflicts": [],
+      "decision": "El enlace de la bio no lleva código de país; el sitio usa 5493434732110. Falta probar que abra el chat correcto."
     },
     {
-      "fact": "Actividad registral",
-      "value": "Venta de vehículos automotores usados N.C.P. (CIIU 501290)",
-      "source": "Indicadores AR",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
+      "fact": "Actividad de la cuenta",
+      "value": "311 publicaciones, 296 seguidores",
+      "source": "Captura del perfil",
+      "sourceType": "red social del negocio",
+      "url": "https://www.instagram.com/zabala_automotores/",
+      "accessed": "2026-10-11",
+      "evidence": "Cifras de la captura.",
       "confidence": "alta",
       "status": "no publicado",
-      "notes": "Referencia interna."
+      "conflicts": [],
+      "decision": "Cifras variables y sin valor comercial: no se publican."
     },
     {
-      "fact": "Valoración en Google",
-      "value": "4,7/5, 46 reseñas",
-      "source": "Google Business/Maps",
-      "url": "https://www.google.com/maps/place/Chita+Automotores,+Gral.+Galarza+1712,+Concepci%C3%B3n+del+Uruguay,+Entre+R%C3%ADos",
-      "checkedAt": "2026-10-08",
-      "confidence": "alta",
-      "status": "publicado con fecha",
-      "notes": "Sin testimonios textuales; GTM (9,2/10, 58) no se mezcla."
-    },
-    {
-      "fact": "Recibimos tu usado",
-      "value": "Texto de publicaciones",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/p/DS3DLQ-jHmu/",
-      "checkedAt": "2026-10-02",
-      "confidence": "alta",
-      "status": "publicado",
-      "notes": "No se traduce a \"compramos tu usado\" ni \"parte de pago\"."
-    },
-    {
-      "fact": "Financiación en cuotas fijas",
-      "value": "Texto de publicaciones",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/reel/DdZ4lD9s7mL/",
-      "checkedAt": "2026-10-02",
-      "confidence": "alta",
-      "status": "publicado",
-      "notes": "Sin cuotas, tasa, entidad ni simulador."
-    },
-    {
-      "fact": "Evalúa los usados que recibe",
-      "value": "Frase truncada en el índice",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/reel/DYhdePJhyz4/",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado (solo lo respaldado)",
-      "notes": "Sin checklist, puntos ni certificación."
-    },
-    {
-      "fact": "0 km y usados",
-      "value": "Comunicación comercial",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/reel/DS2mDaoja_t/",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado",
-      "notes": "Sin marcas oficiales ni stock 0 km."
-    },
-    {
-      "fact": "Tracker Premier 1.2T 2021, 100.000 km",
-      "value": "Coincide con demo y Instagram",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/chita.automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "alta",
-      "status": "publicado como ficha",
-      "notes": "Sin datos técnicos inferidos."
-    },
-    {
-      "fact": "Palio 2017 1.4, km",
-      "value": "128.000 (demo) vs 120.000 (Instagram)",
-      "source": "Instagram de Chita",
-      "url": "https://www.instagram.com/chita.automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "conflicto",
-      "notes": "Km oculto hasta conciliar."
-    },
-    {
-      "fact": "Coordenadas",
-      "value": "-32.486865, -58.250318",
-      "source": "Enlace de Maps y Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/agente%2Bde%2Bautom%C3%B3viles.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado",
-      "notes": "Corrige tres coordenadas previas del repo."
-    },
-    {
-      "fact": "Paradas de colectivo",
-      "value": "Díaz Vélez 230 (110 m), San Martín 1686 (373 m), Alberdi 1659 (509 m)",
-      "source": "Moovit",
-      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-Chita_Automotores-Concepci%C3%B3n_del_Uruguay-site_359520794-5697",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado con fecha",
-      "notes": "Información externa."
-    },
-    {
-      "fact": "Titular \"Elvio Orcellet\"",
-      "value": "Denominación en directorios, LinkedIn 2004–2007, Dunsguide",
-      "source": "Páginas Amarillas, Dunsguide, LinkedIn",
-      "url": "https://www.dunsguide.com/company/23357b809ea3e965735d4c3343888d2a/orcellet-elvio-celso",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "descartado",
-      "notes": "Sin fuente societaria actual; CLAUDE.md regla 4."
-    },
-    {
-      "fact": "Concesionario oficial / multimarca 0 km",
-      "value": "Rubro de directorios y ZonaAuto",
-      "source": "Entre Ríos Total, ZonaAuto",
-      "url": "https://zonaauto.com.ar/concesionarios/chita-automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "descartado",
-      "notes": "Categoría de directorio, no prueba representación."
-    },
-    {
-      "fact": "Garantía, taller, service, postventa, gestoría propia, \"impecable\", \"único dueño\"",
-      "value": "Sin evidencia confiable",
-      "source": "Dossiers 1 y 2",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
-      "confidence": "ninguna",
-      "status": "descartado",
-      "notes": "Solo por unidad con publicación concreta."
-    },
-    {
-      "fact": "Códigos SIC inmobiliaria / taller",
-      "value": "Clasificación de Dunsguide",
-      "source": "Dunsguide",
-      "url": "https://www.dunsguide.com/company/23357b809ea3e965735d4c3343888d2a/orcellet-elvio-celso",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "descartado",
-      "notes": "No prueba servicios actuales."
-    },
-    {
-      "fact": "Seguidores de Instagram/Facebook",
-      "value": "Sin dato fiable (acceso limitado)",
-      "source": "—",
-      "url": "https://www.instagram.com/chita.automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "ninguna",
-      "status": "descartado",
-      "notes": ""
-    },
-    {
-      "fact": "Horario Cylex",
-      "value": "L-V 08:30–12:00 y 16:00–20:00; sáb 09:00–12:00; dom cerrado (cargado 27/12/2022, actualizado 18/07/2024)",
-      "source": "Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "conflicto",
-      "notes": "Cuarta versión de horarios; el sitio sigue diciendo «a confirmar»."
-    },
-    {
-      "fact": "Descripción «Venta de automotores usados y nuevos»",
-      "value": "Texto de ficha",
-      "source": "Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado como «las fuentes públicas describen…»",
-      "notes": "Descripción de directorio, no clasificación oficial; no se fusiona con la actividad registral (usados N.C.P.)."
-    },
-    {
-      "fact": "Email de Cylex",
-      "value": "Existe pero está protegido",
-      "source": "Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "ninguna",
-      "status": "descartado",
-      "notes": "No se reconstruye ni se adivina."
-    },
-    {
-      "fact": "Fotos históricas de fachada, Ford e interior (4 imágenes)",
-      "value": "Fachada: «0KM Y USADOS», «MULTIMARCAS», «FINANCIACION», «COTIZACIONES», «GESTORIA»",
-      "source": "Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado solo como texto histórico",
-      "notes": "No se usan las imágenes (sin autorización) ni como stock, representación o servicios actuales. La gestoría histórica no confirma el servicio actual."
-    },
-    {
-      "fact": "Multimarca",
-      "value": "Rotulación histórica de fachada",
-      "source": "Cylex (fotos)",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado como historia",
-      "notes": "No es lista de marcas actuales ni concesión oficial."
-    },
-    {
-      "fact": "Cylex sin reseñas propias",
-      "value": "0 opiniones",
-      "source": "Cylex",
-      "url": "https://www.cylex.com.ar/concepcion-del-uruguay/chita-automotores-de-elvio-11397671.html",
-      "checkedAt": "2026-10-02",
-      "confidence": "alta",
-      "status": "no publicado",
-      "notes": "No atribuir reputación a Cylex."
-    },
-    {
-      "fact": "GTM: 4,6/5 en texto y 58 reseñas en la plataforma",
-      "value": "Cifras propias de GTM",
-      "source": "GTM",
-      "url": "https://gtm.com.ar/concesionario/chita-automotores/",
-      "checkedAt": "2026-10-02",
-      "confidence": "baja",
-      "status": "descartado",
-      "notes": "No se mezclan con Google; «perfecto estado» no se usa como promesa."
-    },
-    {
-      "fact": "Guía Urbana",
-      "value": "Chita Automotores de Elvio Orcellet, Galarza 1712",
-      "source": "Guía Urbana",
-      "url": "https://www.guiaurbana.com.ar/me/automotores/concepcion-del-uruguay-entre-rios?page=2",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "solo dirección",
-      "notes": "Suma a las diez fuentes con la misma dirección."
-    },
-    {
-      "fact": "Boletín Oficial / socios / gerentes / reformas",
-      "value": "Sin resultados atribuibles",
-      "source": "Búsquedas dossier 3",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
-      "confidence": "ninguna",
-      "status": "descartado",
-      "notes": "El vacío no se rellena con datos de terceros."
-    },
-    {
-      "fact": "«Chita Automotores de Elvio Orcellet»",
-      "value": "Denominación de directorios",
-      "source": "Cylex, Páginas Amarillas, Licuo, Guía Clarín",
-      "url": "https://www.paginasamarillas.com.ar/fichas/chita-automotores-de-elvio-orcellet_15260280",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "descartado",
-      "notes": "No se publica el nombre ni «fundada por» (CLAUDE.md regla 4)."
-    },
-    {
-      "fact": "Antigüedad",
-      "value": "Constitución 1991 (año); sin prueba de atención continua",
-      "source": "Fichas empresariales",
-      "url": "https://indicadores.ar/empresa/30650697096-chita-automotores-s-r-l",
-      "checkedAt": "2026-10-02",
-      "confidence": "media",
-      "status": "publicado con aclaración",
-      "notes": "Línea de tiempo y FAQ explican el límite; sin «años de experiencia»."
-    },
-    {
-      "fact": "Focus SE 2.0N 4P 2015, 159.000 km",
-      "value": "Ford Focus SE 2.0N 4P · 2015 · 159.000 km",
-      "source": "Instagram de Chita (publicación con texto «Ford Focus SE 2.0N 4P - 2015 - 159.000km») y cartel de la foto de portada",
-      "url": "https://www.instagram.com/chita.automotores/",
-      "checkedAt": "2026-10-07",
-      "confidence": "alta",
-      "status": "publicado",
-      "notes": "Sin precio, transmisión ni equipamiento publicados. Fotos aportadas por el dueño (7)."
+      "fact": "Dirección, ciudad, horarios, teléfono fijo, email, razón social, CUIT, antigüedad, financiación, permuta, garantía",
+      "value": null,
+      "source": "Búsquedas web (4 consultas) y captura",
+      "sourceType": "—",
+      "url": null,
+      "accessed": "2026-10-11",
+      "evidence": "Sin resultados atribuibles a este negocio. Instagram bloquea acceso automatizado (robots) y el buscador no indexa la cuenta.",
+      "confidence": "n/a",
+      "status": "no verificado",
+      "conflicts": [
+        "Zabala Automotriz (@zabala_automotriz, taller de tren delantero, tel. 829) y Omar Zabala (vendedor en Red Vialis): homónimos sin vínculo probado; descartados."
+      ],
+      "decision": "No se publican."
     }
   ]
 }
