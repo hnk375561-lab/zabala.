@@ -1,16 +1,15 @@
 {
   "_ayuda": "Completá solo lo que el responsable confirmó. Los campos en null se ignoran.",
-  "contacto": {
-    "telefono": null,
-    "email": null,
-    "whatsAppProbado": null
-  },
   "ubicacion": {
     "direccion": null,
-    "ciudad": null,
     "mapsUrl": null
   },
-  "horarios": null,
+  "horarios": {
+    "confirmado": null
+  },
+  "contacto": {
+    "email": null
+  },
   "identidad": {
     "razonSocial": null,
     "cuit": null
@@ -18,7 +17,11 @@
   "fotos": {
     "autorizadas": null
   },
-  "vehiculos": [],
+  "vehiculos": {
+    "kmYDetallePorUnidad": null,
+    "preciosPublicables": null,
+    "disponibilidadActual": null
+  },
   "produccion": {
     "dominio": null,
     "confirmar": false

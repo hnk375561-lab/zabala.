@@ -4,69 +4,166 @@
     {
       "fact": "Nombre comercial",
       "value": "Zabala Automotores",
-      "source": "Perfil de Instagram (nombre y usuario)",
-      "sourceType": "red social del negocio",
+      "source": "Instagram @zabala_automotores y tienda en Clasionce",
+      "sourceType": "red social del negocio + plataforma de clasificados",
       "url": "https://www.instagram.com/zabala_automotores/",
       "accessed": "2026-10-11",
-      "evidence": "Captura aportada por el usuario: usuario zabala_automotores, nombre \"Zabala Automotores\", logotipo con la Z y la leyenda ZABALA AUTOMOTORES.",
+      "evidence": "Captura del perfil (usuario, nombre, logo) y título de la tienda ZABALA AUTOMOTORES en Clasionce, con el mismo usuario de Instagram enlazado.",
       "confidence": "alta",
       "status": "publicado",
       "conflicts": [],
-      "decision": "Se publica."
+      "decision": "Se publica. Instagram y Clasionce se enlazan entre sí: son dos fuentes del mismo negocio, no confirmaciones independientes de un registro."
     },
     {
       "fact": "Rubro",
       "value": "Intermediación y reventa de vehículos",
-      "source": "Bio de Instagram",
-      "sourceType": "red social del negocio",
-      "url": "https://www.instagram.com/zabala_automotores/",
+      "source": "Bio de Instagram y descripción de la tienda en Clasionce",
+      "sourceType": "red social del negocio + plataforma",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
       "accessed": "2026-10-11",
-      "evidence": "Primera oración de la bio, visible en la captura.",
+      "evidence": "Mismo texto en ambas: \"Nos dedicamos a la intermediación y reventa de vehículos.\"",
       "confidence": "alta",
       "status": "publicado",
       "conflicts": [],
-      "decision": "Se publica solo la primera oración; la segunda está truncada en la captura."
+      "decision": "Se publica solo la primera oración. La segunda (\"servicio transparente y confiable\") es autodescripción comercial y no se afirma."
     },
     {
-      "fact": "WhatsApp",
-      "value": "3434732110 (enlace de la bio: wa.me/3434732110)",
-      "source": "Enlace de la bio de Instagram",
-      "sourceType": "red social del negocio",
-      "url": "https://www.instagram.com/zabala_automotores/",
+      "fact": "Ciudad",
+      "value": "Paraná, Entre Ríos",
+      "source": "Perfil de la tienda en Clasionce",
+      "sourceType": "plataforma de clasificados (datos cargados por el negocio)",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
       "accessed": "2026-10-11",
-      "evidence": "Enlace visible bajo la bio.",
+      "evidence": "Línea de ubicación del perfil y localidad Paraná en 51 de 53 avisos; el prefijo 343 del teléfono coincide con Paraná.",
       "confidence": "media",
-      "status": "publicado con aviso",
-      "conflicts": [],
-      "decision": "El enlace de la bio no lleva código de país; el sitio usa 5493434732110. Falta probar que abra el chat correcto."
+      "status": "publicado",
+      "conflicts": [
+        "Google Maps: la URL de búsqueda de Maps del listado es solo por ciudad, no una ficha del negocio."
+      ],
+      "decision": "Se publica ciudad y provincia. Sin calle ni número: no hay fuente."
     },
     {
-      "fact": "Actividad de la cuenta",
-      "value": "311 publicaciones, 296 seguidores",
-      "source": "Captura del perfil",
+      "fact": "Horario",
+      "value": "Lunes a sábados de 8:00 a 21:30",
+      "source": "Perfil de la tienda en Clasionce",
+      "sourceType": "plataforma de clasificados (datos cargados por el negocio)",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "accessed": "2026-10-11",
+      "evidence": "Texto original: \"Lunes a Sabados de 08.00hs a 21.30hs\".",
+      "confidence": "media",
+      "status": "publicado con atribución",
+      "conflicts": [],
+      "decision": "Se publica indicando que es el horario de su perfil en Clasionce. Fuente única; sin cruce con Maps ni Instagram. No se afirma nada sobre domingos y feriados."
+    },
+    {
+      "fact": "Teléfono / WhatsApp",
+      "value": "343 473-2110 / 5493434732110",
+      "source": "Perfil de Clasionce e Instagram",
+      "sourceType": "plataforma + red social del negocio",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "accessed": "2026-10-11",
+      "evidence": "Clasionce: tel:3434732110 y wa.me/5493434732110. Instagram: wa.me/3434732110.",
+      "confidence": "alta",
+      "status": "publicado",
+      "conflicts": [],
+      "decision": "Se publica. Resuelve el pendiente anterior sobre el formato internacional del WhatsApp."
+    },
+    {
+      "fact": "Instagram",
+      "value": "@zabala_automotores",
+      "source": "Captura y enlace desde Clasionce",
       "sourceType": "red social del negocio",
       "url": "https://www.instagram.com/zabala_automotores/",
       "accessed": "2026-10-11",
-      "evidence": "Cifras de la captura.",
+      "evidence": "Perfil con 311 publicaciones y 296 seguidores (captura). El acceso automatizado está bloqueado por robots.",
       "confidence": "alta",
+      "status": "publicado",
+      "conflicts": [],
+      "decision": "Se publica el enlace. Cifras de seguidores no se publican."
+    },
+    {
+      "fact": "Listado de vehículos",
+      "value": "53 avisos (36 autos y SUV, 14 camionetas y utilitarios, 2 embarcaciones, 1 moto); 3 marcados Vendido",
+      "source": "Tienda de Zabala en Clasionce, páginas 1 y 2",
+      "sourceType": "plataforma de clasificados (avisos del negocio)",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "accessed": "2026-10-11",
+      "evidence": "Cada tarjeta: título, año, transmisión, localidad, precio y estado.",
+      "confidence": "media",
+      "status": "publicado parcialmente",
+      "conflicts": [
+        "Ford Focus 1.6 S L/14 5P (N1164752): título 2014, ficha 2011.",
+        "Toyota Yaris 1.5 XLS Pack CVT 2021: dos avisos (N1168258 y N1137120) con precio distinto."
+      ],
+      "decision": "Se publican 47 autos y utilitarios no vendidos con título, año y transmisión y enlace al aviso. Sin precio ni km. El Focus L/14 se publica sin año. Moto y lanchas quedan solo en datos internos."
+    },
+    {
+      "fact": "Ficha completa de aviso (muestra)",
+      "value": "VW Up! 1.0 MPI Move 3P 2017: 65.000 km, nafta, manual, 3 puertas, blanco; sin permuta",
+      "source": "Aviso N1168048 en Clasionce",
+      "sourceType": "publicación del negocio en plataforma",
+      "url": "https://clasificados.elonce.com/index.php/aviso/N1168048",
+      "accessed": "2026-10-11",
+      "evidence": "Ficha técnica y descripción del aviso.",
+      "confidence": "media",
+      "status": "solo datos internos",
+      "conflicts": [],
+      "decision": "Único aviso individual abierto. Se guarda en vehicles.json; el sitio no publica km para mantener tarjetas homogéneas."
+    },
+    {
+      "fact": "Precios listados",
+      "value": "ver data/vehicles.json (listedPrice)",
+      "source": "Tienda en Clasionce",
+      "sourceType": "plataforma de clasificados (avisos del negocio)",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "accessed": "2026-10-11",
+      "evidence": "Precios en pesos y en dólares, algunos con oferta y otros \"negociable\".",
+      "confidence": "media",
       "status": "no publicado",
       "conflicts": [],
-      "decision": "Cifras variables y sin valor comercial: no se publican."
+      "decision": "No se publican: cambian con frecuencia y no hay forma de confirmar vigencia. Solo documentación interna."
     },
     {
-      "fact": "Dirección, ciudad, horarios, teléfono fijo, email, razón social, CUIT, antigüedad, financiación, permuta, garantía",
+      "fact": "Insignia \"Identidad verificada\"",
+      "value": "Insignia de Clasionce",
+      "source": "Tienda en Clasionce",
+      "sourceType": "plataforma",
+      "url": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "accessed": "2026-10-11",
+      "evidence": "Texto \"Concesionaria Verificada · Identidad verificada\".",
+      "confidence": "media",
+      "status": "no publicado",
+      "conflicts": [],
+      "decision": "Es una insignia de la plataforma, sin criterio explicado. No se replica la palabra \"verificado\" en el sitio."
+    },
+    {
+      "fact": "Datos sin fuente",
       "value": null,
-      "source": "Búsquedas web (4 consultas) y captura",
+      "source": "Todas las consultadas",
       "sourceType": "—",
       "url": null,
       "accessed": "2026-10-11",
-      "evidence": "Sin resultados atribuibles a este negocio. Instagram bloquea acceso automatizado (robots) y el buscador no indexa la cuenta.",
+      "evidence": "Sin dirección exacta, ficha de Maps, email, razón social, CUIT, antigüedad, financiación, garantía, reseñas ni sitio web propio.",
       "confidence": "n/a",
       "status": "no verificado",
       "conflicts": [
-        "Zabala Automotriz (@zabala_automotriz, taller de tren delantero, tel. 829) y Omar Zabala (vendedor en Red Vialis): homónimos sin vínculo probado; descartados."
+        "Zabala Automotriz (@zabala_automotriz) y Omar Zabala (Red Vialis): homónimos sin vínculo probado; descartados."
       ],
       "decision": "No se publican."
     }
-  ]
+  ],
+  "coverage": {
+    "opened": [
+      "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+      "https://clasificados.elonce.com/concesionarias/zabala-automotores?page=2",
+      "https://clasificados.elonce.com/index.php/aviso/N1168048"
+    ],
+    "blocked": [
+      "https://www.instagram.com/zabala_automotores/ (robots: acceso automatizado no permitido; solo la captura aportada)"
+    ],
+    "notOpened": "Los otros 35 avisos individuales de la lista, los de facebook.com y google.com (búsquedas y Maps) y las demás páginas de listados de Clasionce no se abrieron: las búsquedas de Google no son consultables desde esta herramienta y los avisos se cubrieron a través del listado de la tienda (que trae título, año, transmisión, localidad, precio y estado). Los datos que solo están en cada ficha (km, combustible, color, descripción) quedan pendientes.",
+    "idsInListNotInStore": [
+      "N1164716 (figura en la lista pero no en las páginas 1 y 2 de la tienda)"
+    ]
+  }
 }

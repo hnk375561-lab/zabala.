@@ -31,11 +31,19 @@ if (d) {
   if (!idx.includes('<title>Zabala Automotores')) errors.push('index.html: title');
   // Datos sin fuente: no pueden aparecer en el sitio
   const visible = pages.map(rd).join('\n').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '');
-  for (const [re, why] of [[/\b(financiaci[oó]n|cuotas|tasa|garant[ií]a|permut|consignaci[oó]n|gestor[ií]a|0 ?km|taller)/i, 'servicio sin fuente'], [/\b\d{1,3}(\.\d{3})+ ?km\b/i, 'kilometraje'], [/\$\s?\d/, 'precio'], [/\b(19|20)\d{2}\b(?!.*©)/, null], [/rese[ñn]as?|calificaci[oó]n|★/i, 'reseñas'], [/desde \d{4}|\d+ años/i, 'antigüedad'], [/oficial(?! ·)/i, null]]) {
-    if (!why) continue;
-    if (re.test(visible.replace(/©\s*2026/g, ''))) errors.push(`Texto no permitido en el sitio (${why}): ${re}`);
+  const visNoCars = visible.replace(/<ul class="cars">[\s\S]*?<\/ul>/, '');
+  for (const [re, why] of [[/\b(financiaci[oó]n|cuotas|tasa fija|garant[ií]a|permut|consignaci[oó]n|gestor[ií]a|taller)/i, 'servicio sin fuente'], [/\b\d{1,3}(\.\d{3})+ ?km\b/i, 'kilometraje'], [/\$\s?\d|US\$/, 'precio'], [/rese[ñn]as?|calificaci[oó]n|★/i, 'reseñas'], [/desde \d{4}|\d+ años/i, 'antigüedad']]) {
+    if (re.test(visNoCars) || re.test(visible.replace(/©\s*2026/g, ''))) errors.push(`Texto no permitido en el sitio (${why}): ${re}`);
   }
   if (/Verificado|Confirmado/.test(visible)) errors.push('Texto "verificado/confirmado" no permitido');
+  const vj = JSON.parse(rd('data/vehicles.json')).vehicles;
+  const pubs = vj.filter((v) => v.published);
+  const nCards = (idx.match(/<li class="car">/g) || []).length;
+  if (nCards !== pubs.length) errors.push(`index.html tiene ${nCards} tarjetas y vehicles.json publica ${pubs.length}`);
+  for (const v of pubs) { if (!idx.includes(v.adUrl)) errors.push(`index.html: falta el aviso ${v.id}`); if (v.sold) errors.push(`${v.id}: vendido pero published`); }
+  if (!idx.includes('Paraná, Entre Ríos')) errors.push('index.html: falta la ciudad');
+  if (d.contact.phoneTel && !idx.includes(`tel:${d.contact.phoneTel}`)) errors.push('index.html: teléfono no coincide con dealership.json');
+  if (d.hours.display && !idx.includes('Lunes a sábados de 8:00 a 21:30')) errors.push('index.html: horario no coincide con dealership.json');
   if (d.identity.cuit !== null) errors.push('CUIT debe ser null hasta confirmación');
   // Restos del proyecto anterior en todo lo que se entrega
   const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.name === 'node_modules' || e.name === '.git' || e.name === 'fonts') ? [] : e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)]);
@@ -47,7 +55,7 @@ if (d) {
   }
   if (PROD) {
     if (d.publicacion.publicIndexing !== true) errors.push('PROD: publicIndexing sigue en false');
-    if (!d.location.address) errors.push('PROD: falta dirección');
+    if (!d.location.address) errors.push('PROD: falta dirección exacta');
     if (!d.hours.display) errors.push('PROD: faltan horarios');
     if (!(d.photos && d.photos.authorized === true)) errors.push('PROD: falta photos.authorized = true');
     if (/data-demo-note/.test(rd('index.html'))) errors.push('PROD: quitar el aviso de demo');

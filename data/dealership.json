@@ -4,7 +4,7 @@
     "stage": "demo-funcional",
     "official": false,
     "publicIndexing": false,
-    "note": "Demo con los únicos datos respaldados por la captura del perfil de Instagram (2026-10-11). No autorizada para publicación pública."
+    "note": "Demo con datos respaldados por el perfil de Instagram (captura 2026-10-11) y el perfil de la tienda en Clasionce/Elonce (consultado 2026-10-11). No autorizada para publicación pública."
   },
   "identity": {
     "tradeName": "Zabala Automotores",
@@ -16,18 +16,19 @@
   },
   "location": {
     "address": null,
-    "city": null,
-    "province": null,
+    "city": "Paraná",
+    "province": "Entre Ríos",
     "mapsPlaceUrl": null,
     "coordinates": null,
-    "note": "Sin dirección, ciudad ni ficha de Google Maps verificadas. El prefijo 343 del WhatsApp es un indicio, no una prueba de ubicación: no se publica ciudad. El sitio no muestra mapa ni dirección."
+    "note": "Solo ciudad y provincia, tomadas del perfil de la tienda en Clasionce. Sin calle ni número, sin ficha de Google Maps y sin coordenadas: el sitio no muestra mapa ni dirección. Hay avisos con localidad Federal (1) y María Grande (1): son localidades de las unidades, no sucursales.",
+    "country": "Argentina"
   },
   "contact": {
     "whatsApp": "5493434732110",
     "whatsAppBioRaw": "3434732110",
-    "whatsAppNote": "La bio de Instagram enlaza wa.me/3434732110 (sin código de país). El sitio usa el formato internacional argentino para móviles (54 9 + 343 4732110). Probar el enlace antes de publicar.",
-    "phone": null,
-    "phoneTel": null,
+    "whatsAppNote": "Confirmado en el perfil de Clasionce: enlace wa.me/5493434732110 y teléfono 3434732110. Coincide con el enlace de la bio de Instagram (wa.me/3434732110).",
+    "phone": "343 473-2110",
+    "phoneTel": "+543434732110",
     "email": null,
     "website": null,
     "instagram": "zabala_automotores",
@@ -35,9 +36,9 @@
     "facebook": null
   },
   "hours": {
-    "display": null,
-    "status": "not-found",
-    "note": "Sin horarios publicados en la fuente disponible."
+    "display": "Lunes a sábados de 8:00 a 21:30",
+    "status": "single-source-clasionce-2026-10-11",
+    "note": "Texto original del perfil: \"Lunes a Sabados de 08.00hs a 21.30hs\". Fuente única, cargada por el negocio en una plataforma de terceros. Sin cruce con Google Maps ni Instagram. Domingos: no figura; el sitio no afirma que esté cerrado."
   },
   "foundation": {
     "claim": null,
@@ -46,7 +47,8 @@
   "services": {
     "status": "bio-only",
     "supported": [
-      "Intermediación y reventa de vehículos"
+      "Intermediación y reventa de vehículos",
+      "Venta de autos, utilitarios, una moto y dos lanchas (avisos en Clasionce)"
     ],
     "notSupported": [
       "Financiación",
@@ -57,7 +59,8 @@
       "Taller o posventa",
       "0 km",
       "Representación de marcas"
-    ]
+    ],
+    "note": "Permuta: depende de cada aviso (el de la Up! dice sin permuta; el del Passat dice vendo o permuto). No se afirma como servicio general. Financiación: sin evidencia."
   },
   "photos": {
     "authorized": null,
@@ -65,7 +68,8 @@
   },
   "reputation": {
     "google": null,
-    "note": "Sin reseñas ni calificaciones verificadas."
+    "clasionce": "Aún sin valoraciones (perfil de Clasionce, 2026-10-11)",
+    "note": "Sin reseñas verificadas: no se publican."
   },
   "checkedAt": "2026-10-11"
 }
