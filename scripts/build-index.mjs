@@ -1,4 +1,4 @@
-// Genera index.html de Zabala Automotores con el diseño de Chita (azul/rojo, cortes diagonales).
+// Genera index.html de Zabala Automotores: fondo negro, paleta de grises y plata del logotipo, cortes diagonales.
 // Uso: node scripts/build-index.mjs   → escribe ../index.html
 // Los datos salen de data/autos.json (relevado de Clasionce). Para actualizar: editar ese JSON y volver a correrlo.
 import fs from 'node:fs'; import path from 'node:path'; import { fileURLToPath } from 'node:url';
@@ -18,24 +18,32 @@ const DB = JSON.parse(fs.readFileSync(path.join(root, 'data', 'autos.json'), 'ut
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const fmt = (n) => n.toLocaleString('es-AR');
 const precio = (p) => (p ? (p.moneda === 'USD' ? 'US$ ' : '$ ') + fmt(p.monto) : null);
-const cars = DB.autos.map((a, i) => ({ ...a, i, m: a.marca, y: a.anio, t: a.titulo, tr: a.transmision || '', vend: a.estado === 'vendido' }));
+const cars = DB.autos.map((a, i) => ({ ...a, i, tipo: a.tipo === 'Auto' ? 'Auto o utilitario' : a.tipo, m: a.marca, y: a.anio, t: a.titulo, tr: a.transmision || '', vend: a.estado === 'vendido' }));
 const activos = cars.filter((c) => !c.vend);
 const marcas = [...new Set(cars.map((c) => c.m))].sort((a, b) => a.localeCompare(b, 'es'));
 const conteo = (m) => activos.filter((c) => c.m === m).length;
 const topMarcas = [...marcas].sort((a, b) => conteo(b) - conteo(a) || a.localeCompare(b, 'es')).slice(0, 4);
 const nEmb = activos.filter((c) => c.tipo === 'Embarcación').length, nMoto = activos.filter((c) => c.tipo === 'Moto').length;
 const nAutos = activos.length - nEmb - nMoto;
+const nOferta = activos.filter((c) => c.precio && c.precio.oferta).length, nNegoc = activos.filter((c) => c.negociable).length;
+const nUsd = activos.filter((c) => c.precio && c.precio.moneda === 'USD').length, nArs = activos.filter((c) => c.precio && c.precio.moneda === 'ARS').length;
+const locs = Object.entries(cars.reduce((o, c) => ((o[c.localidad] = (o[c.localidad] || 0) + 1), o), {})).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'es'));
+// Avisos con datos que se contradicen en la fuente: se aclara en la tarjeta en vez de elegir uno.
+const NOTAS = {
+  N1164752: 'El título del aviso dice 2014 y la ficha 2011: te confirmamos el año por WhatsApp.',
+  N1165540: 'El aviso muestra dos montos distintos: te confirmamos el precio por WhatsApp.',
+};
 
 const card = (c) => {
   const p = precio(c.precio), ant = c.precio && c.precio.anterior ? precio({ moneda: c.precio.moneda, monto: c.precio.anterior }) : null;
   const badges = [c.vend ? '<i class="bd v">Vendido</i>' : '', c.precio && c.precio.oferta && !c.vend ? '<i class="bd o">Oferta</i>' : '', c.negociable && !c.vend ? '<i class="bd">Negociable</i>' : ''].join('');
   const f = c.ficha || {};
-  const meta = [c.y ? c.y : '', c.tr, f.km ? fmt(f.km) + ' km' : '', f.combustible || '', c.localidad !== 'Paraná' ? c.localidad : ''].filter(Boolean).join(' · ');
-  const nota = f.nota ? `<p class="car-n">${esc(f.nota)}</p>` : c.id === 'N1140083' ? '<p class="car-n">El aviso indica: vendo o permuto.</p>' : '';
+  const meta = [c.y ? c.y : '', c.tr, f.km ? fmt(f.km) + ' km' : '', f.combustible || '', f.color || '', f.puertas ? f.puertas + ' puertas' : '', c.localidad !== 'Paraná' ? c.localidad : ''].filter(Boolean).join(' · ');
+  const notas = [f.nota, NOTAS[c.id], !f.nota && c.id === 'N1140083' ? 'El aviso indica: vendo o permuto.' : ''].filter(Boolean);
+  const nota = notas.map((t) => `<p class="car-n">${esc(t)}</p>`).join('');
   const pr = p ? `<p class="car-p"><b>${p}</b>${ant ? ` <s>${ant}</s>` : ''}</p>` : '<p class="car-p"><b>Consultar precio</b></p>';
-  return `<li class="car${c.vend ? ' vend' : ''}" data-m="${esc(c.m)}" data-tr="${esc(c.tr)}" data-tp="${esc(c.tipo)}" data-y="${c.y ?? 0}" data-i="${c.i}" data-v="${c.vend ? 1 : 0}" data-q="${esc((c.t + ' ' + (c.y ?? '')).toLowerCase())}"><div class="car-art" aria-hidden="true"><span class="car-y">${c.y ?? '—'}</span><i class="car-tag">${esc(c.m)}</i></div><div class="car-b"><div class="bds">${badges}</div><h3>${esc(c.t)}</h3><p class="car-meta">${esc(meta)}</p>${pr}${nota}<a class="btn p sm" href="${c.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de ${esc(c.t)}${c.y ? ' ' + c.y : ''} en Clasionce">Ver aviso ↗</a></div></li>`;
+  return `<li class="car t${c.i % 3}${c.vend ? ' vend' : ''}" data-m="${esc(c.m)}" data-tr="${esc(c.tr)}" data-tp="${esc(c.tipo)}" data-y="${c.y ?? 0}" data-i="${c.i}" data-v="${c.vend ? 1 : 0}" data-q="${esc((c.t + ' ' + (c.y ?? '')).toLowerCase())}"><div class="car-art" aria-hidden="true"><span class="car-y">${c.y ?? '—'}</span><i class="car-tag">${esc(c.m)}</i></div><div class="car-b"><div class="bds">${badges}</div><h3>${esc(c.t)}</h3><p class="car-meta">${esc(meta)}</p>${pr}${nota}<a class="btn p sm" href="${c.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de ${esc(c.t)}${c.y ? ' ' + c.y : ''} en Clasionce">Ver aviso ↗</a></div></li>`;
 };
-const tile = (c, lab) => `<li class="vt"><b class="vt-y">${c.y ?? '—'}</b><span class="vt-n">${esc(c.t)}</span><i class="vt-l">${lab}</i></li>`;
 
 const ld = { '@context': 'https://schema.org', '@type': 'AutoDealer', name: N.nombre, description: 'Intermediación y reventa de vehículos.', telephone: N.telTel, address: { '@type': 'PostalAddress', addressLocality: 'Paraná', addressRegion: 'Entre Ríos', addressCountry: 'AR' }, openingHours: 'Mo-Sa 08:00-21:30', sameAs: [IG] };
 const vendidos = cars.length - activos.length;
@@ -51,8 +59,10 @@ const html = `<!DOCTYPE html>
 <meta name="robots" content="noindex, nofollow">
 <title>Zabala Automotores · Intermediación y reventa de vehículos en Paraná</title>
 <meta name="description" content="Zabala Automotores en Paraná, Entre Ríos: intermediación y reventa de vehículos. Consultá por WhatsApp o mirá los autos publicados.">
-<meta name="theme-color" content="#002060">
+<meta name="theme-color" content="#0d0d0d">
 <link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/png" href="images/zabala-z.png">
+<link rel="preload" href="images/zabala-logo.webp" as="image" type="image/webp">
 <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -71,9 +81,21 @@ ${css}
 <p class="lead">${N.desc} Mirá los vehículos publicados y consultanos por WhatsApp.</p>
 <div class="row"><a class="btn p cut" href="#autos">Ver autos</a><a class="btn o" href="${WA}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
 <a class="proof" href="#autos"><b>${activos.length}</b><span>vehículos publicados en Clasionce</span></a></div>
-<div class="hx-side" aria-hidden="true"><ul class="vit">${activos.slice(0, 3).map((c) => tile(c, 'Publicado')).join('')}</ul>
-<div class="big"><p class="big-t">Marcas en stock</p><ul>${topMarcas.map((m) => `<li><b>${esc(m)}</b><span>${conteo(m)}</span></li>`).join('')}</ul><i class="big-l">Autos publicados en Clasionce</i></div></div>
+<figure class="hx-logo"><img src="images/zabala-logo.webp" width="640" height="641" alt="Logotipo de Zabala Automotores: una Z que combina un auto y una lancha" fetchpriority="high" decoding="async"></figure>
 </div>
+
+<section id="stock" class="st" aria-labelledby="stock-t"><div class="w">
+<span class="ey">Stock</span><h2 id="stock-t">Stock <em>de un vistazo</em></h2>
+<div class="st-g">
+<div class="stt"><b>${activos.length}</b><span>vehículos publicados y disponibles en Clasionce</span></div>
+<div class="stt"><b>${nAutos}</b><span>autos, camionetas y utilitarios</span></div>
+<div class="stt"><b>${nOferta}</b><span>avisos con precio rebajado (figura el precio anterior tachado)</span></div>
+<div class="stt"><b>${nEmb + nMoto}</b><span>${nMoto ? nMoto + ' moto' : ''}${nMoto && nEmb ? ' y ' : ''}${nEmb ? nEmb + ' embarcaciones' : ''}</span></div>
+<div class="stt wide"><p class="stt-t">Marcas con más unidades</p><ul>${topMarcas.map((m) => `<li>${esc(m)}<i>${conteo(m)}</i></li>`).join('')}</ul></div>
+<div class="stt wide"><p class="stt-t">Localidad de los avisos (${cars.length} en total)</p><ul>${locs.map(([l, n]) => `<li>${esc(l)}<i>${n}</i></li>`).join('')}</ul></div>
+</div>
+<p class="st-n">Relevado de nuestra tienda en Clasionce el 11/10/2026. ${nNegoc} avisos figuran como negociables; ${nArs} publican el precio en pesos y ${nUsd} en dólares. La localidad es la que declara cada aviso y no implica sucursales. Hay ${vendidos} avisos marcados como vendidos que se muestran al final de la lista.</p>
+</div></section>
 
 <section id="autos" aria-labelledby="autos-t"><div class="w">
 <span class="ey">Autos</span><h2 id="autos-t">Nuestros <em>autos</em></h2>
@@ -95,10 +117,11 @@ ${[...cars].sort((a, b) => a.vend - b.vend || a.i - b.i).map(card).join('\n')}
 
 <section id="contacto" class="ct" aria-labelledby="contacto-t"><div class="w">
 <span class="ey">Contacto</span><h2 id="contacto-t">Horarios y <em>contacto</em></h2>
-<div class="ct-g"><dl><dt>Ubicación</dt><dd>${N.ciudad}. La dirección exacta la coordinamos por WhatsApp.</dd>
+<div class="ct-g"><dl><dt>Ubicación</dt><dd>${N.ciudad}. La dirección exacta la coordinamos por WhatsApp.${locs.length > 1 ? ` Algunos avisos están en ${locs.filter(([l]) => l !== 'Paraná').map(([l]) => esc(l)).join(' y ')}.` : ''}</dd>
 <dt>Horario</dt><dd>${N.horarios}</dd>
-<dt>Quiénes somos</dt><dd>${N.desc} <small class="src">(descripción de nuestra tienda en Clasionce, donde figuramos como concesionaria con identidad verificada)</small></dd>
-<dt>Teléfono y WhatsApp</dt><dd><a href="tel:${N.telTel}">${N.tel}</a></dd></dl>
+<dt>Quiénes somos</dt><dd>${N.desc} <small class="src">(descripción de nuestra tienda en Clasionce)</small></dd>
+<dt>Teléfono y WhatsApp</dt><dd><a href="tel:${N.telTel}">${N.tel}</a></dd>
+<dt>Dónde publicamos</dt><dd><a href="${N.tienda}" target="_blank" rel="noopener noreferrer">Tienda en Clasionce (Elonce)</a> · <a href="${IG}" target="_blank" rel="noopener noreferrer">@${N.ig}</a><br><span class="ok">Concesionaria con identidad verificada en Clasionce</span></dd></dl>
 <div class="ct-c"><p class="ct-t">¿Te gustó alguno?</p><p>Escribinos y te contamos disponibilidad, precio y detalles del auto que te interese.</p><div class="row"><a class="btn p cut" href="${WA}" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn o" href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></div>
 </div></section>
 </main>
