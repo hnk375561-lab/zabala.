@@ -6,6 +6,6 @@ Sitio estático (`index.html`, `privacidad.html`, `reserva.html`, `404.html`) si
 - `npm test` → valida `data/dealership.json` contra las páginas y busca restos del proyecto anterior.
 - `npm run test:prod` → puerta de salida; falla mientras falten datos y autorizaciones (ver `data/pendientes.json`).
 
-**Estado:** demo funcional (`noindex`, `robots.txt` con `Disallow: /`). Publica los datos respaldados por el Instagram `@zabala_automotores` y por la tienda en Clasionce (Elonce): nombre, rubro, Paraná (Entre Ríos), horario atribuido, teléfono/WhatsApp y 47 autos y utilitarios con enlace a su aviso. No hay dirección exacta, precios, km, financiación ni reseñas porque no hay fuente suficiente.
+**Estado:** demo funcional (`noindex`, `robots.txt` con `Disallow: /`). Incluye catálogo con filtros y orden, galería, contacto, horarios por día, consultas de compra/venta, coordinación de visita, guía y preguntas frecuentes. Los datos publicados están respaldados por el perfil de la tienda en Clasionce y por el material aportado de `@zabala_automotores`; no se publican dirección exacta, mapa, reseñas ni condiciones comerciales sin confirmación.
 
-Los datos viven en `data/dealership.json`; la fuente de cada uno, en `data/sources.json`.
+Los datos viven en `data/dealership.json`; la fuente de cada uno, en `data/sources.json`. La auditoría de cobertura y los pendientes están en `docs/AUDITORIA-ZABALA.md`.

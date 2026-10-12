@@ -48,6 +48,18 @@
   status = 404
   force = true
 
+[[redirects]]
+  from = "/golive/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/cambios.patch"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
