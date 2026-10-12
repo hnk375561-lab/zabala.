@@ -1,6 +1,6 @@
 // Genera index.html de Zabala Automotores: fondo negro, paleta de grises y plata del logotipo, cortes diagonales.
 // Uso: node scripts/build-index.mjs   → escribe ../index.html
-// Los datos salen de data/autos.json (listado de Clasionce al 11/10/2026) y data/historial.json (avisos vistos solo en capturas anteriores).
+// Los datos salen de data/autos.json (listado de Clasionce sincronizado al 12/10/2026) y data/historial.json (avisos vistos solo en capturas anteriores).
 // Para actualizar: editar esos JSON y volver a correrlo.
 import fs from 'node:fs'; import path from 'node:path'; import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -12,7 +12,7 @@ const N = {
   horarios: 'Lunes a sábados de 8:00 a 21:30 (según nuestro perfil en Clasionce).',
   desc: 'Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable.',
   cobertura: 'Toda la región',
-  fecha: '11/10/2026',
+  fecha: '12/10/2026',
   leyenda: 'Demo ilustrativa construida a partir de información pública. Precios, datos y disponibilidad sujetos a confirmación por Zabala Automotores.',
 };
 const wa = (txt) => `https://wa.me/${N.wa}?text=${encodeURIComponent(txt)}`;
@@ -61,7 +61,7 @@ const card = (c) => {
   const nombre = `${c.t}${c.y ? ' ' + c.y : ''}`;
   const consulta = c.vend ? '' : `<a class="btn o sm" href="${wa(`Hola! Quiero consultar por el ${nombre} (aviso ${c.id} en Clasionce).`)}" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp sobre ${esc(nombre)}">Consultar</a>`;
   const mo = c.precio ? c.precio.moneda : '';
-  return `<li class="car t${c.i % 3}${c.vend ? ' vend' : ''}" data-m="${esc(c.m)}" data-tr="${esc(c.tr)}" data-tp="${esc(c.tipo)}" data-y="${c.y ?? 0}" data-i="${c.i}" data-mo="${mo}" data-pm="${c.precio ? c.precio.monto : 0}" data-of="${c.precio && c.precio.oferta ? 1 : 0}" data-ng="${c.negociable ? 1 : 0}" data-q="${esc((c.t + ' ' + (c.y ?? '')).toLowerCase())}"><div class="car-art" aria-hidden="true"><span class="car-y">${c.y ?? '—'}</span><i class="car-tag">${esc(c.m)}</i></div><div class="car-b"><div class="bds">${badges}</div><h3>${esc(c.t)}</h3><p class="car-meta">${esc(meta)}</p>${pr}${nota}<div class="car-act"><a class="btn p sm" href="${c.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de ${esc(nombre)} en Clasionce">Ver aviso ↗</a>${consulta}</div><p class="car-s">Fuente: Clasionce, ${N.fecha}</p></div></li>`;
+  return `<li class="car t${c.i % 3}${c.vend ? ' vend' : ''}" data-m="${esc(c.m)}" data-tr="${esc(c.tr)}" data-tp="${esc(c.tipo)}" data-y="${c.y ?? 0}" data-i="${c.i}" data-mo="${mo}" data-pm="${c.precio ? c.precio.monto : 0}" data-of="${c.precio && c.precio.oferta ? 1 : 0}" data-ng="${c.negociable ? 1 : 0}" data-q="${esc((c.t + ' ' + (c.y ?? '')).toLowerCase())}"><div class="car-art" aria-hidden="true">${c.fotos?.[0] ? `<img src="${esc(c.fotos[0])}" width="800" height="1000" loading="lazy" decoding="async" alt="">` : ''}<span class="car-y">${c.y ?? '—'}</span><i class="car-tag">${esc(c.m)}</i></div><div class="car-b"><div class="bds">${badges}</div><h3>${esc(c.t)}</h3><p class="car-meta">${esc(meta)}</p>${pr}${nota}<div class="car-act"><a class="btn p sm" href="${c.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de ${esc(nombre)} en Clasionce">Ver aviso ↗</a>${consulta}</div><p class="car-s">Fuente: Clasionce, ${N.fecha}</p></div></li>`;
 };
 const hrow = (h, k) => {
   const p = precio(h.precio), ant = h.precio.anterior ? precio({ moneda: h.precio.moneda, monto: h.precio.anterior }) : null;

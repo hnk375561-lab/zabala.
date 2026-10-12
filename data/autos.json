@@ -1,1036 +1,1425 @@
 {
- "fuente": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
- "relevado": "2026-10-11",
- "totalAvisos": 53,
- "nota": "Listado de la tienda en Clasionce al 11/10/2026 (páginas 1 y 2). Los precios son los del aviso; $ = pesos, US$ = dólares. 'anterior' = precio tachado en avisos con Oferta. Solo 3 fichas individuales se leyeron completas (campo 'ficha').",
- "autos": [
-  {
-   "orden": 1,
-   "id": "N1168048",
-   "url": "https://clasificados.elonce.com/aviso/N1168048",
-   "titulo": "Volkswagen Up! 1.0 MPI Move 3P",
-   "marca": "Volkswagen",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 16000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 2,
-   "id": "N1165274",
-   "url": "https://clasificados.elonce.com/aviso/N1165274",
-   "titulo": "Peugeot 308 1.6 Allure Nav",
-   "marca": "Peugeot",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 14200000,
-    "anterior": 14700000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 3,
-   "id": "N1142198",
-   "url": "https://clasificados.elonce.com/aviso/N1142198",
-   "titulo": "Fiat Toro 2.0 TDI Freedom 4x2",
-   "marca": "Fiat",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 20500000,
-    "anterior": 22500000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 4,
-   "id": "N1168498",
-   "url": "https://clasificados.elonce.com/aviso/N1168498",
-   "titulo": "Volkswagen Suran 1.6 MSI Highline",
-   "marca": "Volkswagen",
-   "anio": 2019,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 19700000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 5,
-   "id": "N1168476",
-   "url": "https://clasificados.elonce.com/aviso/N1168476",
-   "titulo": "Toyota SW4 2.8 TDI SRX 4x4 AT 7AS",
-   "marca": "Toyota",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 41000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 6,
-   "id": "N1168420",
-   "url": "https://clasificados.elonce.com/aviso/N1168420",
-   "titulo": "Yamaha 155 N-MAX",
-   "marca": "Yamaha",
-   "anio": 2017,
-   "transmision": "Scooter",
-   "tipo": "Moto",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 4500000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 7,
-   "id": "N1168363",
-   "url": "https://clasificados.elonce.com/aviso/N1168363",
-   "titulo": "Fiat Doblo 1.4 Active 16V Family 7AS",
-   "marca": "Fiat",
-   "anio": 2014,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 16500000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 8,
-   "id": "N1168350",
-   "url": "https://clasificados.elonce.com/aviso/N1168350",
-   "titulo": "Volkswagen T-Cross 1.0 200TSI Highline AT L/24",
-   "marca": "Volkswagen",
-   "anio": 2025,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 39800000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 9,
-   "id": "N1168258",
-   "url": "https://clasificados.elonce.com/aviso/N1168258",
-   "titulo": "Toyota Yaris 1.5 XLS Pack CVT",
-   "marca": "Toyota",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 18000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 10,
-   "id": "N1167888",
-   "url": "https://clasificados.elonce.com/aviso/N1167888",
-   "titulo": "Volkswagen Suran 1.6 Highline",
-   "marca": "Volkswagen",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 17700000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 11,
-   "id": "N1167685",
-   "url": "https://clasificados.elonce.com/aviso/N1167685",
-   "titulo": "Nissan Frontier 2.3 S DC 4x4",
-   "marca": "Nissan",
-   "anio": 2019,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 32000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 12,
-   "id": "N1167667",
-   "url": "https://clasificados.elonce.com/aviso/N1167667",
-   "titulo": "Volkswagen Suran 1.6 Trendline L/15 Manual",
-   "marca": "Volkswagen",
-   "anio": 2016,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 15300000,
-    "anterior": 16000000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 13,
-   "id": "N1167171",
-   "url": "https://clasificados.elonce.com/aviso/N1167171",
-   "titulo": "Toyota Etios 1.5 Platinum 4P 6MT",
-   "marca": "Toyota",
-   "anio": 2015,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 16000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 14,
-   "id": "N1162959",
-   "url": "https://clasificados.elonce.com/aviso/N1162959",
-   "titulo": "Audi A1 1.2 T FSI Attraction Manual",
-   "marca": "Audi",
-   "anio": 2012,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Federal",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "USD",
-    "monto": 11000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 15,
-   "id": "N1167106",
-   "url": "https://clasificados.elonce.com/aviso/N1167106",
-   "titulo": "Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4",
-   "marca": "Nissan",
-   "anio": 2026,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 82000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 16,
-   "id": "N1164467",
-   "url": "https://clasificados.elonce.com/aviso/N1164467",
-   "titulo": "Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP",
-   "marca": "Volkswagen",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 29000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 17,
-   "id": "N1166714",
-   "url": "https://clasificados.elonce.com/aviso/N1166714",
-   "titulo": "Volkswagen Taos 250 TSI Comfortline AT L/24",
-   "marca": "Volkswagen",
-   "anio": 2025,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 42000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 18,
-   "id": "N1166713",
-   "url": "https://clasificados.elonce.com/aviso/N1166713",
-   "titulo": "Chevrolet S10 2.8TD DC 4x2 DLX Electronic",
-   "marca": "Chevrolet",
-   "anio": 2012,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 21000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 19,
-   "id": "N1166453",
-   "url": "https://clasificados.elonce.com/aviso/N1166453",
-   "titulo": "Toyota Etios Cross 1.5 M/T",
-   "marca": "Toyota",
-   "anio": 2014,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 10600,
-    "anterior": 10800,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 20,
-   "id": "N1166231",
-   "url": "https://clasificados.elonce.com/aviso/N1166231",
-   "titulo": "Jeep Compass Limited T270 AT6 4x2",
-   "marca": "Jeep",
-   "anio": 2025,
-   "transmision": "Automático",
-   "tipo": "Auto",
-   "localidad": "Paraná",
-   "estado": "vendido",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 30000,
-    "anterior": null,
-    "oferta": false
-   },
-   "ficha": {
-    "km": 18000,
-    "color": "Beige",
-    "combustible": "Nafta",
-    "puertas": 5,
-    "nota": "El aviso decía: cadenero, techo panorámico, sonido premium Beats, service al día. Aviso marcado como vendido."
-   }
-  },
-  {
-   "orden": 21,
-   "id": "N1166228",
-   "url": "https://clasificados.elonce.com/aviso/N1166228",
-   "titulo": "Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T",
-   "marca": "Toyota",
-   "anio": 2015,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 30000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 22,
-   "id": "N1166145",
-   "url": "https://clasificados.elonce.com/aviso/N1166145",
-   "titulo": "Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón",
-   "marca": "Mercedes-Benz",
-   "anio": 2018,
-   "transmision": "Manual",
-   "tipo": "Auto",
-   "localidad": "Paraná",
-   "estado": "vendido",
-   "negociable": true,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 36500000,
-    "anterior": null,
-    "oferta": false
-   },
-   "notaInterna": "Aviso marcado como vendido."
-  },
-  {
-   "orden": 23,
-   "id": "2110116",
-   "url": "https://clasificados.elonce.com/aviso/2110116",
-   "titulo": "Ford Ranger 2.3 DC 4x2 L/10 XL Plus",
-   "marca": "Ford",
-   "anio": 2010,
-   "transmision": "Manual",
-   "tipo": "Auto",
-   "localidad": "Paraná",
-   "estado": "vendido",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 14500000,
-    "anterior": null,
-    "oferta": false
-   },
-   "ficha": {
-    "km": 217000,
-    "color": "Rojo",
-    "combustible": "Nafta/GNC",
-    "puertas": 4,
-    "nota": "El aviso decía: con GNC, batería nueva, service al día, cubiertas con 5.000 km, uso familiar; solo venta, no permuta. Aviso marcado como vendido."
-   }
-  },
-  {
-   "orden": 24,
-   "id": "N1166080",
-   "url": "https://clasificados.elonce.com/aviso/N1166080",
-   "titulo": "Toyota Corolla Cross 1.8 SEG HEV E-CVT",
-   "marca": "Toyota",
-   "anio": 2022,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 29500,
-    "anterior": 30000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 25,
-   "id": "N1166077",
-   "url": "https://clasificados.elonce.com/aviso/N1166077",
-   "titulo": "Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T",
-   "marca": "Toyota",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 27500,
-    "anterior": 28000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 26,
-   "id": "N1165540",
-   "url": "https://clasificados.elonce.com/aviso/N1165540",
-   "titulo": "Toyota Hilux 2.8 TDI DC SRX 4x4 Aut",
-   "marca": "Toyota",
-   "anio": 2017,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": null,
-   "notaInterna": "El aviso muestra dos montos en monedas distintas ($44M y $29.000): no se publica precio hasta confirmarlo."
-  },
-  {
-   "orden": 27,
-   "id": "N1165353",
-   "url": "https://clasificados.elonce.com/aviso/N1165353",
-   "titulo": "Honda HR-V 1.8 EXL CVT",
-   "marca": "Honda",
-   "anio": 2018,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 25900000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 28,
-   "id": "N1164887",
-   "url": "https://clasificados.elonce.com/aviso/N1164887",
-   "titulo": "Volkswagen Golf 1.4 TSI Comfortline",
-   "marca": "Volkswagen",
-   "anio": 2016,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 13500,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 29,
-   "id": "N1164752",
-   "url": "https://clasificados.elonce.com/aviso/N1164752",
-   "titulo": "Ford Focus 1.6 S L/14 5P",
-   "marca": "Ford",
-   "anio": null,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "USD",
-    "monto": 10600,
-    "anterior": null,
-    "oferta": false
-   },
-   "ficha": {
-    "km": 87996,
-    "color": "Gris plata",
-    "combustible": "Nafta",
-    "puertas": 5,
-    "anioFicha": 2011,
-    "anioTitulo": 2014,
-    "nota": "El aviso dice: tren delantero recién hecho, cambio de correa de distribución recién hecho, service con 5.000 km y batería nueva."
-   }
-  },
-  {
-   "orden": 30,
-   "id": "N1164715",
-   "url": "https://clasificados.elonce.com/aviso/N1164715",
-   "titulo": "Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG",
-   "marca": "Volkswagen",
-   "anio": 2018,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 40800000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 31,
-   "id": "N1164426",
-   "url": "https://clasificados.elonce.com/aviso/N1164426",
-   "titulo": "Nissan Versa 1.6 Advance Pure Drive F2 M/T",
-   "marca": "Nissan",
-   "anio": 2018,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 10500,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 32,
-   "id": "N1163973",
-   "url": "https://clasificados.elonce.com/aviso/N1163973",
-   "titulo": "Volkswagen Taos 1.4 TSI Comfortline Tip",
-   "marca": "Volkswagen",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 34000000,
-    "anterior": 36000000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 33,
-   "id": "N1163971",
-   "url": "https://clasificados.elonce.com/aviso/N1163971",
-   "titulo": "Fiat Qubo Fiorino 1.4 Dynamic",
-   "marca": "Fiat",
-   "anio": 2013,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 11700000,
-    "anterior": 12000000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 34,
-   "id": "N1162994",
-   "url": "https://clasificados.elonce.com/aviso/N1162994",
-   "titulo": "Peugeot 408 1.6 THP Allure Plus",
-   "marca": "Peugeot",
-   "anio": 2017,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 13000000,
-    "anterior": 14000000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 35,
-   "id": "N1162742",
-   "url": "https://clasificados.elonce.com/aviso/N1162742",
-   "titulo": "Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS",
-   "marca": "Toyota",
-   "anio": 2021,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 42000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 36,
-   "id": "N1158048",
-   "url": "https://clasificados.elonce.com/aviso/N1158048",
-   "titulo": "Volkswagen T-Cross 1.0 200TSI Highline AT L/24",
-   "marca": "Volkswagen",
-   "anio": 2025,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 42000000,
-    "anterior": 43500000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 37,
-   "id": "N1157845",
-   "url": "https://clasificados.elonce.com/aviso/N1157845",
-   "titulo": "Toyota Corolla Cross 1.8 XEI HEV E-CVT",
-   "marca": "Toyota",
-   "anio": 2024,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "María Grande",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 45000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 38,
-   "id": "N1137128",
-   "url": "https://clasificados.elonce.com/aviso/N1137128",
-   "titulo": "Honda Civic EXL 2.0 L/17",
-   "marca": "Honda",
-   "anio": 2017,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 30000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 39,
-   "id": "N1136911",
-   "url": "https://clasificados.elonce.com/aviso/N1136911",
-   "titulo": "Hyundai i10 1.2 GLS Seguridad L/11",
-   "marca": "Hyundai",
-   "anio": 2013,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 7500,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 40,
-   "id": "N1137119",
-   "url": "https://clasificados.elonce.com/aviso/N1137119",
-   "titulo": "Ford Focus 1.6 S L/16 4P",
-   "marca": "Ford",
-   "anio": 2018,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 19500000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 41,
-   "id": "N1139461",
-   "url": "https://clasificados.elonce.com/aviso/N1139461",
-   "titulo": "Lancha Eclipse 20 Open motor Evinrude E-TEC 200HP",
-   "marca": "Lancha",
-   "anio": 2016,
-   "transmision": null,
-   "tipo": "Embarcación",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 25000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 42,
-   "id": "N1136912",
-   "url": "https://clasificados.elonce.com/aviso/N1136912",
-   "titulo": "Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme",
-   "marca": "Volkswagen",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 32000,
-    "anterior": 34000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 43,
-   "id": "N1141275",
-   "url": "https://clasificados.elonce.com/aviso/N1141275",
-   "titulo": "Peugeot Partner Patagonica 1.6 16V",
-   "marca": "Peugeot",
-   "anio": 2015,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 15000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 44,
-   "id": "N1137120",
-   "url": "https://clasificados.elonce.com/aviso/N1137120",
-   "titulo": "Toyota Yaris 1.5 XLS Pack CVT",
-   "marca": "Toyota",
-   "anio": 2021,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 26000000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 45,
-   "id": "N1137121",
-   "url": "https://clasificados.elonce.com/aviso/N1137121",
-   "titulo": "Honda HR-V 1.8 EX CVT",
-   "marca": "Honda",
-   "anio": 2016,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "USD",
-    "monto": 15300,
-    "anterior": 15800,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 46,
-   "id": "N1136617",
-   "url": "https://clasificados.elonce.com/aviso/N1136617",
-   "titulo": "Lancha Eclipse 20 Sport motor Mercury 150HP",
-   "marca": "Lancha",
-   "anio": 2013,
-   "transmision": null,
-   "tipo": "Embarcación",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 24000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 47,
-   "id": "N1162559",
-   "url": "https://clasificados.elonce.com/aviso/N1162559",
-   "titulo": "Honda HR-V 1.8 EXL CVT",
-   "marca": "Honda",
-   "anio": 2016,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": true,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 22800000,
-    "anterior": 24500000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 48,
-   "id": "N1162557",
-   "url": "https://clasificados.elonce.com/aviso/N1162557",
-   "titulo": "Volkswagen Amarok 2.0TD 4x4 DC Highline",
-   "marca": "Volkswagen",
-   "anio": 2010,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 16000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 49,
-   "id": "N1140083",
-   "url": "https://clasificados.elonce.com/aviso/N1140083",
-   "titulo": "VW Passat 2.0 FSI Exclusive Tip",
-   "marca": "Volkswagen",
-   "anio": 2008,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 10600000,
-    "anterior": 12500000,
-    "oferta": true
-   },
-   "notaInterna": "El título del aviso dice «Vendo o permuto»."
-  },
-  {
-   "orden": 50,
-   "id": "N1140481",
-   "url": "https://clasificados.elonce.com/aviso/N1140481",
-   "titulo": "BMW X3 xDrive 3.0 35i Executive 306 cv AT",
-   "marca": "BMW",
-   "anio": 2012,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 23000,
-    "anterior": null,
-    "oferta": false
-   }
-  },
-  {
-   "orden": 51,
-   "id": "N1138064",
-   "url": "https://clasificados.elonce.com/aviso/N1138064",
-   "titulo": "Mercedes-Benz C250 Coupe BlueEfficiency AT Sport",
-   "marca": "Mercedes-Benz",
-   "anio": 2014,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "USD",
-    "monto": 23000,
-    "anterior": 24000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 52,
-   "id": "N1157909",
-   "url": "https://clasificados.elonce.com/aviso/N1157909",
-   "titulo": "Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP",
-   "marca": "Volkswagen",
-   "anio": 2013,
-   "transmision": "Manual",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 21000000,
-    "anterior": 22000000,
-    "oferta": true
-   }
-  },
-  {
-   "orden": 53,
-   "id": "2146368",
-   "url": "https://clasificados.elonce.com/aviso/2146368",
-   "titulo": "Honda HR-V 1.8 EXL CVT",
-   "marca": "Honda",
-   "anio": 2020,
-   "transmision": "Automático",
-   "tipo": "Auto o utilitario",
-   "localidad": "Paraná",
-   "estado": "disponible",
-   "negociable": false,
-   "precio": {
-    "moneda": "ARS",
-    "monto": 31800000,
-    "anterior": null,
-    "oferta": false
-   }
-  }
- ]
+  "checkedAt": "2026-10-12",
+  "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+  "note": "Listado sincronizado con las dos páginas públicas de la tienda. Fotos de cada aviso descargadas desde la fuente pública, en resolución _l cuando estuvo disponible.",
+  "autos": [
+    {
+      "orden": 1,
+      "id": "N1168048",
+      "url": "https://clasificados.elonce.com/aviso/N1168048",
+      "titulo": "Volkswagen Up! 1.0 MPI Move 3P",
+      "marca": "Volkswagen",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 16000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168048-1.jpg",
+        "images/stock/N1168048-2.jpg",
+        "images/stock/N1168048-3.jpg",
+        "images/stock/N1168048-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168048 · 2026-10-12"
+    },
+    {
+      "orden": 2,
+      "id": "N1165274",
+      "url": "https://clasificados.elonce.com/aviso/N1165274",
+      "titulo": "Peugeot 308 1.6 Allure Nav",
+      "marca": "Peugeot",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 14200000,
+        "anterior": 14700000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1165274-1.jpg",
+        "images/stock/N1165274-2.jpg",
+        "images/stock/N1165274-3.jpg",
+        "images/stock/N1165274-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1165274 · 2026-10-12"
+    },
+    {
+      "orden": 3,
+      "id": "N1142198",
+      "url": "https://clasificados.elonce.com/aviso/N1142198",
+      "titulo": "Fiat Toro 2.0 TDI Freedom 4x2",
+      "marca": "Fiat",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 20500000,
+        "anterior": 22500000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1142198-1.jpg",
+        "images/stock/N1142198-2.jpg",
+        "images/stock/N1142198-3.jpg",
+        "images/stock/N1142198-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1142198 · 2026-10-12"
+    },
+    {
+      "orden": 4,
+      "id": "N1168498",
+      "url": "https://clasificados.elonce.com/aviso/N1168498",
+      "titulo": "Volkswagen Suran 1.6 MSI Highline",
+      "marca": "Volkswagen",
+      "anio": 2019,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 19700000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168498-1.jpg",
+        "images/stock/N1168498-2.jpg",
+        "images/stock/N1168498-3.jpg",
+        "images/stock/N1168498-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168498 · 2026-10-12"
+    },
+    {
+      "orden": 5,
+      "id": "N1168476",
+      "url": "https://clasificados.elonce.com/aviso/N1168476",
+      "titulo": "Toyota SW4 2.8 TDI SRX 4x4 AT 7AS",
+      "marca": "Toyota",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 41000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168476-1.jpg",
+        "images/stock/N1168476-2.jpg",
+        "images/stock/N1168476-3.jpg",
+        "images/stock/N1168476-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168476 · 2026-10-12"
+    },
+    {
+      "orden": 6,
+      "id": "N1168420",
+      "url": "https://clasificados.elonce.com/aviso/N1168420",
+      "titulo": "Yamaha 155 N-MAX",
+      "marca": "Yamaha",
+      "anio": 2017,
+      "transmision": "Scooter",
+      "tipo": "Moto",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 4500000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168420-1.jpg",
+        "images/stock/N1168420-2.jpg",
+        "images/stock/N1168420-3.jpg",
+        "images/stock/N1168420-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168420 · 2026-10-12"
+    },
+    {
+      "orden": 7,
+      "id": "N1168363",
+      "url": "https://clasificados.elonce.com/aviso/N1168363",
+      "titulo": "Fiat Doblo 1.4 Active 16V Family 7AS",
+      "marca": "Fiat",
+      "anio": 2014,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 16500000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168363-1.jpg",
+        "images/stock/N1168363-2.jpg",
+        "images/stock/N1168363-3.jpg",
+        "images/stock/N1168363-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168363 · 2026-10-12"
+    },
+    {
+      "orden": 8,
+      "id": "N1168350",
+      "url": "https://clasificados.elonce.com/aviso/N1168350",
+      "titulo": "Volkswagen T-Cross 1.0 200TSI Highline AT L/24",
+      "marca": "Volkswagen",
+      "anio": 2025,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 39800000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168350-1.jpg",
+        "images/stock/N1168350-2.jpg",
+        "images/stock/N1168350-3.jpg",
+        "images/stock/N1168350-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168350 · 2026-10-12"
+    },
+    {
+      "orden": 9,
+      "id": "N1168258",
+      "url": "https://clasificados.elonce.com/aviso/N1168258",
+      "titulo": "Toyota Yaris 1.5 XLS Pack CVT",
+      "marca": "Toyota",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 18000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1168258-1.jpg",
+        "images/stock/N1168258-2.jpg",
+        "images/stock/N1168258-3.jpg",
+        "images/stock/N1168258-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1168258 · 2026-10-12"
+    },
+    {
+      "orden": 10,
+      "id": "N1167888",
+      "url": "https://clasificados.elonce.com/aviso/N1167888",
+      "titulo": "Volkswagen Suran 1.6 Highline",
+      "marca": "Volkswagen",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 17700000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1167888-1.jpg",
+        "images/stock/N1167888-2.jpg",
+        "images/stock/N1167888-3.jpg",
+        "images/stock/N1167888-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1167888 · 2026-10-12"
+    },
+    {
+      "orden": 11,
+      "id": "N1167685",
+      "url": "https://clasificados.elonce.com/aviso/N1167685",
+      "titulo": "Nissan Frontier 2.3 S DC 4x4",
+      "marca": "Nissan",
+      "anio": 2019,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 32000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1167685-1.jpg",
+        "images/stock/N1167685-2.jpg",
+        "images/stock/N1167685-3.jpg",
+        "images/stock/N1167685-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1167685 · 2026-10-12"
+    },
+    {
+      "orden": 12,
+      "id": "N1167667",
+      "url": "https://clasificados.elonce.com/aviso/N1167667",
+      "titulo": "Volkswagen Suran 1.6 Trendline L/15 Manual",
+      "marca": "Volkswagen",
+      "anio": 2016,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 15300000,
+        "anterior": 16000000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1167667-1.jpg",
+        "images/stock/N1167667-2.jpg",
+        "images/stock/N1167667-3.jpg",
+        "images/stock/N1167667-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1167667 · 2026-10-12"
+    },
+    {
+      "orden": 13,
+      "id": "N1167171",
+      "url": "https://clasificados.elonce.com/aviso/N1167171",
+      "titulo": "Toyota Etios 1.5 Platinum 4P 6MT",
+      "marca": "Toyota",
+      "anio": 2015,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 16000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1167171-1.jpg",
+        "images/stock/N1167171-2.jpg",
+        "images/stock/N1167171-3.jpg",
+        "images/stock/N1167171-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1167171 · 2026-10-12"
+    },
+    {
+      "orden": 14,
+      "id": "N1162959",
+      "url": "https://clasificados.elonce.com/aviso/N1162959",
+      "titulo": "Audi A1 1.2 T FSI Attraction Manual",
+      "marca": "Audi",
+      "anio": 2012,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Federal",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "USD",
+        "monto": 11000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1162959-1.jpg",
+        "images/stock/N1162959-2.jpg",
+        "images/stock/N1162959-3.jpg",
+        "images/stock/N1162959-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1162959 · 2026-10-12"
+    },
+    {
+      "orden": 15,
+      "id": "N1167106",
+      "url": "https://clasificados.elonce.com/aviso/N1167106",
+      "titulo": "Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4",
+      "marca": "Nissan",
+      "anio": 2026,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 82000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1167106-1.jpg",
+        "images/stock/N1167106-2.jpg",
+        "images/stock/N1167106-3.jpg",
+        "images/stock/N1167106-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1167106 · 2026-10-12"
+    },
+    {
+      "orden": 16,
+      "id": "N1164467",
+      "url": "https://clasificados.elonce.com/aviso/N1164467",
+      "titulo": "Volkswagen Amarok 2.0TD Confort 4x2 AT 180HP",
+      "marca": "Volkswagen",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 29000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1164467-1.jpg",
+        "images/stock/N1164467-2.jpg",
+        "images/stock/N1164467-3.jpg",
+        "images/stock/N1164467-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1164467 · 2026-10-12"
+    },
+    {
+      "orden": 17,
+      "id": "N1166714",
+      "url": "https://clasificados.elonce.com/aviso/N1166714",
+      "titulo": "Volkswagen Taos 250 TSI Comfortline AT L/24",
+      "marca": "Volkswagen",
+      "anio": 2025,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 42000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166714-1.jpg",
+        "images/stock/N1166714-2.jpg",
+        "images/stock/N1166714-3.jpg",
+        "images/stock/N1166714-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166714 · 2026-10-12"
+    },
+    {
+      "orden": 18,
+      "id": "N1166713",
+      "url": "https://clasificados.elonce.com/aviso/N1166713",
+      "titulo": "Chevrolet S10 2.8TD DC 4x2 DLX Electronic",
+      "marca": "Chevrolet",
+      "anio": 2012,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 21000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166713-1.jpg",
+        "images/stock/N1166713-2.jpg",
+        "images/stock/N1166713-3.jpg",
+        "images/stock/N1166713-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166713 · 2026-10-12"
+    },
+    {
+      "orden": 19,
+      "id": "N1166453",
+      "url": "https://clasificados.elonce.com/aviso/N1166453",
+      "titulo": "Toyota Etios Cross 1.5 M/T",
+      "marca": "Toyota",
+      "anio": 2014,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 1080010600,
+        "anterior": 10800,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166453-1.jpg",
+        "images/stock/N1166453-2.jpg",
+        "images/stock/N1166453-3.jpg",
+        "images/stock/N1166453-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166453 · 2026-10-12"
+    },
+    {
+      "orden": 20,
+      "id": "N1166231",
+      "url": "https://clasificados.elonce.com/aviso/N1166231",
+      "titulo": "Jeep Compass Limited T270 AT6 4x2",
+      "marca": "Jeep",
+      "anio": 2025,
+      "transmision": "Automático",
+      "tipo": "Auto",
+      "localidad": "Paraná",
+      "estado": "vendido",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 30000,
+        "anterior": null,
+        "oferta": false
+      },
+      "ficha": {
+        "km": 18000,
+        "color": "Beige",
+        "combustible": "Nafta",
+        "puertas": 5,
+        "nota": "El aviso decía: cadenero, techo panorámico, sonido premium Beats, service al día. Aviso marcado como vendido."
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166231-1.jpg",
+        "images/stock/N1166231-2.jpg",
+        "images/stock/N1166231-3.jpg",
+        "images/stock/N1166231-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166231 · 2026-10-12"
+    },
+    {
+      "orden": 21,
+      "id": "N1166228",
+      "url": "https://clasificados.elonce.com/aviso/N1166228",
+      "titulo": "Toyota Hilux L/12 3.0 DC 4x2 TDI SR M/T",
+      "marca": "Toyota",
+      "anio": 2015,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 30000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166228-1.jpg",
+        "images/stock/N1166228-2.jpg",
+        "images/stock/N1166228-3.jpg",
+        "images/stock/N1166228-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166228 · 2026-10-12"
+    },
+    {
+      "orden": 22,
+      "id": "N1166145",
+      "url": "https://clasificados.elonce.com/aviso/N1166145",
+      "titulo": "Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón",
+      "marca": "Mercedes-Benz",
+      "anio": 2018,
+      "transmision": "Manual",
+      "tipo": "Auto",
+      "localidad": "Paraná",
+      "estado": "vendido",
+      "negociable": true,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 36500000,
+        "anterior": null,
+        "oferta": false
+      },
+      "notaInterna": "Aviso marcado como vendido.",
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166145-1.jpg",
+        "images/stock/N1166145-2.jpg",
+        "images/stock/N1166145-3.jpg",
+        "images/stock/N1166145-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166145 · 2026-10-12"
+    },
+    {
+      "orden": 23,
+      "id": "N1166080",
+      "url": "https://clasificados.elonce.com/aviso/N1166080",
+      "titulo": "Toyota Corolla Cross 1.8 SEG HEV E-CVT",
+      "marca": "Toyota",
+      "anio": 2022,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 3000029500,
+        "anterior": 30000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166080-1.jpg",
+        "images/stock/N1166080-2.jpg",
+        "images/stock/N1166080-3.jpg",
+        "images/stock/N1166080-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166080 · 2026-10-12"
+    },
+    {
+      "orden": 24,
+      "id": "N1166077",
+      "url": "https://clasificados.elonce.com/aviso/N1166077",
+      "titulo": "Toyota Hilux 2.8 TDI DC SRV Pack Cuero 4x2 M/T",
+      "marca": "Toyota",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 2800027500,
+        "anterior": 28000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1166077-1.jpg",
+        "images/stock/N1166077-2.jpg",
+        "images/stock/N1166077-3.jpg",
+        "images/stock/N1166077-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1166077 · 2026-10-12"
+    },
+    {
+      "orden": 25,
+      "id": "N1165540",
+      "url": "https://clasificados.elonce.com/aviso/N1165540",
+      "titulo": "Toyota Hilux 2.8 TDI DC SRX 4x4 Aut",
+      "marca": "Toyota",
+      "anio": 2017,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": null,
+      "notaInterna": "El aviso muestra dos montos en monedas distintas ($44M y $29.000): no se publica precio hasta confirmarlo.",
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1165540-1.jpg",
+        "images/stock/N1165540-2.jpg",
+        "images/stock/N1165540-3.jpg",
+        "images/stock/N1165540-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1165540 · 2026-10-12"
+    },
+    {
+      "orden": 26,
+      "id": "N1165353",
+      "url": "https://clasificados.elonce.com/aviso/N1165353",
+      "titulo": "Honda HR-V 1.8 EXL CVT",
+      "marca": "Honda",
+      "anio": 2018,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 25900000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1165353-1.jpg",
+        "images/stock/N1165353-2.jpg",
+        "images/stock/N1165353-3.jpg",
+        "images/stock/N1165353-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1165353 · 2026-10-12"
+    },
+    {
+      "orden": 27,
+      "id": "N1164887",
+      "url": "https://clasificados.elonce.com/aviso/N1164887",
+      "titulo": "Volkswagen Golf 1.4 TSI Comfortline",
+      "marca": "Volkswagen",
+      "anio": 2016,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 13500,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1164887-1.jpg",
+        "images/stock/N1164887-2.jpg",
+        "images/stock/N1164887-3.jpg",
+        "images/stock/N1164887-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1164887 · 2026-10-12"
+    },
+    {
+      "orden": 28,
+      "id": "N1164752",
+      "url": "https://clasificados.elonce.com/aviso/N1164752",
+      "titulo": "Ford Focus 1.6 S L/14 5P",
+      "marca": "Ford",
+      "anio": null,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "USD",
+        "monto": 10600,
+        "anterior": null,
+        "oferta": false
+      },
+      "ficha": {
+        "km": 87996,
+        "color": "Gris plata",
+        "combustible": "Nafta",
+        "puertas": 5,
+        "anioFicha": 2011,
+        "anioTitulo": 2014,
+        "nota": "El aviso dice: tren delantero recién hecho, cambio de correa de distribución recién hecho, service con 5.000 km y batería nueva."
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1164752-1.jpg",
+        "images/stock/N1164752-2.jpg",
+        "images/stock/N1164752-3.jpg",
+        "images/stock/N1164752-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1164752 · 2026-10-12"
+    },
+    {
+      "orden": 29,
+      "id": "N1164715",
+      "url": "https://clasificados.elonce.com/aviso/N1164715",
+      "titulo": "Volkswagen Tiguan Allspace 2.0 TSI Comfortline DSG",
+      "marca": "Volkswagen",
+      "anio": 2018,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 40800000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1164715-1.jpg",
+        "images/stock/N1164715-2.jpg",
+        "images/stock/N1164715-3.jpg",
+        "images/stock/N1164715-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1164715 · 2026-10-12"
+    },
+    {
+      "orden": 30,
+      "id": "N1164426",
+      "url": "https://clasificados.elonce.com/aviso/N1164426",
+      "titulo": "Nissan Versa 1.6 Advance Pure Drive F2 M/T",
+      "marca": "Nissan",
+      "anio": 2018,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 10500,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1164426-1.jpg",
+        "images/stock/N1164426-2.jpg",
+        "images/stock/N1164426-3.jpg",
+        "images/stock/N1164426-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1164426 · 2026-10-12"
+    },
+    {
+      "orden": 31,
+      "id": "N1163973",
+      "url": "https://clasificados.elonce.com/aviso/N1163973",
+      "titulo": "Volkswagen Taos 1.4 TSI Comfortline Tip",
+      "marca": "Volkswagen",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 34000000,
+        "anterior": 36000000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1163973-1.jpg",
+        "images/stock/N1163973-2.jpg",
+        "images/stock/N1163973-3.jpg",
+        "images/stock/N1163973-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1163973 · 2026-10-12"
+    },
+    {
+      "orden": 32,
+      "id": "N1163971",
+      "url": "https://clasificados.elonce.com/aviso/N1163971",
+      "titulo": "Fiat Qubo Fiorino 1.4 Dynamic",
+      "marca": "Fiat",
+      "anio": 2013,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 11700000,
+        "anterior": 12000000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1163971-1.jpg",
+        "images/stock/N1163971-2.jpg",
+        "images/stock/N1163971-3.jpg",
+        "images/stock/N1163971-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1163971 · 2026-10-12"
+    },
+    {
+      "orden": 33,
+      "id": "N1162994",
+      "url": "https://clasificados.elonce.com/aviso/N1162994",
+      "titulo": "Peugeot 408 1.6 THP Allure Plus",
+      "marca": "Peugeot",
+      "anio": 2017,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 13000000,
+        "anterior": 14000000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1162994-1.jpg",
+        "images/stock/N1162994-2.jpg",
+        "images/stock/N1162994-3.jpg",
+        "images/stock/N1162994-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1162994 · 2026-10-12"
+    },
+    {
+      "orden": 34,
+      "id": "N1162742",
+      "url": "https://clasificados.elonce.com/aviso/N1162742",
+      "titulo": "Toyota SW4 2.8 TDI 4x4 SRX L/21 Manual 7AS",
+      "marca": "Toyota",
+      "anio": 2021,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 42000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1162742-1.jpg",
+        "images/stock/N1162742-2.jpg",
+        "images/stock/N1162742-3.jpg",
+        "images/stock/N1162742-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1162742 · 2026-10-12"
+    },
+    {
+      "orden": 35,
+      "id": "N1158048",
+      "url": "https://clasificados.elonce.com/aviso/N1158048",
+      "titulo": "Volkswagen T-Cross 1.0 200TSI Highline AT L/24",
+      "marca": "Volkswagen",
+      "anio": 2025,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 42000000,
+        "anterior": 43500000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1158048-1.jpg",
+        "images/stock/N1158048-2.jpg",
+        "images/stock/N1158048-3.jpg",
+        "images/stock/N1158048-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1158048 · 2026-10-12"
+    },
+    {
+      "orden": 36,
+      "id": "N1157845",
+      "url": "https://clasificados.elonce.com/aviso/N1157845",
+      "titulo": "Toyota Corolla Cross 1.8 XEI HEV E-CVT",
+      "marca": "Toyota",
+      "anio": 2024,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Maria Grande",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 45000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1157845-1.jpg",
+        "images/stock/N1157845-2.jpg",
+        "images/stock/N1157845-3.jpg",
+        "images/stock/N1157845-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1157845 · 2026-10-12"
+    },
+    {
+      "orden": 37,
+      "id": "N1137128",
+      "url": "https://clasificados.elonce.com/aviso/N1137128",
+      "titulo": "Honda Civic EXL 2.0 L/17",
+      "marca": "Honda",
+      "anio": 2017,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 30000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1137128-1.jpg",
+        "images/stock/N1137128-2.jpg",
+        "images/stock/N1137128-3.jpg",
+        "images/stock/N1137128-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1137128 · 2026-10-12"
+    },
+    {
+      "orden": 38,
+      "id": "N1136911",
+      "url": "https://clasificados.elonce.com/aviso/N1136911",
+      "titulo": "Hyundai i10 1.2 GLS Seguridad L/11",
+      "marca": "Hyundai",
+      "anio": 2013,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 7500,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1136911-1.jpg",
+        "images/stock/N1136911-2.jpg",
+        "images/stock/N1136911-3.jpg",
+        "images/stock/N1136911-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1136911 · 2026-10-12"
+    },
+    {
+      "orden": 39,
+      "id": "N1137119",
+      "url": "https://clasificados.elonce.com/aviso/N1137119",
+      "titulo": "Ford Focus 1.6 S L/16 4P",
+      "marca": "Ford",
+      "anio": 2018,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 19500000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1137119-1.jpg",
+        "images/stock/N1137119-2.jpg",
+        "images/stock/N1137119-3.jpg",
+        "images/stock/N1137119-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1137119 · 2026-10-12"
+    },
+    {
+      "orden": 40,
+      "id": "N1139461",
+      "url": "https://clasificados.elonce.com/aviso/N1139461",
+      "titulo": "Lancha Eclipse 20 Open motor Evinrude E-TEC 200HP",
+      "marca": "Lancha",
+      "anio": 2016,
+      "transmision": null,
+      "tipo": "Embarcación",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 25000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1139461-1.jpg",
+        "images/stock/N1139461-2.jpg",
+        "images/stock/N1139461-3.jpg",
+        "images/stock/N1139461-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1139461 · 2026-10-12"
+    },
+    {
+      "orden": 41,
+      "id": "N1136912",
+      "url": "https://clasificados.elonce.com/aviso/N1136912",
+      "titulo": "Volkswagen Amarok V6 3.0TD 4x4 DC AT 224HP Extreme",
+      "marca": "Volkswagen",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 3400032000,
+        "anterior": 34000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1136912-1.png",
+        "images/stock/N1136912-2.png",
+        "images/stock/N1136912-3.png",
+        "images/stock/N1136912-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1136912 · 2026-10-12"
+    },
+    {
+      "orden": 42,
+      "id": "N1141275",
+      "url": "https://clasificados.elonce.com/aviso/N1141275",
+      "titulo": "Peugeot Partner Patagonica 1.6 16V",
+      "marca": "Peugeot",
+      "anio": 2015,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 15000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1141275-1.jpg",
+        "images/stock/N1141275-2.jpg",
+        "images/stock/N1141275-3.jpg",
+        "images/stock/N1141275-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1141275 · 2026-10-12"
+    },
+    {
+      "orden": 43,
+      "id": "N1137120",
+      "url": "https://clasificados.elonce.com/aviso/N1137120",
+      "titulo": "Toyota Yaris 1.5 XLS Pack CVT",
+      "marca": "Toyota",
+      "anio": 2021,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 26000000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1137120-1.jpg",
+        "images/stock/N1137120-2.jpg",
+        "images/stock/N1137120-3.jpg",
+        "images/stock/N1137120-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1137120 · 2026-10-12"
+    },
+    {
+      "orden": 44,
+      "id": "N1137121",
+      "url": "https://clasificados.elonce.com/aviso/N1137121",
+      "titulo": "Honda HR-V 1.8 EX CVT",
+      "marca": "Honda",
+      "anio": 2016,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "USD",
+        "monto": 1580015300,
+        "anterior": 15800,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1137121-1.jpg",
+        "images/stock/N1137121-2.jpg",
+        "images/stock/N1137121-3.jpg",
+        "images/stock/N1137121-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1137121 · 2026-10-12"
+    },
+    {
+      "orden": 45,
+      "id": "N1136617",
+      "url": "https://clasificados.elonce.com/aviso/N1136617",
+      "titulo": "Lancha Eclipse 20 Sport motor Mercury 150HP",
+      "marca": "Lancha",
+      "anio": 2013,
+      "transmision": null,
+      "tipo": "Embarcación",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 24000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1136617-1.jpg",
+        "images/stock/N1136617-2.jpg",
+        "images/stock/N1136617-3.jpg",
+        "images/stock/N1136617-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1136617 · 2026-10-12"
+    },
+    {
+      "orden": 46,
+      "id": "N1162559",
+      "url": "https://clasificados.elonce.com/aviso/N1162559",
+      "titulo": "Honda HR-V 1.8 EXL CVT",
+      "marca": "Honda",
+      "anio": 2016,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": true,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 22800000,
+        "anterior": 24500000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1162559-1.jpg",
+        "images/stock/N1162559-2.jpg",
+        "images/stock/N1162559-3.jpg",
+        "images/stock/N1162559-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1162559 · 2026-10-12"
+    },
+    {
+      "orden": 47,
+      "id": "N1162557",
+      "url": "https://clasificados.elonce.com/aviso/N1162557",
+      "titulo": "Volkswagen Amarok 2.0TD 4x4 DC Highline",
+      "marca": "Volkswagen",
+      "anio": 2010,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 16000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1162557-1.jpg",
+        "images/stock/N1162557-2.jpg",
+        "images/stock/N1162557-3.jpg",
+        "images/stock/N1162557-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1162557 · 2026-10-12"
+    },
+    {
+      "orden": 48,
+      "id": "N1140083",
+      "url": "https://clasificados.elonce.com/aviso/N1140083",
+      "titulo": "VW Passat 2.0 FSI Exclusive Tip",
+      "marca": "Volkswagen",
+      "anio": 2008,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 10600000,
+        "anterior": 12500000,
+        "oferta": true
+      },
+      "notaInterna": "El título del aviso dice «Vendo o permuto».",
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1140083-1.png",
+        "images/stock/N1140083-2.png",
+        "images/stock/N1140083-3.png",
+        "images/stock/N1140083-4.png"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1140083 · 2026-10-12"
+    },
+    {
+      "orden": 49,
+      "id": "N1140481",
+      "url": "https://clasificados.elonce.com/aviso/N1140481",
+      "titulo": "BMW X3 xDrive 3.0 35i Executive 306 cv AT",
+      "marca": "BMW",
+      "anio": 2012,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 23000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1140481-1.png",
+        "images/stock/N1140481-2.png",
+        "images/stock/N1140481-3.png",
+        "images/stock/N1140481-4.png"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1140481 · 2026-10-12"
+    },
+    {
+      "orden": 50,
+      "id": "N1138064",
+      "url": "https://clasificados.elonce.com/aviso/N1138064",
+      "titulo": "Mercedes-Benz C250 Coupe BlueEfficiency AT Sport",
+      "marca": "Mercedes-Benz",
+      "anio": 2014,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "USD",
+        "monto": 2400023000,
+        "anterior": 24000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1138064-1.png",
+        "images/stock/N1138064-2.png",
+        "images/stock/N1138064-3.png",
+        "images/stock/N1138064-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1138064 · 2026-10-12"
+    },
+    {
+      "orden": 51,
+      "id": "N1157909",
+      "url": "https://clasificados.elonce.com/aviso/N1157909",
+      "titulo": "Volkswagen Amarok 2.0TD 4x2 DC Highline 180HP",
+      "marca": "Volkswagen",
+      "anio": 2013,
+      "transmision": "Manual",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 21000000,
+        "anterior": 22000000,
+        "oferta": true
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/N1157909-1.jpg",
+        "images/stock/N1157909-2.jpg",
+        "images/stock/N1157909-3.jpg",
+        "images/stock/N1157909-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso N1157909 · 2026-10-12"
+    },
+    {
+      "orden": 52,
+      "id": "2146368",
+      "url": "https://clasificados.elonce.com/aviso/2146368",
+      "titulo": "Honda HR-V 1.8 EXL CVT",
+      "marca": "Honda",
+      "anio": 2020,
+      "transmision": "Automático",
+      "tipo": "Auto o utilitario",
+      "localidad": "Paraná",
+      "estado": "disponible",
+      "negociable": false,
+      "precio": {
+        "moneda": "ARS",
+        "monto": 31800000,
+        "anterior": null,
+        "oferta": false
+      },
+      "relevado": "2026-10-12",
+      "fotos": [
+        "images/stock/2146368-1.jpg",
+        "images/stock/2146368-2.jpg",
+        "images/stock/2146368-3.jpg",
+        "images/stock/2146368-4.jpg"
+      ],
+      "fuenteFotos": "Clasionce · aviso 2146368 · 2026-10-12"
+    }
+  ]
 }
