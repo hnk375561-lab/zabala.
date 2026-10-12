@@ -1,5 +1,5 @@
 {
-  "fuente": "ZABALA_DOSSIER_VERIFICADO.txt (consulta del 11/10/2026)",
+  "fuente": "ZABALA_DOSSIER_VERIFICADO.txt y ZABALA_TODO_CONFIRMADO_VERIFICADO.txt (consulta del 11/10/2026)",
   "nota": "Avisos que el dossier vio en capturas indexadas de Clasionce y que NO figuran en el listado leído el 11/10/2026 (data/autos.json). Pueden estar vendidos, pausados o dados de baja. No son stock confirmado: el sitio los muestra solo como historial, sin enlace de aviso. Confianza B (tarjetas indexadas), a revalidar abriendo cada aviso.",
   "avisos": [
     { "titulo": "Chevrolet Captiva 2.2 LTZ AT 184 CV", "marca": "Chevrolet", "anio": 2018, "transmision": "Automático", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 32800000, "anterior": null, "oferta": false } },
@@ -12,6 +12,10 @@
     { "titulo": "Honda CR-V 1.5 EX 2WD CVT", "marca": "Honda", "anio": 2021, "transmision": "Automático", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "USD", "monto": 35000, "anterior": 37000, "oferta": true } },
     { "titulo": "Ford Ranger 2.0 TD DC 4x2 XL 6MT", "marca": "Ford", "anio": 2024, "transmision": "Manual", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 37000000, "anterior": null, "oferta": false } },
     { "titulo": "Chevrolet Cruze 1.4 LTZ AT 4P", "marca": "Chevrolet", "anio": 2023, "transmision": "Automático", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 27000000, "anterior": 28700000, "oferta": true } },
-    { "titulo": "Renault Fluence 2.0 Dynamique", "marca": "Renault", "anio": 2011, "transmision": "Manual", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 9000000, "anterior": 9700000, "oferta": true } }
+    { "titulo": "Renault Fluence 2.0 Dynamique", "marca": "Renault", "anio": 2011, "transmision": "Manual", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 9000000, "anterior": 9700000, "oferta": true } },
+    { "titulo": "Ford Territory 1.8T Titanium", "marca": "Ford", "anio": 2024, "transmision": "Automático", "localidad": "Federal", "negociable": false, "precio": { "moneda": "ARS", "monto": 45000000, "anterior": null, "oferta": false } },
+    { "titulo": "Jeep Renegade 1.3T 4x2 Serie S L/24 AT", "marca": "Jeep", "anio": 2025, "transmision": "Automático", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "USD", "monto": 31000, "anterior": null, "oferta": false } },
+    { "titulo": "Peugeot 208 1.5 Allure Touchscreen", "marca": "Peugeot", "anio": 2015, "transmision": "Manual", "localidad": "Paraná", "negociable": false, "precio": { "moneda": "ARS", "monto": 12500000, "anterior": null, "oferta": false } },
+    { "titulo": "Chevrolet Prisma 1.4 LT", "marca": "Chevrolet", "anio": 2018, "transmision": "Manual", "localidad": "Paraná", "negociable": false, "vendidoEnCaptura": true, "precio": { "moneda": "ARS", "monto": 13800000, "anterior": null, "oferta": false } }
   ]
 }

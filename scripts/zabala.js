@@ -70,6 +70,7 @@
   function show(i) {
     cur = (i + links.length) % links.length;
     var a = links[cur], t = a.querySelector('img');
+    img.onerror = function () { cap.textContent = 'No se pudo cargar esta foto. Probá con la siguiente.'; };
     img.src = a.getAttribute('href'); img.alt = t.alt;
     cap.textContent = t.alt.replace('Foto del Instagram de Zabala: ', '') + ' · ' + (cur + 1) + ' de ' + links.length;
   }

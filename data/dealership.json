@@ -1,75 +1,247 @@
 {
   "publicacion": {
     "status": "demo",
-    "stage": "demo-funcional",
     "official": false,
-    "publicIndexing": false,
-    "note": "Demo con datos respaldados por el perfil de Instagram (captura 2026-10-11) y el perfil de la tienda en Clasionce/Elonce (consultado 2026-10-11). No autorizada para publicación pública."
+    "publicIndexing": false
   },
   "identity": {
     "tradeName": "Zabala Automotores",
     "legalName": null,
     "cuit": null,
-    "activity": "Intermediación y reventa de vehículos",
-    "activitySource": "Bio de Instagram @zabala_automotores (captura 2026-10-11): \"Nos dedicamos a la intermediación y reventa de vehículos.\" La bio continúa truncada (\"Brindamos un servicio transparente y confiable, asegurando de…\"): no se usa la parte truncada.",
-    "note": "Sin razón social, CUIT, titular ni antigüedad: no hay fuente. No se publican."
+    "note": "No hay fuente que vincule una razón social o CUIT con Zabala Automotores. Los resultados de directorios (Dun & Bradstreet, indicadores.ar) corresponden a otras empresas (p. ej. PARANA AUTOMOTORES SRL de Corrientes, GANAUTO SAS) y se descartaron.",
+    "verifiedOn": {
+      "Clasionce": "Perfil de tienda marcado «Concesionaria Verificada · Identidad verificada» (11/10/2026). Es una verificación de Clasionce, no un dato societario."
+    },
+    "noVerificado": [
+      "dirección exacta",
+      "correo comercial propio",
+      "razón social y CUIT",
+      "fecha de fundación o antigüedad",
+      "sucursales"
+    ]
+  },
+  "description": {
+    "text": "Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable.",
+    "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+    "checkedAt": "2026-10-11",
+    "note": "Texto de la propia tienda en Clasionce. El original tiene un error de tipeo («u servicio») y termina con una frase cortada («asegurando de que encuentres tu vehículo»); el sitio usa solo la parte clara.",
+    "original": "Nos dedicamos a la intermediación y reventa de vehículos. Brindamos u servicio transparente y confiable, asegurando de que encuentres tu vehículo.",
+    "confirmado": [
+      "Intermediación de vehículos",
+      "Reventa de vehículos"
+    ],
+    "aviso": "«Transparente y confiable» es una afirmación promocional del propio perfil, no una evaluación independiente."
   },
   "location": {
     "address": null,
     "city": "Paraná",
     "province": "Entre Ríos",
-    "mapsPlaceUrl": null,
-    "coordinates": null,
-    "note": "Solo ciudad y provincia, tomadas del perfil de la tienda en Clasionce. Sin calle ni número, sin ficha de Google Maps y sin coordenadas: el sitio no muestra mapa ni dirección. Hay avisos con localidad Federal (1) y María Grande (1): son localidades de las unidades, no sucursales.",
-    "country": "Argentina"
+    "country": "Argentina",
+    "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Paran%C3%A1%2C++Entre+R%C3%ADos",
+    "status": "Clasionce indica solo «Paraná, Entre Ríos». No hay dirección, coordenadas ni ficha de Google Maps verificadas. No se publica mapa ni dirección.",
+    "otherLocalities": {
+      "Federal": [
+        "N1162959 Audi A1 2012"
+      ],
+      "María Grande": [
+        "N1157845 Toyota Corolla Cross XEI 2024"
+      ],
+      "note": "Clasionce lista 51 avisos en Paraná, 1 en Federal y 1 en María Grande. Se muestra la localidad de cada aviso; no implica sucursales."
+    }
   },
   "contact": {
-    "whatsApp": "5493434732110",
-    "whatsAppBioRaw": "3434732110",
-    "whatsAppNote": "Confirmado en el perfil de Clasionce: enlace wa.me/5493434732110 y teléfono 3434732110. Coincide con el enlace de la bio de Instagram (wa.me/3434732110).",
     "phone": "343 473-2110",
     "phoneTel": "+543434732110",
+    "whatsApp": "5493434732110",
     "email": null,
     "website": null,
     "instagram": "zabala_automotores",
-    "instagramUrl": "https://www.instagram.com/zabala_automotores/",
-    "facebook": null
+    "facebook": null,
+    "status": "Teléfono y WhatsApp tomados del perfil de la tienda en Clasionce (11/10/2026); coinciden con el número del listado de investigación. Instagram enlazado desde ese perfil. Facebook: no se encontró página verificada.",
+    "claseonceEmails": "comercial@clasionce.com y soporte@clasionce.com son contactos de Clasionce, NO de Zabala. No se usan.",
+    "whatsAppUrl": "https://wa.me/5493434732110",
+    "vigencia": "Se confirma que el teléfono y el enlace de WhatsApp figuran en la ficha de Clasionce, no que el número esté activo ni atendido hoy. Vigencia pendiente de comprobar."
   },
   "hours": {
-    "display": "Lunes a sábados de 8:00 a 21:30",
-    "status": "single-source-clasionce-2026-10-11",
-    "note": "Texto original del perfil: \"Lunes a Sabados de 08.00hs a 21.30hs\". Fuente única, cargada por el negocio en una plataforma de terceros. Sin cruce con Google Maps ni Instagram. Domingos: no figura; el sitio no afirma que esté cerrado."
+    "display": "Lunes a sábados de 8:00 a 21:30 (según nuestro perfil en Clasionce).",
+    "status": "clasionce-profile-2026-10-11",
+    "note": "Texto original del perfil: «Lunes a Sabados de 08.00hs a 21.30hs». Una sola fuente; domingos y feriados no figuran.",
+    "schedule": {
+      "lun": "08:00-21:30",
+      "mar": "08:00-21:30",
+      "mie": "08:00-21:30",
+      "jue": "08:00-21:30",
+      "vie": "08:00-21:30",
+      "sab": "08:00-21:30",
+      "dom": null
+    }
+  },
+  "stock": {
+    "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+    "checkedAt": "2026-10-11",
+    "totalAvisos": 53,
+    "activos": 50,
+    "vendidos": 3,
+    "porTipoSegunClasionce": {
+      "Autos y SUV": 36,
+      "Camionetas y Utilitarios": 14,
+      "Embarcaciones": 2,
+      "Motos y Cuatriciclos": 1
+    },
+    "detalle": "data/autos.json",
+    "nota": "Los 53 avisos de la tienda incluyen 3 marcados como vendidos (Jeep Compass 2025, Mercedes-Benz Sprinter 2018, Ford Ranger 2010), 1 moto y 2 lanchas. El sitio anterior mostraba 47 (sin moto, lanchas ni vendidos).",
+    "filtrosClasionce": [
+      "localidad",
+      "precio",
+      "transmisión",
+      "año",
+      "Acepta permuta"
+    ],
+    "recuentosVariables": {
+      "nota": "El catálogo es dinámico: otras capturas del mismo listado mostraron 51 y 55 avisos, con otra distribución por categoría. No se fija una cifra como permanente.",
+      "captura53": {
+        "Autos y SUV": 39,
+        "Camionetas y Utilitarios": 12,
+        "Embarcaciones": 2
+      },
+      "otrasCapturas": [
+        51,
+        55
+      ],
+      "fuente": "ZABALA_TODO_CONFIRMADO_VERIFICADO.txt"
+    },
+    "ceros": "Varios resúmenes del portal muestran valores numéricos 0 en campos sin contexto. No se interpretan como kilometraje ni como vehículo 0 km.",
+    "precioIndexado": "Los precios y estados vistos en capturas indexadas pueden ser anteriores; no se tratan como vigentes sin reconfirmar."
+  },
+  "prices": {
+    "policy": "Se publican solo los precios que figuran en cada aviso de Clasionce, con fecha 11/10/2026 y aclaración de que pueden haber cambiado. Un aviso (Hilux SRX N1165540) muestra dos montos en monedas distintas y no se publica precio.",
+    "currencies": "«$16M» = $16.000.000 (pesos); «US$41.000» = dólares."
+  },
+  "services": {
+    "status": "sin-confirmar-por-el-negocio",
+    "published": [],
+    "adLevelClaims": [
+      {
+        "claim": "Posibilidad de financiación",
+        "where": "Aviso N1166231 (Jeep Compass, vendido)",
+        "use": "No se publica como servicio general."
+      },
+      {
+        "claim": "Vendo o permuto",
+        "where": "Aviso N1140083 (VW Passat 2008, título del aviso)",
+        "use": "Se muestra solo en esa unidad."
+      },
+      {
+        "claim": "Solo venta, no permuto",
+        "where": "Aviso 2110116 (Ford Ranger, vendido)",
+        "use": "Solo documentación interna."
+      }
+    ],
+    "note": "Clasionce tiene un filtro «Acepta permuta», pero no se pudo ver qué avisos lo tienen activado. No se afirma que Zabala reciba usados ni financie.",
+    "noVerificadoComoServicioGeneral": [
+      "Permutas",
+      "Financiación",
+      "Consignación",
+      "Gestoría",
+      "Garantías",
+      "Entrega a domicilio",
+      "Tasación de usados",
+      "Venta de 0 km como servicio general",
+      "Servicio mecánico",
+      "Cobertura nacional"
+    ],
+    "confirmadoPorLaFicha": [
+      "Intermediación de vehículos",
+      "Reventa de vehículos"
+    ]
   },
   "foundation": {
     "claim": null,
     "year": null
   },
-  "services": {
-    "status": "bio-only",
-    "supported": [
-      "Intermediación y reventa de vehículos",
-      "Venta de autos, utilitarios, una moto y dos lanchas (avisos en Clasionce)"
-    ],
-    "notSupported": [
-      "Financiación",
-      "Recepción de usado / permuta",
-      "Consignación",
-      "Gestoría",
-      "Garantía",
-      "Taller o posventa",
-      "0 km",
-      "Representación de marcas"
-    ],
-    "note": "Permuta: depende de cada aviso (el de la Up! dice sin permuta; el del Passat dice vendo o permuto). No se afirma como servicio general. Financiación: sin evidencia."
+  "reviews": {
+    "clasionce": "Aún sin valoraciones",
+    "google": null,
+    "note": "Sin reseñas verificadas. No se publica puntaje. «Aún sin valoraciones» describe solo la ficha de Clasionce; no prueba que no existan reseñas en Google Maps, Facebook u otros sitios."
+  },
+  "coverage": {
+    "text": "Toda la región",
+    "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+    "checkedAt": "2026-10-11",
+    "confidence": "A",
+    "note": "Cobertura declarada en la ficha de Clasionce (dossier del 11/10/2026). Es una frase del perfil, no una lista de localidades ni de sucursales."
   },
   "photos": {
-    "authorized": null,
-    "note": "Las fotos las aporta el responsable del sitio. Este paquete no referencia ninguna imagen."
+    "provided": true,
+    "authorized": false,
+    "count": 38,
+    "source": "https://www.instagram.com/zabala_automotores/",
+    "detail": "data/instagram.json",
+    "note": "38 fotos del perfil de Instagram, aportadas por el responsable del proyecto (página guardada el 11/10/2026). Se muestran en la galería como muestra del perfil, sin vincularlas a ningún aviso. Falta la confirmación escrita de Zabala para usarlas en la versión pública (PROD exige authorized = true).",
+    "permiso": "La disponibilidad pública de una foto no equivale a permiso para reutilizarla en una web comercial. No se verificó la resolución original ni la disponibilidad de todas las vistas."
   },
-  "reputation": {
-    "google": null,
-    "clasionce": "Aún sin valoraciones (perfil de Clasionce, 2026-10-11)",
-    "note": "Sin reseñas verificadas: no se publican."
+  "website": {
+    "propio": null,
+    "estado": "No se encontró un sitio web propio verificable en las fuentes examinadas. Esto no demuestra que no exista.",
+    "checkedAt": "2026-10-11",
+    "fuente": "ZABALA_TODO_CONFIRMADO_VERIFICADO.txt"
   },
-  "checkedAt": "2026-10-11"
+  "riesgos": {
+    "fuente": "ZABALA_TODO_CONFIRMADO_VERIFICADO.txt",
+    "consultado": "2026-10-11",
+    "items": [
+      {
+        "id": "D1",
+        "tema": "Recuento de anuncios variable (51, 53 y 55 según captura)"
+      },
+      {
+        "id": "D2",
+        "tema": "Categorías con distribución distinta según captura o filtro"
+      },
+      {
+        "id": "D3",
+        "tema": "Fiat Toro 2017: distintos precios de oferta en resultados diferentes"
+      },
+      {
+        "id": "D4",
+        "tema": "Toyota Hilux SRX 2017: precio y moneda confusos; revisar la ficha individual"
+      },
+      {
+        "id": "D5",
+        "tema": "Ford Focus: título con año 2014 y campo estructurado con 2011"
+      },
+      {
+        "id": "D6",
+        "tema": "Avisos «Vendido» en algunas capturas: no publicarlos como stock"
+      },
+      {
+        "id": "D7",
+        "tema": "Valores 0 en campos resumidos: no son kilometraje"
+      },
+      {
+        "id": "D8",
+        "tema": "Dirección: el mapa enlazado es una búsqueda genérica de Paraná"
+      },
+      {
+        "id": "D9",
+        "tema": "Instagram: auditoría publicación por publicación pendiente"
+      },
+      {
+        "id": "D10",
+        "tema": "Web propia: no encontrada, inexistencia no demostrada"
+      },
+      {
+        "id": "D11",
+        "tema": "Reseñas: «Aún sin valoraciones» solo corresponde a Clasionce"
+      },
+      {
+        "id": "D12",
+        "tema": "Imágenes: permisos de reutilización no verificados"
+      },
+      {
+        "id": "D13",
+        "tema": "Precios antiguos o indexados: no tratarlos como vigentes"
+      }
+    ]
+  }
 }

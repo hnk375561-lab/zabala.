@@ -46,6 +46,8 @@ const NOTAS = {
   2146368: ['Otra captura del portal mostró $ 32.000.000: te confirmamos el precio por WhatsApp.'],
   N1164426: [OTRA_VENDIDO],
   N1163973: [OTRA_VENDIDO],
+  N1166453: [OTRA_VENDIDO],
+  N1166228: [OTRA_VENDIDO],
 };
 
 const card = (c) => {
@@ -120,7 +122,7 @@ ${css}
 <div class="stt wide"><p class="stt-t">Marcas con más unidades</p><ul>${topMarcas.map((m) => `<li>${esc(m)}<i>${conteo(m)}</i></li>`).join('')}</ul></div>
 <div class="stt wide"><p class="stt-t">Localidad de los avisos (${cars.length} en total)</p><ul>${locs.map(([l, n]) => `<li>${esc(l)}<i>${n}</i></li>`).join('')}</ul></div>
 </div>
-<p class="st-n">Relevado de nuestra tienda en Clasionce el ${N.fecha}. ${nNegoc} avisos figuran como negociables; ${nArs} publican el precio en pesos y ${nUsd} en dólares, y no se convierten. La localidad es la que declara cada aviso y no implica sucursales. Hay ${vendidos} avisos marcados como vendidos: están en el historial, al final de la página.</p>
+<p class="st-n">Relevado de nuestra tienda en Clasionce el ${N.fecha}. ${nNegoc} avisos figuran como negociables; ${nArs} publican el precio en pesos y ${nUsd} en dólares, y no se convierten. La localidad es la que declara cada aviso y no implica sucursales. La cantidad de avisos cambia según el momento de la consulta (otras capturas del portal mostraron 51 y 55). Hay ${vendidos} avisos marcados como vendidos: están en el historial, al final de la página.</p>
 </div></section>
 
 <section id="autos" aria-labelledby="autos-t"><div class="w">
@@ -172,7 +174,7 @@ ${HIST.map(hrow).join('\n')}
 
 <section id="contacto" class="ct" aria-labelledby="contacto-t"><div class="w">
 <span class="ey">Contacto</span><h2 id="contacto-t">Horarios y <em>contacto</em></h2>
-<div class="ct-g"><dl><dt>Ubicación</dt><dd>${N.ciudad}. La dirección exacta la coordinamos por WhatsApp.${locs.length > 1 ? ` Algunos avisos están en ${locs.filter(([l]) => l !== 'Paraná').map(([l]) => esc(l)).join(' y ')}.` : ''}</dd>
+<div class="ct-g"><dl><dt>Ubicación</dt><dd>${N.ciudad}. La dirección exacta todavía no está confirmada: consultala por WhatsApp.${locs.length > 1 ? ` Algunos avisos están en ${locs.filter(([l]) => l !== 'Paraná').map(([l]) => esc(l)).join(' y ')}.` : ''}</dd>
 <dt>Cobertura</dt><dd>${N.cobertura} <small class="src">(según el perfil de nuestra tienda en Clasionce)</small></dd>
 <dt>Horario</dt><dd>${N.horarios}</dd>
 <dt>Quiénes somos</dt><dd>${N.desc} <small class="src">(descripción de nuestra tienda en Clasionce)</small></dd>
