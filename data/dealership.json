@@ -117,5 +117,13 @@
     "checkedAt": "2026-10-11",
     "confidence": "A",
     "note": "Cobertura declarada en la ficha de Clasionce (dossier del 11/10/2026). Es una frase del perfil, no una lista de localidades ni de sucursales."
+  },
+  "photos": {
+    "provided": true,
+    "authorized": false,
+    "count": 38,
+    "source": "https://www.instagram.com/zabala_automotores/",
+    "detail": "data/instagram.json",
+    "note": "38 fotos del perfil de Instagram, aportadas por el responsable del proyecto (página guardada el 11/10/2026). Se muestran en la galería como muestra del perfil, sin vincularlas a ningún aviso. Falta la confirmación escrita de Zabala para usarlas en la versión pública (PROD exige authorized = true)."
   }
 }

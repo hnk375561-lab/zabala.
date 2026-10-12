@@ -25,8 +25,8 @@
  },
  {
   "responsable": "dueño",
-  "pendiente": "Autorización para usar las fotos de los avisos",
-  "detalle": "El sitio no usa imágenes. Sin autorización no se incorporan.",
+  "pendiente": "Autorización escrita para usar las 38 fotos del Instagram",
+  "detalle": "Están en la galería de la demo (data/instagram.json). Sin autorización no pasan a la versión pública.",
   "estado": "abierto"
  },
  {
@@ -87,6 +87,18 @@
   "responsable": "dueño",
   "pendiente": "Autorización para usar logotipo, nombre comercial y textos",
   "detalle": "El logotipo ya está en el sitio de demostración; falta la autorización para la versión pública.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "dueño",
+  "pendiente": "Epígrafes, fechas y a qué aviso corresponde cada foto",
+  "detalle": "La página guardada no trajo texto. Con eso se podrían poner fotos en las tarjetas de autos.",
+  "estado": "abierto"
+ },
+ {
+  "responsable": "investigación",
+  "pendiente": "Biografía, seguidores y publicaciones de Instagram",
+  "detalle": "Volver a guardar la página del perfil ya con sesión iniciada (la anterior era la pantalla de login de Facebook) o copiar el texto a mano.",
   "estado": "abierto"
  }
 ]

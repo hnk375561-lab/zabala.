@@ -194,13 +194,35 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
  .demo{font-size:12.5px;padding:8px 14px;text-align:left}
 }
 .btn.o.sm{clip-path:none}
+/* galería del Instagram */
+.gal{background:var(--k0);border-top:1px solid var(--g1)}
+.gal-g{list-style:none;margin:26px 0 0;padding:0;columns:4 230px;column-gap:12px}
+.gi{break-inside:avoid;margin:0 0 12px;background:var(--k2)}
+.gi.g1{background:var(--k3)}.gi.g2{background:var(--k4)}
+.gi a{position:relative;display:block;line-height:0;border:1px solid var(--g1);transition:border-color .2s}
+.gi a::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--metal);z-index:1;opacity:0;transition:opacity .2s}
+.gi a:hover,.gi a:focus-visible{border-color:var(--s1)}.gi a:hover::before,.gi a:focus-visible::before{opacity:1}
+.gi img{display:block;width:100%;height:auto;background:var(--k3)}
+/* visor */
+.lb{border:0;padding:0;margin:0;max-width:none;max-height:none;width:100%;height:100%;background:transparent;color:var(--s2)}
+.lb::backdrop{background:rgba(0,0,0,.94)}
+.lb[open]{display:grid;place-items:center}
+.lb figure{margin:0;display:grid;gap:12px;justify-items:center;max-width:min(94vw,1200px)}
+.lb img{display:block;max-width:100%;max-height:78vh;width:auto;height:auto;border:1px solid var(--g2);background:var(--k2)}
+.lb figcaption{font:600 15px var(--b);color:var(--s2);text-align:center}
+.lb-b{position:fixed;display:grid;place-items:center;width:48px;height:48px;border:0;background:var(--k4);color:var(--s3);font:600 26px/1 var(--h);cursor:pointer;box-shadow:inset 0 0 0 1.5px var(--s1)}
+.lb-b:hover{background:var(--s2);color:var(--k0)}
+.lb-x{top:max(14px,env(safe-area-inset-top));right:14px}
+.lb-p{left:14px;top:50%;transform:translateY(-50%)}.lb-n{right:14px;top:50%;transform:translateY(-50%)}
+@media(max-width:700px){.gal-g{columns:2 140px;column-gap:8px}.gi{margin-bottom:8px}.lb-p,.lb-n{top:auto;bottom:max(14px,env(safe-area-inset-bottom));transform:none}.lb-p{left:14px}.lb-n{right:14px}.lb img{max-height:70vh}}
+@media(prefers-reduced-motion:reduce){.gi a,.gi a::before{transition:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoDealer","name":"Zabala Automotores","description":"Intermediación y reventa de vehículos.","telephone":"+543434732110","areaServed":"Toda la región","address":{"@type":"PostalAddress","addressLocality":"Paraná","addressRegion":"Entre Ríos","addressCountry":"AR"},"openingHours":"Mo-Sa 08:00-21:30","sameAs":["https://www.instagram.com/zabala_automotores/"]}</script>
 </head>
 <body>
 <a class="skip" href="#autos">Saltar al contenido</a>
 <header><div class="w"><a class="mark" href="./" aria-label="Zabala Automotores, inicio">Zabala<small>Automotores</small></a>
-<nav aria-label="Principal"><a href="#autos">Autos</a><a href="#stock">Stock</a><a href="#historial">Historial</a><a href="#contacto">Contacto</a><a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
+<nav aria-label="Principal"><a href="#autos">Autos</a><a href="#stock">Stock</a><a href="#galeria">Fotos</a><a href="#historial">Historial</a><a href="#contacto">Contacto</a><a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
 <div class="hc"><a class="ic" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Zabala Automotores"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos</a></div></div></header>
 <p class="demo"><span>Demo ilustrativa construida a partir de información pública. Precios, datos y disponibilidad sujetos a confirmación por Zabala Automotores.</span></p>
 <main id="top">
@@ -295,6 +317,54 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 <p class="vacio" id="vac" hidden>No hay autos con ese filtro. Probá con otra combinación o escribinos por WhatsApp.</p>
 <div class="row mt"><a class="btn p cut" href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Ver la tienda en Clasionce</a><a class="btn o" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a></div>
 </div></section>
+
+<section id="galeria" class="gal" aria-labelledby="gal-t"><div class="w">
+<span class="ey">Instagram</span><h2 id="gal-t">Fotos <em>del Instagram</em></h2>
+<p class="sec-p">Imágenes publicadas en el perfil @zabala_automotores. Es una muestra del perfil, no un listado: no todas las unidades que aparecen siguen disponibles. Si te gustó alguna, escribinos y te decimos si hay una igual o parecida.</p>
+<ul class="gal-g" id="gal">
+<li class="gi g0"><a href="images/ig/ig-01.webp" aria-label="Ampliar foto: Camioneta pick-up Chevrolet plateada"><img src="images/ig/ig-01-s.webp" width="572" height="640" alt="Foto del Instagram de Zabala: Camioneta pick-up Chevrolet plateada" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-02.webp" aria-label="Ampliar foto: SUV blanca"><img src="images/ig/ig-02-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: SUV blanca" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-03.webp" aria-label="Ampliar foto: Mercedes-Benz gris oscuro"><img src="images/ig/ig-03-s.webp" width="640" height="480" alt="Foto del Instagram de Zabala: Mercedes-Benz gris oscuro" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-04.webp" aria-label="Ampliar foto: Chevrolet plateado"><img src="images/ig/ig-04-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Chevrolet plateado" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-05.webp" aria-label="Ampliar foto: Toyota rojo"><img src="images/ig/ig-05-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Toyota rojo" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-06.webp" aria-label="Ampliar foto: Toyota plateado visto de frente"><img src="images/ig/ig-06-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Toyota plateado visto de frente" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-07.webp" aria-label="Ampliar foto: Camioneta Ford gris"><img src="images/ig/ig-07-s.webp" width="640" height="480" alt="Foto del Instagram de Zabala: Camioneta Ford gris" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-08.webp" aria-label="Ampliar foto: Citroën blanco"><img src="images/ig/ig-08-s.webp" width="512" height="640" alt="Foto del Instagram de Zabala: Citroën blanco" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-09.webp" aria-label="Ampliar foto: Lancha en la costa"><img src="images/ig/ig-09-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Lancha en la costa" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-10.webp" aria-label="Ampliar foto: SUV blanca"><img src="images/ig/ig-10-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: SUV blanca" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-11.webp" aria-label="Ampliar foto: SUV Volkswagen color cobre"><img src="images/ig/ig-11-s.webp" width="563" height="640" alt="Foto del Instagram de Zabala: SUV Volkswagen color cobre" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-12.webp" aria-label="Ampliar foto: Citroën gris"><img src="images/ig/ig-12-s.webp" width="640" height="622" alt="Foto del Instagram de Zabala: Citroën gris" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-13.webp" aria-label="Ampliar foto: Peugeot plateado"><img src="images/ig/ig-13-s.webp" width="507" height="640" alt="Foto del Instagram de Zabala: Peugeot plateado" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-14.webp" aria-label="Ampliar foto: Lancha navegando en el río"><img src="images/ig/ig-14-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Lancha navegando en el río" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-15.webp" aria-label="Ampliar foto: Jeep negro"><img src="images/ig/ig-15-s.webp" width="507" height="640" alt="Foto del Instagram de Zabala: Jeep negro" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-16.webp" aria-label="Ampliar foto: Toyota plateado"><img src="images/ig/ig-16-s.webp" width="512" height="640" alt="Foto del Instagram de Zabala: Toyota plateado" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-17.webp" aria-label="Ampliar foto: Camioneta pick-up Toyota negra"><img src="images/ig/ig-17-s.webp" width="507" height="640" alt="Foto del Instagram de Zabala: Camioneta pick-up Toyota negra" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-18.webp" aria-label="Ampliar foto: Camioneta pick-up Ford plateada"><img src="images/ig/ig-18-s.webp" width="640" height="640" alt="Foto del Instagram de Zabala: Camioneta pick-up Ford plateada" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-19.webp" aria-label="Ampliar foto: Lancha sobre trailer"><img src="images/ig/ig-19-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Lancha sobre trailer" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-20.webp" aria-label="Ampliar foto: Sedán blanco"><img src="images/ig/ig-20-s.webp" width="640" height="338" alt="Foto del Instagram de Zabala: Sedán blanco" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-21.webp" aria-label="Ampliar foto: Camioneta negra"><img src="images/ig/ig-21-s.webp" width="507" height="640" alt="Foto del Instagram de Zabala: Camioneta negra" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-22.webp" aria-label="Ampliar foto: SUV Volkswagen azul oscuro"><img src="images/ig/ig-22-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: SUV Volkswagen azul oscuro" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-23.webp" aria-label="Ampliar foto: Renault rojo"><img src="images/ig/ig-23-s.webp" width="512" height="640" alt="Foto del Instagram de Zabala: Renault rojo" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-24.webp" aria-label="Ampliar foto: Renault gris oscuro"><img src="images/ig/ig-24-s.webp" width="512" height="640" alt="Foto del Instagram de Zabala: Renault gris oscuro" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-25.webp" aria-label="Ampliar foto: Peugeot rojo"><img src="images/ig/ig-25-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Peugeot rojo" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-26.webp" aria-label="Ampliar foto: Ford blanco"><img src="images/ig/ig-26-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Ford blanco" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-27.webp" aria-label="Ampliar foto: Toyota rojo"><img src="images/ig/ig-27-s.webp" width="640" height="480" alt="Foto del Instagram de Zabala: Toyota rojo" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-28.webp" aria-label="Ampliar foto: Toyota blanco"><img src="images/ig/ig-28-s.webp" width="640" height="640" alt="Foto del Instagram de Zabala: Toyota blanco" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-29.webp" aria-label="Ampliar foto: Moto negra"><img src="images/ig/ig-29-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Moto negra" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-30.webp" aria-label="Ampliar foto: SUV gris, vista trasera"><img src="images/ig/ig-30-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: SUV gris, vista trasera" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-31.webp" aria-label="Ampliar foto: Camioneta pick-up Volkswagen gris"><img src="images/ig/ig-31-s.webp" width="507" height="640" alt="Foto del Instagram de Zabala: Camioneta pick-up Volkswagen gris" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-32.webp" aria-label="Ampliar foto: Camioneta pick-up blanca"><img src="images/ig/ig-32-s.webp" width="610" height="610" alt="Foto del Instagram de Zabala: Camioneta pick-up blanca" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-33.webp" aria-label="Ampliar foto: Hatchback blanco"><img src="images/ig/ig-33-s.webp" width="640" height="640" alt="Foto del Instagram de Zabala: Hatchback blanco" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-34.webp" aria-label="Ampliar foto: Chevrolet gris plata"><img src="images/ig/ig-34-s.webp" width="512" height="640" alt="Foto del Instagram de Zabala: Chevrolet gris plata" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-35.webp" aria-label="Ampliar foto: Renault rojo"><img src="images/ig/ig-35-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Renault rojo" loading="lazy" decoding="async"></a></li>
+<li class="gi g2"><a href="images/ig/ig-36.webp" aria-label="Ampliar foto: Volkswagen negro"><img src="images/ig/ig-36-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: Volkswagen negro" loading="lazy" decoding="async"></a></li>
+<li class="gi g0"><a href="images/ig/ig-37.webp" aria-label="Ampliar foto: Hatchback naranja"><img src="images/ig/ig-37-s.webp" width="640" height="480" alt="Foto del Instagram de Zabala: Hatchback naranja" loading="lazy" decoding="async"></a></li>
+<li class="gi g1"><a href="images/ig/ig-38.webp" aria-label="Ampliar foto: SUV blanca"><img src="images/ig/ig-38-s.webp" width="640" height="360" alt="Foto del Instagram de Zabala: SUV blanca" loading="lazy" decoding="async"></a></li>
+</ul>
+<div class="row mt"><a class="btn p cut" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Ver el perfil en Instagram</a><a class="btn o" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
+</div></section>
+
+<dialog id="lb" class="lb" aria-label="Foto ampliada"><figure><img alt="" width="1200" height="800"><figcaption></figcaption></figure><button type="button" class="lb-b lb-x" aria-label="Cerrar">✕</button><button type="button" class="lb-b lb-p" aria-label="Foto anterior">‹</button><button type="button" class="lb-b lb-n" aria-label="Foto siguiente">›</button></dialog>
 
 <section id="historial" class="hist" aria-labelledby="hist-t"><div class="w">
 <span class="ey">Historial</span><h2 id="hist-t">Historial <em>de avisos</em></h2>
@@ -397,6 +467,28 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
     });
   });
   apply();
+})();
+
+/* galería: visor de fotos. Sin JavaScript (o sin <dialog>) cada miniatura es un enlace a la foto grande. */
+(function () {
+  var g = document.getElementById('gal'), lb = document.getElementById('lb');
+  if (!g || !lb || typeof lb.showModal !== 'function') return;
+  var links = [].slice.call(g.querySelectorAll('a')), img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), cur = 0, opener = null;
+  function show(i) {
+    cur = (i + links.length) % links.length;
+    var a = links[cur], t = a.querySelector('img');
+    img.src = a.getAttribute('href'); img.alt = t.alt;
+    cap.textContent = t.alt.replace('Foto del Instagram de Zabala: ', '') + ' · ' + (cur + 1) + ' de ' + links.length;
+  }
+  links.forEach(function (a, i) {
+    a.addEventListener('click', function (e) { e.preventDefault(); opener = a; show(i); lb.showModal(); });
+  });
+  lb.querySelector('.lb-x').addEventListener('click', function () { lb.close(); });
+  lb.querySelector('.lb-p').addEventListener('click', function () { show(cur - 1); });
+  lb.querySelector('.lb-n').addEventListener('click', function () { show(cur + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+  lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); else if (e.key === 'ArrowRight') show(cur + 1); });
+  lb.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
 })();
 </script>
 </body>

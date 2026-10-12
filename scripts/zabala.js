@@ -61,3 +61,25 @@
   });
   apply();
 })();
+
+/* galería: visor de fotos. Sin JavaScript (o sin <dialog>) cada miniatura es un enlace a la foto grande. */
+(function () {
+  var g = document.getElementById('gal'), lb = document.getElementById('lb');
+  if (!g || !lb || typeof lb.showModal !== 'function') return;
+  var links = [].slice.call(g.querySelectorAll('a')), img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), cur = 0, opener = null;
+  function show(i) {
+    cur = (i + links.length) % links.length;
+    var a = links[cur], t = a.querySelector('img');
+    img.src = a.getAttribute('href'); img.alt = t.alt;
+    cap.textContent = t.alt.replace('Foto del Instagram de Zabala: ', '') + ' · ' + (cur + 1) + ' de ' + links.length;
+  }
+  links.forEach(function (a, i) {
+    a.addEventListener('click', function (e) { e.preventDefault(); opener = a; show(i); lb.showModal(); });
+  });
+  lb.querySelector('.lb-x').addEventListener('click', function () { lb.close(); });
+  lb.querySelector('.lb-p').addEventListener('click', function () { show(cur - 1); });
+  lb.querySelector('.lb-n').addEventListener('click', function () { show(cur + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+  lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); else if (e.key === 'ArrowRight') show(cur + 1); });
+  lb.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
+})();

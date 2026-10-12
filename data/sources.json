@@ -1121,6 +1121,21 @@
     "Hilux SRX 4x4: US$30.000 (ant. US$32.000) en una captura",
     "Versa 2018, Taos 1.4 2021 y Focus: «Vendido» en una captura"
    ]
+  },
+  {
+   "id": "S-IG",
+   "url": "https://www.instagram.com/zabala_automotores/",
+   "estado": "guardada-por-el-usuario",
+   "tipo": "instagram",
+   "consultado": "2026-10-11",
+   "datosActuales": false,
+   "identidad": "Perfil enlazado desde la tienda de Clasionce (S01)",
+   "aporta": "38 fotos de publicaciones. La página guardada era solo la pantalla de login_sync de Facebook: sin biografía, seguidores, epígrafes, fechas ni precios.",
+   "datos": [
+    "38 fotos (data/instagram.json)",
+    "logotipo en una publicación (ya está en el sitio)",
+    "5 imágenes chicas descartadas: no son de Zabala"
+   ]
   }
  ]
 }

@@ -21,6 +21,7 @@ const IG = `https://www.instagram.com/${N.ig}/`;
 
 const DB = JSON.parse(fs.readFileSync(path.join(root, 'data', 'autos.json'), 'utf8'));
 const HIST = JSON.parse(fs.readFileSync(path.join(root, 'data', 'historial.json'), 'utf8')).avisos;
+const FOTOS = JSON.parse(fs.readFileSync(path.join(root, 'data', 'instagram.json'), 'utf8')).fotos;
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const fmt = (n) => n.toLocaleString('es-AR');
 const precio = (p) => (p ? (p.moneda === 'USD' ? 'US$ ' : '$ ') + fmt(p.monto) : null);
@@ -67,6 +68,8 @@ const hrow = (h, k) => {
   return `<li class="hr${k % 2 ? ' alt' : ''}"><b>${esc(h.titulo)}</b><span>${esc(meta)}</span><span class="hr-p">${p}${ant ? ` <s>${ant}</s>` : ''}</span>${tags ? `<i>${esc(tags)}</i>` : ''}</li>`;
 };
 
+const foto = (f, k) => `<li class="gi g${k % 3}"><a href="${f.archivo}" aria-label="Ampliar foto: ${esc(f.alt)}"><img src="${f.miniatura}" width="${f.ancho}" height="${f.alto}" alt="Foto del Instagram de Zabala: ${esc(f.alt)}" loading="lazy" decoding="async"></a></li>`;
+
 const ld = { '@context': 'https://schema.org', '@type': 'AutoDealer', name: N.nombre, description: 'Intermediación y reventa de vehículos.', telephone: N.telTel, areaServed: N.cobertura, address: { '@type': 'PostalAddress', addressLocality: 'Paraná', addressRegion: 'Entre Ríos', addressCountry: 'AR' }, openingHours: 'Mo-Sa 08:00-21:30', sameAs: [IG] };
 
 const css = fs.readFileSync(path.join(root, 'scripts', 'zabala.css'), 'utf8').trim();
@@ -95,7 +98,7 @@ ${css}
 <body>
 <a class="skip" href="#autos">Saltar al contenido</a>
 <header><div class="w"><a class="mark" href="./" aria-label="Zabala Automotores, inicio">Zabala<small>Automotores</small></a>
-<nav aria-label="Principal"><a href="#autos">Autos</a><a href="#stock">Stock</a><a href="#historial">Historial</a><a href="#contacto">Contacto</a><a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
+<nav aria-label="Principal"><a href="#autos">Autos</a><a href="#stock">Stock</a><a href="#galeria">Fotos</a><a href="#historial">Historial</a><a href="#contacto">Contacto</a><a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
 <div class="hc"><a class="ic" href="${IG}" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Zabala Automotores"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a><a class="btn p cut" href="${WA}" target="_blank" rel="noopener noreferrer">Escribinos</a></div></div></header>
 <p class="demo"><span>${N.leyenda}</span></p>
 <main id="top">
@@ -142,6 +145,17 @@ ${activos.map(card).join('\n')}
 <div class="row mt"><a class="btn p cut" href="${N.tienda}" target="_blank" rel="noopener noreferrer">Ver la tienda en Clasionce</a><a class="btn o" href="${IG}" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a></div>
 </div></section>
 
+<section id="galeria" class="gal" aria-labelledby="gal-t"><div class="w">
+<span class="ey">Instagram</span><h2 id="gal-t">Fotos <em>del Instagram</em></h2>
+<p class="sec-p">Imágenes publicadas en el perfil @${N.ig}. Es una muestra del perfil, no un listado: no todas las unidades que aparecen siguen disponibles. Si te gustó alguna, escribinos y te decimos si hay una igual o parecida.</p>
+<ul class="gal-g" id="gal">
+${FOTOS.map(foto).join('\n')}
+</ul>
+<div class="row mt"><a class="btn p cut" href="${IG}" target="_blank" rel="noopener noreferrer">Ver el perfil en Instagram</a><a class="btn o" href="${WA}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
+</div></section>
+
+<dialog id="lb" class="lb" aria-label="Foto ampliada"><figure><img alt="" width="1200" height="800"><figcaption></figcaption></figure><button type="button" class="lb-b lb-x" aria-label="Cerrar">✕</button><button type="button" class="lb-b lb-p" aria-label="Foto anterior">‹</button><button type="button" class="lb-b lb-n" aria-label="Foto siguiente">›</button></dialog>
+
 <section id="historial" class="hist" aria-labelledby="hist-t"><div class="w">
 <span class="ey">Historial</span><h2 id="hist-t">Historial <em>de avisos</em></h2>
 <p class="sec-p">Acá no hay stock: son avisos que ya no figuran como disponibles o que solo se vieron en capturas anteriores del portal. Se muestran para que quede el registro completo y no se ofrecen como unidades en venta.</p>
@@ -175,4 +189,4 @@ ${js}
 </html>
 `;
 fs.writeFileSync(path.join(root, 'index.html'), html);
-console.log(`index.html: ${cars.length} autos (${activos.length} disponibles), ${HIST.length} en historial, ${marcas.length} marcas, ${(html.length / 1024).toFixed(1)} KB`);
+console.log(`index.html: ${cars.length} autos (${activos.length} disponibles), ${HIST.length} en historial, ${FOTOS.length} fotos, ${marcas.length} marcas, ${(html.length / 1024).toFixed(1)} KB`);
