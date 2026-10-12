@@ -23,7 +23,7 @@
   "description": {
     "text": "Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable.",
     "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-    "checkedAt": "2026-10-11",
+    "checkedAt": "2026-10-12",
     "note": "Texto de la propia tienda en Clasionce. El original tiene un error de tipeo («u servicio») y termina con una frase cortada («asegurando de que encuentres tu vehículo»); el sitio usa solo la parte clara.",
     "original": "Nos dedicamos a la intermediación y reventa de vehículos. Brindamos u servicio transparente y confiable, asegurando de que encuentres tu vehículo.",
     "confirmado": [
@@ -78,18 +78,18 @@
   },
   "stock": {
     "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
-    "checkedAt": "2026-10-11",
-    "totalAvisos": 53,
+    "checkedAt": "2026-10-12",
+    "totalAvisos": 52,
     "activos": 50,
-    "vendidos": 3,
+    "vendidos": 2,
     "porTipoSegunClasionce": {
       "Autos y SUV": 36,
-      "Camionetas y Utilitarios": 14,
+      "Camionetas y Utilitarios": 13,
       "Embarcaciones": 2,
       "Motos y Cuatriciclos": 1
     },
     "detalle": "data/autos.json",
-    "nota": "Los 53 avisos de la tienda incluyen 3 marcados como vendidos (Jeep Compass 2025, Mercedes-Benz Sprinter 2018, Ford Ranger 2010), 1 moto y 2 lanchas. El sitio anterior mostraba 47 (sin moto, lanchas ni vendidos).",
+    "nota": "Los 52 avisos vigentes de la tienda incluyen 2 marcados como vendidos (Jeep Compass 2025 y Mercedes-Benz Sprinter 2018), 1 moto y 2 lanchas. El catálogo puede cambiar.",
     "filtrosClasionce": [
       "localidad",
       "precio",

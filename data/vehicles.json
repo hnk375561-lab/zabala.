@@ -1,14 +1,17 @@
 {
-  "checkedAt": "2026-10-11",
-  "source": "Tienda ZABALA AUTOMOTORES en Clasionce (clasificados.elonce.com/concesionarias/zabala-automotores), páginas 1 y 2, 53 avisos.",
-  "note": "Registro de los 53 avisos de la tienda en Clasionce al 2026-10-11. Fuente de las tarjetas del sitio: data/autos.json. El sitio publica los 53: los disponibles en el listado, y los 3 marcados como vendidos en una sección aparte. Cada aviso muestra el precio que figura en Clasionce con su fecha y moneda, sin convertir; no es stock garantizado ni disponibilidad confirmada.",
+  "checkedAt": "2026-10-12",
+  "source": "https://clasificados.elonce.com/concesionarias/zabala-automotores",
+  "note": "Sincronizado automáticamente con las páginas 1 y 2 del listado público vigente.",
   "counts": {
-    "total": 53,
-    "autosYSuv": 36,
-    "camionetasUtilitarios": 14,
+    "total": 52,
+    "parana": 50,
+    "federal": 1,
+    "mariaGrande": 1,
+    "autosSUV": 36,
+    "camionetasUtilitarios": 13,
     "embarcaciones": 2,
     "motos": 1,
-    "vendidosSegunLaTienda": 3
+    "sold": 2
   },
   "vehicles": [
     {
@@ -20,10 +23,10 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$16M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 16.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": "65.000 km",
       "fuel": "Nafta",
       "color": "Blanco",
@@ -31,7 +34,13 @@
         "Sin permuta según el aviso"
       ],
       "published": true,
-      "verification": "ficha completa del aviso abierta"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168048-1.jpg",
+        "images/stock/N1168048-2.jpg",
+        "images/stock/N1168048-3.jpg",
+        "images/stock/N1168048-4.jpg"
+      ]
     },
     {
       "id": "N1165274",
@@ -42,16 +51,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$14,2M (oferta; antes $14,7M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 14.200.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1165274-1.jpg",
+        "images/stock/N1165274-2.jpg",
+        "images/stock/N1165274-3.jpg",
+        "images/stock/N1165274-4.jpg"
+      ]
     },
     {
       "id": "N1142198",
@@ -62,16 +77,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$20,5M (oferta; antes $22,5M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 20.500.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1142198-1.jpg",
+        "images/stock/N1142198-2.jpg",
+        "images/stock/N1142198-3.jpg",
+        "images/stock/N1142198-4.jpg"
+      ]
     },
     {
       "id": "N1168498",
@@ -82,76 +103,100 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$19,7M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 19.700.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168498-1.jpg",
+        "images/stock/N1168498-2.jpg",
+        "images/stock/N1168498-3.jpg",
+        "images/stock/N1168498-4.jpg"
+      ]
     },
     {
       "id": "N1168476",
       "adUrl": "https://clasificados.elonce.com/aviso/N1168476",
-      "listingTitle": "TOYOTA SW4 2.8 TDI SRX 4x4 AT 7AS",
+      "listingTitle": "TOYOTA SW4 2.8 TDI SRX 4X4 AT 7AS",
       "title": "Toyota SW4 2.8 TDI SRX 4x4 AT 7AS",
       "year": 2021,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$41.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 41.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168476-1.jpg",
+        "images/stock/N1168476-2.jpg",
+        "images/stock/N1168476-3.jpg",
+        "images/stock/N1168476-4.jpg"
+      ]
     },
     {
       "id": "N1168420",
       "adUrl": "https://clasificados.elonce.com/aviso/N1168420",
       "listingTitle": "YAMAHA 155 N-MAX",
-      "title": "Yamaha 155 N-Max",
+      "title": "Yamaha 155 N-MAX",
       "year": 2017,
-      "transmission": null,
+      "transmission": "Scooter",
       "locality": "Paraná",
       "category": "moto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$4,5M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 4.500.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168420-1.jpg",
+        "images/stock/N1168420-2.jpg",
+        "images/stock/N1168420-3.jpg",
+        "images/stock/N1168420-4.jpg"
+      ]
     },
     {
       "id": "N1168363",
       "adUrl": "https://clasificados.elonce.com/aviso/N1168363",
-      "listingTitle": "FIAT DOBLO 1.4 ACTIVE 16v FAMILY 7AS",
+      "listingTitle": "FIAT DOBLO 1.4 ACTIVE 16V FAMILY 7AS",
       "title": "Fiat Doblo 1.4 Active 16V Family 7AS",
       "year": 2014,
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$16,5M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 16.500.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168363-1.jpg",
+        "images/stock/N1168363-2.jpg",
+        "images/stock/N1168363-3.jpg",
+        "images/stock/N1168363-4.jpg"
+      ]
     },
     {
       "id": "N1168350",
@@ -162,16 +207,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$39,8M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 39.800.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168350-1.jpg",
+        "images/stock/N1168350-2.jpg",
+        "images/stock/N1168350-3.jpg",
+        "images/stock/N1168350-4.jpg"
+      ]
     },
     {
       "id": "N1168258",
@@ -182,16 +233,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$18.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 18.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1168258-1.jpg",
+        "images/stock/N1168258-2.jpg",
+        "images/stock/N1168258-3.jpg",
+        "images/stock/N1168258-4.jpg"
+      ]
     },
     {
       "id": "N1167888",
@@ -202,16 +259,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$17,7M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 17.700.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1167888-1.jpg",
+        "images/stock/N1167888-2.jpg",
+        "images/stock/N1167888-3.jpg",
+        "images/stock/N1167888-4.jpg"
+      ]
     },
     {
       "id": "N1167685",
@@ -222,16 +285,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$32M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 32.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1167685-1.jpg",
+        "images/stock/N1167685-2.jpg",
+        "images/stock/N1167685-3.jpg",
+        "images/stock/N1167685-4.jpg"
+      ]
     },
     {
       "id": "N1167667",
@@ -242,16 +311,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$15,3M (oferta; antes $16M; negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 15.300.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1167667-1.jpg",
+        "images/stock/N1167667-2.jpg",
+        "images/stock/N1167667-3.jpg",
+        "images/stock/N1167667-4.jpg"
+      ]
     },
     {
       "id": "N1167171",
@@ -262,16 +337,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$16M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 16.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1167171-1.jpg",
+        "images/stock/N1167171-2.jpg",
+        "images/stock/N1167171-3.jpg",
+        "images/stock/N1167171-4.jpg"
+      ]
     },
     {
       "id": "N1162959",
@@ -282,36 +363,48 @@
       "transmission": "Manual",
       "locality": "Federal",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$11.000 (negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 11.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1162959-1.jpg",
+        "images/stock/N1162959-2.jpg",
+        "images/stock/N1162959-3.jpg",
+        "images/stock/N1162959-4.jpg"
+      ]
     },
     {
       "id": "N1167106",
       "adUrl": "https://clasificados.elonce.com/aviso/N1167106",
-      "listingTitle": "NISSAN X-TRAIL 1.5 e-POWER EXCLUSIVE CVT 4X4",
+      "listingTitle": "NISSAN X-TRAIL 1.5 E-POWER EXCLUSIVE CVT 4X4",
       "title": "Nissan X-Trail 1.5 e-Power Exclusive CVT 4x4",
       "year": 2026,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$82M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 82.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1167106-1.jpg",
+        "images/stock/N1167106-2.jpg",
+        "images/stock/N1167106-3.jpg",
+        "images/stock/N1167106-4.jpg"
+      ]
     },
     {
       "id": "N1164467",
@@ -322,16 +415,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$29.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 29.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1164467-1.jpg",
+        "images/stock/N1164467-2.jpg",
+        "images/stock/N1164467-3.jpg",
+        "images/stock/N1164467-4.jpg"
+      ]
     },
     {
       "id": "N1166714",
@@ -342,16 +441,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$42M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 42.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166714-1.jpg",
+        "images/stock/N1166714-2.jpg",
+        "images/stock/N1166714-3.jpg",
+        "images/stock/N1166714-4.jpg"
+      ]
     },
     {
       "id": "N1166713",
@@ -362,16 +467,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$21M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 21.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166713-1.jpg",
+        "images/stock/N1166713-2.jpg",
+        "images/stock/N1166713-3.jpg",
+        "images/stock/N1166713-4.jpg"
+      ]
     },
     {
       "id": "N1166453",
@@ -382,16 +493,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$10.600 (oferta; antes US$10.800)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 1.080.010.600",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166453-1.jpg",
+        "images/stock/N1166453-2.jpg",
+        "images/stock/N1166453-3.jpg",
+        "images/stock/N1166453-4.jpg"
+      ]
     },
     {
       "id": "N1166231",
@@ -402,16 +519,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "vendido",
+      "status": "vendido en Clasionce al 2026-10-12",
       "sold": true,
-      "listedPrice": "US$30.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 30.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
-      "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "published": false,
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166231-1.jpg",
+        "images/stock/N1166231-2.jpg",
+        "images/stock/N1166231-3.jpg",
+        "images/stock/N1166231-4.jpg"
+      ]
     },
     {
       "id": "N1166228",
@@ -422,56 +545,48 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$30M (negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 30.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166228-1.jpg",
+        "images/stock/N1166228-2.jpg",
+        "images/stock/N1166228-3.jpg",
+        "images/stock/N1166228-4.jpg"
+      ]
     },
     {
       "id": "N1166145",
       "adUrl": "https://clasificados.elonce.com/aviso/N1166145",
-      "listingTitle": "MERCEDES BENZ SPRINTER 411 CDI/3250 STREET FURGON",
-      "title": "Mercedes-Benz Sprinter 411 CDI/3250 Street Furgon",
+      "listingTitle": "MERCEDES-BENZ SPRINTER 411 CDI/3250 STREET FURGÓN",
+      "title": "Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón",
       "year": 2018,
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "vendido",
+      "status": "vendido en Clasionce al 2026-10-12",
       "sold": true,
-      "listedPrice": "$36,5M (negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 36.500.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
-      "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
-    },
-    {
-      "id": "2110116",
-      "adUrl": "https://clasificados.elonce.com/aviso/2110116",
-      "listingTitle": "FORD RANGER 2.3 DC 4X2 L/10 XL PLUS",
-      "title": "Ford Ranger 2.3 DC 4x2 L/10 XL Plus",
-      "year": 2010,
-      "transmission": "Manual",
-      "locality": "Paraná",
-      "category": "utilitario",
-      "status": "vendido",
-      "sold": true,
-      "listedPrice": "$14,5M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
-      "km": null,
-      "fuel": null,
-      "color": null,
-      "notes": [],
-      "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "published": false,
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166145-1.jpg",
+        "images/stock/N1166145-2.jpg",
+        "images/stock/N1166145-3.jpg",
+        "images/stock/N1166145-4.jpg"
+      ]
     },
     {
       "id": "N1166080",
@@ -482,16 +597,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$29.500 (oferta; antes US$30.000)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 3.000.029.500",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166080-1.jpg",
+        "images/stock/N1166080-2.jpg",
+        "images/stock/N1166080-3.jpg",
+        "images/stock/N1166080-4.jpg"
+      ]
     },
     {
       "id": "N1166077",
@@ -502,16 +623,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$27.500 (oferta; antes US$28.000)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 2.800.027.500",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1166077-1.jpg",
+        "images/stock/N1166077-2.jpg",
+        "images/stock/N1166077-3.jpg",
+        "images/stock/N1166077-4.jpg"
+      ]
     },
     {
       "id": "N1165540",
@@ -522,36 +649,48 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
       "listedPrice": "US$29.000 (oferta; antes $44M; negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1165540-1.jpg",
+        "images/stock/N1165540-2.jpg",
+        "images/stock/N1165540-3.jpg",
+        "images/stock/N1165540-4.jpg"
+      ]
     },
     {
       "id": "N1165353",
       "adUrl": "https://clasificados.elonce.com/aviso/N1165353",
-      "listingTitle": "HONDA HRV 1.8 EXL CVT",
+      "listingTitle": "HONDA HR-V 1.8 EXL CVT",
       "title": "Honda HR-V 1.8 EXL CVT",
       "year": 2018,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$25,9M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 25.900.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1165353-1.jpg",
+        "images/stock/N1165353-2.jpg",
+        "images/stock/N1165353-3.jpg",
+        "images/stock/N1165353-4.jpg"
+      ]
     },
     {
       "id": "N1164887",
@@ -562,16 +701,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$13.500",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 13.500",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1164887-1.jpg",
+        "images/stock/N1164887-2.jpg",
+        "images/stock/N1164887-3.jpg",
+        "images/stock/N1164887-4.jpg"
+      ]
     },
     {
       "id": "N1164752",
@@ -582,10 +727,10 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$10.600 (negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 10.600",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
@@ -593,7 +738,13 @@
         "El título del aviso dice año 2014 y la ficha dice 2011. No se publica el año."
       ],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1164752-1.jpg",
+        "images/stock/N1164752-2.jpg",
+        "images/stock/N1164752-3.jpg",
+        "images/stock/N1164752-4.jpg"
+      ]
     },
     {
       "id": "N1164715",
@@ -604,16 +755,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$40,8M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 40.800.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1164715-1.jpg",
+        "images/stock/N1164715-2.jpg",
+        "images/stock/N1164715-3.jpg",
+        "images/stock/N1164715-4.jpg"
+      ]
     },
     {
       "id": "N1164426",
@@ -624,16 +781,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$10.500",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 10.500",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1164426-1.jpg",
+        "images/stock/N1164426-2.jpg",
+        "images/stock/N1164426-3.jpg",
+        "images/stock/N1164426-4.jpg"
+      ]
     },
     {
       "id": "N1163973",
@@ -644,16 +807,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$34M (oferta; antes $36M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 34.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1163973-1.jpg",
+        "images/stock/N1163973-2.jpg",
+        "images/stock/N1163973-3.jpg",
+        "images/stock/N1163973-4.jpg"
+      ]
     },
     {
       "id": "N1163971",
@@ -664,16 +833,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$11,7M (oferta; antes $12M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 11.700.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1163971-1.jpg",
+        "images/stock/N1163971-2.jpg",
+        "images/stock/N1163971-3.jpg",
+        "images/stock/N1163971-4.jpg"
+      ]
     },
     {
       "id": "N1162994",
@@ -684,16 +859,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$13M (oferta; antes $14M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 13.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1162994-1.jpg",
+        "images/stock/N1162994-2.jpg",
+        "images/stock/N1162994-3.jpg",
+        "images/stock/N1162994-4.jpg"
+      ]
     },
     {
       "id": "N1162742",
@@ -704,16 +885,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$42.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 42.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1162742-1.jpg",
+        "images/stock/N1162742-2.jpg",
+        "images/stock/N1162742-3.jpg",
+        "images/stock/N1162742-4.jpg"
+      ]
     },
     {
       "id": "N1158048",
@@ -724,16 +911,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$42M (oferta; antes $43,5M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 42.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1158048-1.jpg",
+        "images/stock/N1158048-2.jpg",
+        "images/stock/N1158048-3.jpg",
+        "images/stock/N1158048-4.jpg"
+      ]
     },
     {
       "id": "N1157845",
@@ -742,18 +935,24 @@
       "title": "Toyota Corolla Cross 1.8 XEI HEV E-CVT",
       "year": 2024,
       "transmission": "Automático",
-      "locality": "María Grande",
+      "locality": "Maria Grande",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$45M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 45.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1157845-1.jpg",
+        "images/stock/N1157845-2.jpg",
+        "images/stock/N1157845-3.jpg",
+        "images/stock/N1157845-4.jpg"
+      ]
     },
     {
       "id": "N1137128",
@@ -764,16 +963,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$30M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 30.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1137128-1.jpg",
+        "images/stock/N1137128-2.jpg",
+        "images/stock/N1137128-3.jpg",
+        "images/stock/N1137128-4.jpg"
+      ]
     },
     {
       "id": "N1136911",
@@ -784,16 +989,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$7.500",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 7.500",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1136911-1.jpg",
+        "images/stock/N1136911-2.jpg",
+        "images/stock/N1136911-3.jpg",
+        "images/stock/N1136911-4.jpg"
+      ]
     },
     {
       "id": "N1137119",
@@ -804,36 +1015,48 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$19,5M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 19.500.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1137119-1.jpg",
+        "images/stock/N1137119-2.jpg",
+        "images/stock/N1137119-3.jpg",
+        "images/stock/N1137119-4.jpg"
+      ]
     },
     {
       "id": "N1139461",
       "adUrl": "https://clasificados.elonce.com/aviso/N1139461",
-      "listingTitle": "LANCHA ECLIPSE 20 OPEN MOTOR EVINRUDE ETEC 200HP",
-      "title": "Lancha Eclipse 20 Open Motor Evinrude Etec 200HP",
+      "listingTitle": "LANCHA ECLIPSE 20 OPEN MOTOR EVINRUDE E-TEC 200HP",
+      "title": "Lancha Eclipse 20 Open motor Evinrude E-TEC 200HP",
       "year": 2016,
       "transmission": null,
       "locality": "Paraná",
       "category": "embarcacion",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$25.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 25.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1139461-1.jpg",
+        "images/stock/N1139461-2.jpg",
+        "images/stock/N1139461-3.jpg",
+        "images/stock/N1139461-4.jpg"
+      ]
     },
     {
       "id": "N1136912",
@@ -844,16 +1067,22 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$32.000 (oferta; antes US$34.000)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 3.400.032.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1136912-1.png",
+        "images/stock/N1136912-2.png",
+        "images/stock/N1136912-3.png",
+        "images/stock/N1136912-4.jpg"
+      ]
     },
     {
       "id": "N1141275",
@@ -864,16 +1093,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$15M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 15.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1141275-1.jpg",
+        "images/stock/N1141275-2.jpg",
+        "images/stock/N1141275-3.jpg",
+        "images/stock/N1141275-4.jpg"
+      ]
     },
     {
       "id": "N1137120",
@@ -884,10 +1119,10 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$26M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 26.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
@@ -895,67 +1130,91 @@
         "Mismo modelo, versión y año que N1168258, con precio distinto: dos avisos o dos unidades; no se puede saber sin km/patente."
       ],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1137120-1.jpg",
+        "images/stock/N1137120-2.jpg",
+        "images/stock/N1137120-3.jpg",
+        "images/stock/N1137120-4.jpg"
+      ]
     },
     {
       "id": "N1137121",
       "adUrl": "https://clasificados.elonce.com/aviso/N1137121",
-      "listingTitle": "HONDA HRV 1.8 EX CVT",
+      "listingTitle": "HONDA HR-V 1.8 EX CVT",
       "title": "Honda HR-V 1.8 EX CVT",
       "year": 2016,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$15.300 (oferta; antes US$15.800; negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 1.580.015.300",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1137121-1.jpg",
+        "images/stock/N1137121-2.jpg",
+        "images/stock/N1137121-3.jpg",
+        "images/stock/N1137121-4.jpg"
+      ]
     },
     {
       "id": "N1136617",
       "adUrl": "https://clasificados.elonce.com/aviso/N1136617",
       "listingTitle": "LANCHA ECLIPSE 20 SPORT MOTOR MERCURY 150HP",
-      "title": "Lancha Eclipse 20 Sport Motor Mercury 150HP",
+      "title": "Lancha Eclipse 20 Sport motor Mercury 150HP",
       "year": 2013,
       "transmission": null,
       "locality": "Paraná",
       "category": "embarcacion",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$24.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 24.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1136617-1.jpg",
+        "images/stock/N1136617-2.jpg",
+        "images/stock/N1136617-3.jpg",
+        "images/stock/N1136617-4.jpg"
+      ]
     },
     {
       "id": "N1162559",
       "adUrl": "https://clasificados.elonce.com/aviso/N1162559",
-      "listingTitle": "HONDA HRV 1.8 EXL CVT",
+      "listingTitle": "HONDA HR-V 1.8 EXL CVT",
       "title": "Honda HR-V 1.8 EXL CVT",
       "year": 2016,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$22,8M (oferta; antes $24,5M; negociable)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 22.800.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1162559-1.jpg",
+        "images/stock/N1162559-2.jpg",
+        "images/stock/N1162559-3.jpg",
+        "images/stock/N1162559-4.jpg"
+      ]
     },
     {
       "id": "N1162557",
@@ -966,16 +1225,22 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$16.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 16.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1162557-1.jpg",
+        "images/stock/N1162557-2.jpg",
+        "images/stock/N1162557-3.jpg",
+        "images/stock/N1162557-4.jpg"
+      ]
     },
     {
       "id": "N1140083",
@@ -986,10 +1251,10 @@
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$10,6M (oferta; antes $12,5M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 10.600.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
@@ -997,47 +1262,65 @@
         "El aviso dice \"vendo o permuto\""
       ],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1140083-1.png",
+        "images/stock/N1140083-2.png",
+        "images/stock/N1140083-3.png",
+        "images/stock/N1140083-4.png"
+      ]
     },
     {
       "id": "N1140481",
       "adUrl": "https://clasificados.elonce.com/aviso/N1140481",
-      "listingTitle": "BMW X3 XDRIVE 3.0 35i EXECUTIVE 306cv AT",
+      "listingTitle": "BMW X3 XDRIVE 3.0 35I EXECUTIVE 306 CV AT",
       "title": "BMW X3 xDrive 3.0 35i Executive 306 cv AT",
       "year": 2012,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$23.000",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 23.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1140481-1.png",
+        "images/stock/N1140481-2.png",
+        "images/stock/N1140481-3.png",
+        "images/stock/N1140481-4.png"
+      ]
     },
     {
       "id": "N1138064",
       "adUrl": "https://clasificados.elonce.com/aviso/N1138064",
-      "listingTitle": "MERCEDES BENZ C250 COUPE BLUEEFFICIENCY AT SPOR",
+      "listingTitle": "MERCEDES-BENZ C250 COUPE BLUEEFFICIENCY AT SPORT",
       "title": "Mercedes-Benz C250 Coupe BlueEfficiency AT Sport",
       "year": 2014,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "US$23.000 (oferta; antes US$24.000)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "US$ 2.400.023.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1138064-1.png",
+        "images/stock/N1138064-2.png",
+        "images/stock/N1138064-3.png",
+        "images/stock/N1138064-4.jpg"
+      ]
     },
     {
       "id": "N1157909",
@@ -1048,36 +1331,48 @@
       "transmission": "Manual",
       "locality": "Paraná",
       "category": "utilitario",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$21M (oferta; antes $22M)",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 21.000.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/N1157909-1.jpg",
+        "images/stock/N1157909-2.jpg",
+        "images/stock/N1157909-3.jpg",
+        "images/stock/N1157909-4.jpg"
+      ]
     },
     {
       "id": "2146368",
       "adUrl": "https://clasificados.elonce.com/aviso/2146368",
-      "listingTitle": "HONDA HRV 1.8 EXL CVT",
+      "listingTitle": "HONDA HR-V 1.8 EXL CVT",
       "title": "Honda HR-V 1.8 EXL CVT",
       "year": 2020,
       "transmission": "Automático",
       "locality": "Paraná",
       "category": "auto",
-      "status": "publicado en Clasionce al 2026-10-11",
+      "status": "publicado en Clasionce al 2026-10-12",
       "sold": false,
-      "listedPrice": "$31,8M",
-      "priceNote": "Precio listado en Clasionce el 2026-10-11. Se publica en el sitio con esa fecha y puede haber cambiado.",
+      "listedPrice": "$ 31.800.000",
+      "priceNote": "Precio listado en Clasionce el 2026-10-12. Se publica en la moneda original y puede haber cambiado.",
       "km": null,
       "fuel": null,
       "color": null,
       "notes": [],
       "published": true,
-      "verification": "solo datos del listado de la tienda (título, año, transmisión, localidad, precio); aviso individual no abierto"
+      "verification": "listado público de la tienda actualizado",
+      "photoSources": [
+        "images/stock/2146368-1.jpg",
+        "images/stock/2146368-2.jpg",
+        "images/stock/2146368-3.jpg",
+        "images/stock/2146368-4.jpg"
+      ]
     }
   ],
   "seenInInstagramGridUnverified": "Captura del 2026-10-11: se ven insignias Toyota, Fiat, Toyota y Volkswagen. No se cruzan con los avisos: sin texto en la imagen."
