@@ -66,7 +66,7 @@
 (function () {
   var g = document.getElementById('gal'), lb = document.getElementById('lb');
   if (!g || !lb || typeof lb.showModal !== 'function') return;
-  var links = [].slice.call(g.querySelectorAll('a')), img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), cur = 0, opener = null;
+  var links = [].slice.call(g.querySelectorAll('li:not(.gal-more) > a')), mas = g.querySelector('.gal-more > a'), img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), cur = 0, opener = null;
   function show(i) {
     cur = (i + links.length) % links.length;
     var a = links[cur], t = a.querySelector('img');
@@ -77,10 +77,135 @@
   links.forEach(function (a, i) {
     a.addEventListener('click', function (e) { e.preventDefault(); opener = a; show(i); lb.showModal(); });
   });
+  var vis = g.querySelectorAll('li:not(.gal-more):not(.gx)').length;
+  if (mas) mas.addEventListener('click', function (e) { e.preventDefault(); opener = mas; show(vis); lb.showModal(); });
   lb.querySelector('.lb-x').addEventListener('click', function () { lb.close(); });
   lb.querySelector('.lb-p').addEventListener('click', function () { show(cur - 1); });
   lb.querySelector('.lb-n').addEventListener('click', function () { show(cur + 1); });
   lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
   lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); else if (e.key === 'ArrowRight') show(cur + 1); });
   lb.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
+})();
+
+/* horarios: marca el día de hoy (sin afirmar si está abierto: la fuente es una sola) */
+(function () {
+  var l = document.getElementById('hor-l'); if (!l) return;
+  var d = String(new Date().getDay()), li = l.querySelector('li[data-d="' + d + '"]');
+  if (li) li.classList.add('hoy');
+})();
+
+/* copiar teléfono y imprimir planilla: solo se muestran si el navegador los soporta */
+(function () {
+  var cp = document.getElementById('cp-tel');
+  if (cp && navigator.clipboard) {
+    cp.hidden = false;
+    cp.addEventListener('click', function () {
+      navigator.clipboard.writeText(cp.dataset.v).then(function () { cp.textContent = 'Copiado'; setTimeout(function () { cp.textContent = 'Copiar número'; }, 2000); }, function () {});
+    });
+  }
+  var pr = document.getElementById('gp-print');
+  if (pr) { pr.hidden = false; pr.addEventListener('click', function () { window.print(); }); }
+})();
+
+/* formularios que arman un mensaje de WhatsApp (el sitio no guarda nada: el enlace se actualiza al escribir) */
+(function () {
+  var WA = 'https://wa.me/5493434732110?text=';
+  var $ = function (id) { return document.getElementById(id); };
+  var v = function (id) { return ($(id).value || '').trim(); };
+  function link(a, txt) { a.href = WA + encodeURIComponent(txt); }
+
+  /* vender / permutar / consignar */
+  var opq = $('op-q');
+  if (opq) {
+    var FRASE = { vender: 'quiero vender mi auto', permutar: 'quiero consultar si reciben mi auto como parte de pago', consignar: 'quiero consultar por dejar mi auto en consignación', nose: 'tengo un auto y quiero consultar qué opciones hay' };
+    var upOp = function () {
+      var datos = [v('op-mm'), $('op-y').value ? 'año ' + v('op-y') : '', v('op-km') ? v('op-km') + ' km' : ''].filter(Boolean).join(', ');
+      var txt = 'Hola! ' + FRASE[opq.value].replace(/^./, function (c) { return c.toUpperCase(); }) + (datos ? ': ' + datos + '.' : ': …');
+      $('op-msg').textContent = txt; link($('op-go'), datos ? txt + ' ¿Cómo sería?' : txt);
+    };
+    ['op-mm', 'op-y', 'op-km'].forEach(function (id) { $(id).addEventListener('input', upOp); });
+    opq.addEventListener('change', upOp);
+    [].forEach.call(document.querySelectorAll('[data-op]'), function (a) {
+      a.addEventListener('click', function () { opq.value = a.dataset.op; upOp(); });
+    });
+    upOp();
+  }
+
+  /* coordinar visita */
+  var car = $('vi-car');
+  if (car) {
+    var sel = [];
+    var upVi = function () {
+      var ul = $('vi-sel'); ul.innerHTML = '';
+      sel.forEach(function (t, i) {
+        var li = document.createElement('li'), b = document.createElement('button');
+        li.appendChild(document.createTextNode(t));
+        b.type = 'button'; b.textContent = '✕'; b.setAttribute('aria-label', 'Quitar ' + t);
+        b.addEventListener('click', function () { sel.splice(i, 1); upVi(); });
+        li.appendChild(b); ul.appendChild(li);
+      });
+      var partes = [];
+      if (sel.length) partes.push('Autos: ' + sel.join(', '));
+      if (v('vi-d')) partes.push('Día: ' + v('vi-d').toLowerCase());
+      if (v('vi-f')) partes.push('Franja: ' + v('vi-f').toLowerCase());
+      var resumen = partes.length ? partes.join(' · ') : '';
+      $('vi-msg').textContent = resumen || 'Todavía no elegiste nada. Podés enviar la consulta igual y la coordinamos por WhatsApp.';
+      link($('vi-go'), 'Hola! Quiero coordinar una visita.' + (resumen ? ' ' + resumen + '.' : '') + ' ¿Me confirman disponibilidad y la dirección?');
+    };
+    car.addEventListener('change', function () {
+      if (car.value && sel.length < 3 && sel.indexOf(car.value) < 0) sel.push(car.value);
+      car.value = ''; upVi();
+    });
+    $('vi-d').addEventListener('change', upVi); $('vi-f').addEventListener('change', upVi);
+    upVi();
+  }
+
+  /* contanos qué auto buscás */
+  var bq = $('bq-go');
+  if (bq) {
+    var upBq = function () {
+      var t = 'Hola! Estoy buscando ' + (v('bq-m') || 'un auto') + '.';
+      if ($('bq-y').value) t += ' Año desde: ' + v('bq-y') + '.';
+      if (v('bq-c')) t += ' Combustible: ' + v('bq-c') + '.';
+      if (v('bq-p')) t += ' Presupuesto aproximado: ' + v('bq-p') + '.';
+      link(bq, t + ' ¿Tienen algo así?');
+    };
+    ['bq-m', 'bq-y', 'bq-p'].forEach(function (id) { $(id).addEventListener('input', upBq); });
+    $('bq-c').addEventListener('change', upBq);
+    upBq();
+  }
+})();
+
+/* ficha del auto: «Ver detalles» abre un visor con las fotos del aviso y sus datos */
+(function () {
+  var dlg = document.getElementById('dlg'), src = document.getElementById('fichas');
+  if (!dlg || !src || typeof dlg.showModal !== 'function') return;
+  var F; try { F = JSON.parse(src.textContent); } catch (e) { return; }
+  var $ = function (id) { return document.getElementById(id); };
+  var img = $('dlg-img'), th = $('dlg-th'), opener = null;
+  function foto(f, i, t) { img.src = f[i]; img.alt = 'Foto ' + (i + 1) + ' de ' + f.length + ': ' + t; [].forEach.call(th.querySelectorAll('button'), function (b, k) { b.setAttribute('aria-current', k === i ? 'true' : 'false'); }); }
+  function link(txt, href, cls) { var a = document.createElement('a'); a.className = cls; a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = txt; return a; }
+  function abrir(id, btn) {
+    var c = F[id]; if (!c) return; opener = btn;
+    $('dlg-t').textContent = c.t; $('dlg-m').textContent = c.meta;
+    var p = $('dlg-p'); p.innerHTML = ''; var b = document.createElement('b'); b.textContent = c.p; p.appendChild(b);
+    if (c.ant) { var s = document.createElement('s'); s.textContent = c.ant; p.appendChild(document.createTextNode(' ')); p.appendChild(s); }
+    var n = $('dlg-n'); n.innerHTML = '';
+    (c.vend ? ['Aviso marcado como vendido en Clasionce.'] : []).concat(c.notas).forEach(function (t) { var q = document.createElement('p'); q.className = 'car-n'; q.textContent = t; n.appendChild(q); });
+    var a = $('dlg-a'); a.innerHTML = ''; a.appendChild(link('Ver aviso ↗', c.url, 'btn p sm')); if (c.wa) a.appendChild(link('Consultar', c.wa, 'btn o sm'));
+    $('dlg-s').textContent = 'Fuente: Clasionce. El precio y la disponibilidad pueden haber cambiado: consultá antes de decidir.';
+    th.innerHTML = '';
+    c.fotos.forEach(function (f, i) {
+      var li = document.createElement('li'), bt = document.createElement('button'), im = document.createElement('img');
+      bt.type = 'button'; bt.setAttribute('aria-label', 'Ver foto ' + (i + 1)); im.src = f; im.alt = ''; im.width = 64; im.height = 48; im.loading = 'lazy';
+      bt.appendChild(im); bt.addEventListener('click', function () { foto(c.fotos, i, c.t); }); li.appendChild(bt); th.appendChild(li);
+    });
+    th.hidden = c.fotos.length < 2; img.hidden = !c.fotos.length;
+    if (c.fotos.length) foto(c.fotos, 0, c.t);
+    dlg.showModal();
+  }
+  [].forEach.call(document.querySelectorAll('[data-ficha]'), function (b) { b.hidden = false; b.addEventListener('click', function () { abrir(b.dataset.ficha, b); }); });
+  $('dlg-x').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
 })();
