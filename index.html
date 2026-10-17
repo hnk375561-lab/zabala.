@@ -398,6 +398,39 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 .fi-p{padding-top:20px;border-top:1px solid var(--g1)}
 .fi-t .row .btn{min-height:54px;padding-inline:28px}
 @media(max-width:860px){.fi,.fi:nth-child(even){grid-template-columns:1fr}.fi-m{max-width:100%}}
+
+/* guía plegable + destacados en fila */
+.gp-g{grid-template-columns:repeat(4,minmax(0,1fr));align-items:start}
+.gp-c{padding:0}
+.gp-c summary{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:20px 20px;cursor:pointer;list-style:none}
+.gp-c summary::-webkit-details-marker{display:none}
+.gp-c summary::after{content:"+";flex:none;font:600 28px/1 var(--h);color:var(--s1)}
+.gp-c[open] summary::after{content:"–"}
+.gp-c summary:hover{background:var(--k3)}
+.gp-c summary:focus-visible{outline:3px solid var(--s3);outline-offset:-3px}
+.gp-c summary h3{margin:0;font-size:20px}
+.gp-b{padding:2px 20px 22px}
+@media(min-width:1061px){.gp-c summary{min-height:128px}}
+@media(max-width:1060px){.gp-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.gp-g{grid-template-columns:1fr}}
+@media print{#guia summary::after{display:none}}
+#destacados .w{width:min(1560px,100% - 48px)}
+@media(min-width:1061px){
+ .fl{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);align-items:start;margin-top:34px}
+ .fl .fi,.fl .fi:nth-child(n){grid-template-columns:1fr;gap:16px;padding:clamp(14px,1.6vw,22px);align-items:start}
+ .fl .fi:nth-child(n) .fi-m{order:0;max-width:100%;aspect-ratio:1/1;justify-self:stretch}
+ .fl .fi-t h3{font-size:clamp(24px,2.3vw,34px)}
+ .fl .fi-t h3 small{font-size:13px}
+ .fl .fi-s{gap:8px;margin-top:16px}
+ .fl .fi-s dt{font-size:12.5px}
+ .fl .fi-s dd{font-size:clamp(13px,1.3vw,18px);margin-top:4px;white-space:nowrap}
+ .fl .fi-s div{padding:9px 8px 10px 10px;min-width:0}
+ .fl .fi-t h3{min-height:calc(2.08em + 24px)}
+ .fl .fi-p{margin:14px 0 14px;padding-top:14px}
+ .fl .fi-p b{font-size:clamp(32px,3.2vw,46px)}
+ .fl .fi-t .row .btn{min-height:48px;padding-inline:22px}
+ .fl .fi-b2{width:40px;height:40px}
+}
 /* horarios: centrado */
 #horarios .w{text-align:center}
 #horarios .sec-p{margin-inline:auto}
@@ -643,17 +676,17 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 
 <section id="guia" class="sx b gp pending" aria-labelledby="gp-t"><div class="w">
 <span class="ey">Guía</span><h2 id="gp-t">Guía para comprar <em>un usado</em></h2>
-<p class="sec-p">Qué revisar en el auto, qué papeles pedir y cómo se hace la transferencia. Tildá lo que vas comprobando y llevá la planilla impresa a la visita.</p>
+<p class="sec-p">Qué revisar en el auto, qué papeles pedir y cómo se hace la transferencia. Tocá cada bloque para abrirlo, tildá lo que vas comprobando y llevá la planilla impresa a la visita.</p>
 <div class="gp-g">
-<div class="gp-c"><h3><span class="n">1</span> Mirar el auto <small>Qué revisar cuando lo ves en persona</small></h3><ul>
-<li><label class="ck"><input type="checkbox"><span>Carrocería y pintura: diferencias de tono, golpes u óxido.</span></label></li><li><label class="ck"><input type="checkbox"><span>Neumáticos: desgaste parejo y dibujo suficiente.</span></label></li><li><label class="ck"><input type="checkbox"><span>Luces, espejos y vidrios en buen estado.</span></label></li><li><label class="ck"><input type="checkbox"><span>Tablero sin luces de advertencia encendidas; aire, levantavidrios y cierre funcionando.</span></label></li><li><label class="ck"><input type="checkbox"><span>Motor: sin fugas de aceite o agua, y sin ruidos al arrancar en frío.</span></label></li><li><label class="ck"><input type="checkbox"><span>Kilometraje coherente con el desgaste de pedales, volante y butacas.</span></label></li><li><label class="ck"><input type="checkbox"><span>Prueba de manejo: frenos, dirección, embrague y caja.</span></label></li><li><label class="ck"><input type="checkbox"><span>Comprobantes de service, si los hay.</span></label></li></ul></div>
-<div class="gp-c"><h3><span class="n">2</span> Pedir los papeles <small>Documentación habitual para comprar</small></h3><ul>
-<li><label class="ck"><input type="checkbox"><span>DNI vigente y constancia de CUIT o CUIL.</span></label></li><li><label class="ck"><input type="checkbox"><span>Título del automotor o constancia de asignación de título (CAT).</span></label></li><li><label class="ck"><input type="checkbox"><span>Cédula verde y, si las hay, cédulas azules.</span></label></li><li><label class="ck"><input type="checkbox"><span>Formulario 08, en papel o digital.</span></label></li><li><label class="ck"><input type="checkbox"><span>Si el auto tiene prenda o leasing, la notificación al acreedor.</span></label></li><li><label class="ck"><input type="checkbox"><span>Un informe de dominio, para ver titularidad, prendas e inhibiciones.</span></label></li><li><label class="ck"><input type="checkbox"><span>Consultá en el Registro si corresponde presentar otros certificados, por ejemplo de deudas o infracciones.</span></label></li></ul></div>
-<div class="gp-c"><h3><span class="n">3</span> Preparar tu usado <small>Solo si querés vender o permutar tu auto</small></h3><ul>
-<li><label class="ck"><input type="checkbox"><span>Marca, modelo, versión y año.</span></label></li><li><label class="ck"><input type="checkbox"><span>Kilometraje real.</span></label></li><li><label class="ck"><input type="checkbox"><span>Cédula verde y título (o CAT).</span></label></li><li><label class="ck"><input type="checkbox"><span>Comprobantes de service o de arreglos importantes.</span></label></li><li><label class="ck"><input type="checkbox"><span>Si tiene GNC, prenda o algún faltante, contalo: ayuda a evaluarlo bien.</span></label></li><li><label class="ck"><input type="checkbox"><span>Fotos claras del exterior y del interior.</span></label></li></ul><p class="fm-n">Este sitio no calcula precios ni tasaciones.</p></div>
-<div class="gp-c"><h3><span class="n">4</span> Confirmar la transferencia <small>Cómo se hace en el Registro</small></h3>
+<details class="gp-c"><summary><h3><span class="n">1</span> Mirar el auto <small>Qué revisar cuando lo ves en persona</small></h3></summary><div class="gp-b"><ul>
+<li><label class="ck"><input type="checkbox"><span>Carrocería y pintura: diferencias de tono, golpes u óxido.</span></label></li><li><label class="ck"><input type="checkbox"><span>Neumáticos: desgaste parejo y dibujo suficiente.</span></label></li><li><label class="ck"><input type="checkbox"><span>Luces, espejos y vidrios en buen estado.</span></label></li><li><label class="ck"><input type="checkbox"><span>Tablero sin luces de advertencia encendidas; aire, levantavidrios y cierre funcionando.</span></label></li><li><label class="ck"><input type="checkbox"><span>Motor: sin fugas de aceite o agua, y sin ruidos al arrancar en frío.</span></label></li><li><label class="ck"><input type="checkbox"><span>Kilometraje coherente con el desgaste de pedales, volante y butacas.</span></label></li><li><label class="ck"><input type="checkbox"><span>Prueba de manejo: frenos, dirección, embrague y caja.</span></label></li><li><label class="ck"><input type="checkbox"><span>Comprobantes de service, si los hay.</span></label></li></ul></div></details>
+<details class="gp-c"><summary><h3><span class="n">2</span> Pedir los papeles <small>Documentación habitual para comprar</small></h3></summary><div class="gp-b"><ul>
+<li><label class="ck"><input type="checkbox"><span>DNI vigente y constancia de CUIT o CUIL.</span></label></li><li><label class="ck"><input type="checkbox"><span>Título del automotor o constancia de asignación de título (CAT).</span></label></li><li><label class="ck"><input type="checkbox"><span>Cédula verde y, si las hay, cédulas azules.</span></label></li><li><label class="ck"><input type="checkbox"><span>Formulario 08, en papel o digital.</span></label></li><li><label class="ck"><input type="checkbox"><span>Si el auto tiene prenda o leasing, la notificación al acreedor.</span></label></li><li><label class="ck"><input type="checkbox"><span>Un informe de dominio, para ver titularidad, prendas e inhibiciones.</span></label></li><li><label class="ck"><input type="checkbox"><span>Consultá en el Registro si corresponde presentar otros certificados, por ejemplo de deudas o infracciones.</span></label></li></ul></div></details>
+<details class="gp-c"><summary><h3><span class="n">3</span> Preparar tu usado <small>Solo si querés vender o permutar tu auto</small></h3></summary><div class="gp-b"><ul>
+<li><label class="ck"><input type="checkbox"><span>Marca, modelo, versión y año.</span></label></li><li><label class="ck"><input type="checkbox"><span>Kilometraje real.</span></label></li><li><label class="ck"><input type="checkbox"><span>Cédula verde y título (o CAT).</span></label></li><li><label class="ck"><input type="checkbox"><span>Comprobantes de service o de arreglos importantes.</span></label></li><li><label class="ck"><input type="checkbox"><span>Si tiene GNC, prenda o algún faltante, contalo: ayuda a evaluarlo bien.</span></label></li><li><label class="ck"><input type="checkbox"><span>Fotos claras del exterior y del interior.</span></label></li></ul><p class="fm-n">Este sitio no calcula precios ni tasaciones.</p></div></details>
+<details class="gp-c"><summary><h3><span class="n">4</span> Confirmar la transferencia <small>Cómo se hace en el Registro</small></h3></summary><div class="gp-b">
 <p>Se hace en el Registro Seccional de la Propiedad del Automotor, con comprador y vendedor identificados. El arancel depende del valor del auto y de su origen: pedí siempre la información actualizada en el Registro o consultá los aranceles vigentes de la DNRPA.</p>
-<p class="fm-n">Orientación general, no asesoramiento legal ni garantía de requisitos. Las normas y los costos del trámite cambian y los define el Registro Seccional.</p></div>
+<p class="fm-n">Orientación general, no asesoramiento legal ni garantía de requisitos. Las normas y los costos del trámite cambian y los define el Registro Seccional.</p></div></details>
 </div>
 <div class="row mt"><button type="button" class="btn o" id="gp-print" hidden>Imprimir planilla</button><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">¿Dudas sobre un auto? Consultanos</a></div>
 </div></section>
@@ -810,6 +843,9 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
   }
   var pr = document.getElementById('gp-print');
   if (pr) { pr.hidden = false; pr.addEventListener('click', function () { window.print(); }); }
+  var gd = [].slice.call(document.querySelectorAll('#guia details.gp-c')), gst = [];
+  window.addEventListener('beforeprint', function () { gst = gd.map(function (d) { return d.open; }); gd.forEach(function (d) { d.open = true; }); });
+  window.addEventListener('afterprint', function () { gd.forEach(function (d, i) { d.open = gst[i]; }); });
 })();
 
 /* formularios que arman un mensaje de WhatsApp (el sitio no guarda nada: el enlace se actualiza al escribir) */
