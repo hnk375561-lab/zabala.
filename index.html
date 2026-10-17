@@ -431,21 +431,121 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
  .fl .fi-t .row .btn{min-height:48px;padding-inline:22px}
  .fl .fi-b2{width:40px;height:40px}
 }
-/* horarios: centrado */
-#horarios .w{text-align:center}
-#horarios .sec-p{margin-inline:auto}
-.hor-big{margin:8px auto 30px;display:inline-flex;flex-direction:column;align-items:center;gap:6px;padding:22px 44px 24px;background:var(--k3);border-bottom:4px solid var(--g3);clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%)}
-.hor-big b{font:700 clamp(40px,6vw,72px)/1 var(--h);letter-spacing:-.03em;font-variant-numeric:tabular-nums;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hor-big span{font:600 16px/1 var(--b);color:var(--s1)}
-.hor-l{max-width:660px;margin-inline:auto;border:0;background:transparent;display:grid;gap:8px}
-.hor-l li{background:var(--k2);border:0;border-left:3px solid var(--g2);padding:16px 22px;flex-direction:row!important;align-items:center;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
-.hor-l li:first-child{border-top:0}
-.hor-l span{font-variant-numeric:tabular-nums;text-align:right!important}
-.hor-l li[data-d="0"]{background:transparent;border-left-color:var(--g1);color:var(--mute)}
-.hor-l li[data-d="0"] span{font-size:15px}
-.hor-l li.hoy{background:var(--k4);border-left:5px solid var(--s2);box-shadow:none}
-.hor-n{margin:22px auto 0;text-align:center}
-#horarios .row{justify-content:center}
+/* ===== v69 · hero: pasada lenta, nítida y sin carga de GPU ===== */
+/* La mueve js (px/s), no una animación CSS de 120 s: sin saltos al reiniciar ni capas gigantes recortadas */
+.hx-pass ul{animation:none;will-change:transform;backface-visibility:hidden}
+.hx-pass li{width:clamp(240px,28vw,460px);clip-path:none;overflow:hidden;margin-right:clamp(14px,1.6vw,26px);border-left:4px solid var(--g3)}
+.hx-pass li::after{content:"";position:absolute;right:0;top:0;width:34px;height:34px;background:linear-gradient(to bottom left,var(--k0) 50%,transparent 50%)}
+.hx-pass img{image-rendering:auto}
+.hx-pass i{clip-path:none;padding:8px 26px 8px 14px;background:linear-gradient(110deg,var(--k0) calc(100% - 14px),transparent calc(100% - 13px))}
+@media(max-width:1000px){.hx-pass ul{height:min(92vw,440px)}.hx-pass li{width:clamp(200px,60vw,300px)}}
+.hx-logo{filter:none}
+/* el destello del logotipo corre una vez y deja de existir (antes quedaba una capa mezclada sobre la pasada) */
+.hx-logo::after{mix-blend-mode:normal;opacity:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.16) 50%,transparent 60%);animation:brillo 1.7s .5s ease-out 1 none}
+@keyframes brillo{0%{transform:translateX(-120%);opacity:1}100%{transform:translateX(120%);opacity:1}}
+
+/* ===== v69 · horarios ===== */
+#horarios .w{text-align:left}
+#horarios .sec-p{margin-inline:0}
+.hr-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(18px,3vw,40px);align-items:stretch;margin-top:30px}
+.hr-now{position:relative;display:flex;flex-direction:column;gap:16px;padding:clamp(22px,3vw,40px);background:var(--k2);border-left:5px solid var(--g3);clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}
+.hr-st{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin:0;padding:8px 16px 8px 12px;background:var(--g1);color:var(--s2);font:700 14px/1 var(--b);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%)}
+.hr-dot{width:10px;height:10px;border-radius:50%;background:var(--g4);flex:none}
+.hr-now[data-s=open] .hr-st{background:var(--metal);color:#0a0a0a}
+.hr-now[data-s=open] .hr-dot{background:#0a0a0a;box-shadow:0 0 0 3px rgba(10,10,10,.22)}
+.hr-now[data-s=closed] .hr-st,.hr-now[data-s=soon] .hr-st{box-shadow:inset 0 0 0 1.5px var(--g3);background:transparent}
+.hr-now[data-s=consult] .hr-dot{background:transparent;box-shadow:inset 0 0 0 2px var(--s1)}
+.hr-big{margin:6px 0 0;font:600 clamp(44px,6vw,84px)/.98 var(--h);letter-spacing:-.03em;font-variant-numeric:tabular-nums;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-wrap:balance}
+.hr-sub{margin:0;max-width:24em;font-size:clamp(17px,1.5vw,20px);line-height:1.4;color:var(--s2)}
+.hr-bar{margin-top:6px}
+.hr-bar>div{height:10px;background:var(--k0);box-shadow:inset 0 0 0 1px var(--g1)}
+.hr-bar i{display:block;height:100%;width:var(--w,0%);background:var(--metal);clip-path:polygon(0 0,100% 0,calc(100% - 7px) 100%,0 100%);transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.hr-ends{display:flex;justify-content:space-between;margin:8px 0 0;font:600 13.5px/1 var(--b);font-variant-numeric:tabular-nums;color:var(--mute)}
+.hr-now .row{margin-top:auto;padding-top:8px}
+.hr-fu{margin:0;font-size:13.5px;line-height:1.35;color:var(--g4)}
+.hr-wk{min-width:0;display:flex;flex-direction:column;gap:8px}
+.hr-ax{display:grid;grid-template-columns:minmax(92px,140px) minmax(0,1fr) 188px;gap:clamp(10px,1.6vw,22px);height:18px;padding:0 20px 0 21px;font:600 12.5px/1 var(--b);font-variant-numeric:tabular-nums;color:var(--g4)}
+.hr-ax div{grid-column:2;position:relative}
+.hr-ax span{position:absolute;top:0;left:var(--p);transform:translateX(-50%)}
+.hr-l{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.hr-l li{position:relative;display:grid;grid-template-columns:minmax(92px,140px) minmax(0,1fr) 188px;gap:clamp(10px,1.6vw,22px);align-items:center;padding:15px 20px 15px 18px;background:var(--k2);border-left:3px solid var(--g2);color:var(--s2);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.hr-l b{font:700 18px/1.1 var(--h);color:var(--s3)}
+.hr-t{font:600 16.5px/1.2 var(--b);font-variant-numeric:tabular-nums;text-align:right;color:var(--s2)}
+.hr-tr{position:relative;display:block;height:18px;background:linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px) 0 0/calc(100%/18) 100%,var(--k0);box-shadow:inset 0 0 0 1px var(--g1)}
+.hr-tr .hr-b{position:absolute;top:3px;bottom:3px;left:var(--a);width:calc(var(--b) - var(--a));background:var(--metal);clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%);transform-origin:left center}
+.hr-l li[data-d="0"]{background:transparent;border-left-color:var(--g1);color:var(--mute)}
+.hr-l li[data-d="0"] b{color:var(--s1)}
+.hr-l li[data-d="0"] .hr-tr{background:repeating-linear-gradient(115deg,transparent 0 9px,rgba(255,255,255,.08) 9px 10px),var(--k1)}
+.hr-l li[data-d="0"] .hr-t{color:var(--mute);font-size:15px}
+.hr-l li.hoy{background:var(--k4);border-left:5px solid var(--s2);padding-left:16px}
+.hr-l li.hoy b::after{content:"Hoy";margin-left:10px;padding:3px 8px;background:var(--metal);color:#0a0a0a;font:800 11px/1 var(--b);letter-spacing:.08em;text-transform:uppercase;vertical-align:middle}
+.hr-nd{position:absolute;top:-5px;bottom:-5px;left:var(--n,0%);width:2px;margin-left:-1px;background:var(--s3);box-shadow:0 0 0 1.5px var(--k4);z-index:1}
+.hr-n{margin:14px 0 0;max-width:46em;color:var(--mute);font-size:15px;text-align:left}
+.hr-anim .hr-tr .hr-b{transform:scaleX(0)}
+.hr-anim.in .hr-tr .hr-b{transform:scaleX(1);transition:transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 70ms)}
+@media(max-width:960px){.hr-g{grid-template-columns:1fr}}
+@media(max-width:700px){
+ .hr-l li{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"d t" "tr tr";row-gap:10px;padding:14px 18px 15px 16px}
+ .hr-l li b{grid-area:d}.hr-l li .hr-t{grid-area:t}.hr-l li .hr-tr{grid-area:tr}
+ .hr-ax{grid-template-columns:minmax(0,1fr);padding:0 18px 0 19px}.hr-ax div{grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){.hr-bar i{transition:none}.hr-anim .hr-tr .hr-b{transform:none}.hr-anim.in .hr-tr .hr-b{transition:none}}
+
+/* ===== v69 · dónde estamos + mapa ===== */
+.ub-g{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(14px,2vw,24px);margin-top:30px}
+.ub-map{position:relative;min-height:clamp(380px,40vw,560px);background:var(--k1);overflow:hidden;isolation:isolate}
+.ub-map::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--metal);z-index:6}
+.ub-map::after{content:"";position:absolute;right:0;top:0;width:34px;height:34px;z-index:6;background:linear-gradient(to bottom left,var(--k0) 50%,transparent 50%)}
+.ub-vp{position:absolute;inset:0;overflow:hidden;cursor:grab;touch-action:pan-x pan-y;outline-offset:-3px;opacity:0;transition:opacity .5s}
+.ub-map.on .ub-vp{opacity:1}
+.ub-map.drg .ub-vp{cursor:grabbing}
+.ub-map.act .ub-vp{touch-action:none}
+.ub-vp::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 90px 14px rgba(5,5,5,.78)}
+.ub-tl{position:absolute;left:0;top:0;width:0;height:0;will-change:transform;filter:invert(1) hue-rotate(180deg) grayscale(.9) brightness(.82) contrast(1.08)}
+.ub-tl img{position:absolute;display:block;width:256px;height:256px;max-width:none;opacity:0;transition:opacity .35s;user-select:none;-webkit-user-drag:none}
+.ub-tl img.ok{opacity:1}
+.ub-pin{position:absolute;left:0;top:0;z-index:2;pointer-events:none}
+.ub-pin span{position:absolute;left:0;top:0;display:block;width:54px;height:54px;margin:-62px 0 0 -27px;background:var(--metal);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);display:grid;place-items:center}
+.ub-pin img{position:static;width:36px;height:36px;opacity:1;filter:none}
+.ub-face{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:clamp(24px,4vw,48px) clamp(22px,4vw,48px) clamp(24px,4vw,44px) clamp(26px,4vw,52px);background:radial-gradient(ellipse 60% 70% at 80% 30%,rgba(255,255,255,.07),transparent 70%),repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.035) 46px 47px),linear-gradient(135deg,#050505,#141414);transition:opacity .6s}
+.ub-face img{position:absolute;right:-4%;top:-6%;width:min(62%,420px);height:auto;opacity:.5;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);pointer-events:none}
+.ub-face p{position:relative;margin:0}
+.ub-face .ub-c{font:600 clamp(48px,8vw,104px)/.95 var(--h);letter-spacing:-.035em;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ub-face .ub-p{font:600 clamp(16px,1.6vw,20px)/1.3 var(--b);color:var(--s2)}
+.ub-face .btn{align-self:flex-start;margin-top:6px}
+.ub-ld{display:none;font:600 14px/1 var(--b);color:var(--mute)}
+.ub-map.ld:not(.on) .ub-ld{display:block}
+.ub-map.on .ub-face{opacity:0;pointer-events:none;visibility:hidden;transition:opacity .6s,visibility 0s .6s}
+.ub-tag{position:absolute;left:5px;top:18px;z-index:5;padding:11px 20px 11px 18px;background:var(--metal);color:#0a0a0a;font:800 15px/1 var(--b);clip-path:polygon(0 0,100% 0,calc(100% - 11px) 100%,0 100%);opacity:0;transition:opacity .5s}
+.ub-map.on .ub-tag{opacity:1}
+.ub-z{position:absolute;right:14px;top:46px;z-index:5;display:grid;gap:8px;opacity:0;transition:opacity .5s}
+.ub-map.on .ub-z{opacity:1}
+.ub-z button{width:46px;height:46px;display:grid;place-items:center;padding:0;border:0;cursor:pointer;background:rgba(5,5,5,.84);color:var(--s3);clip-path:var(--cut-s);font:600 26px/1 var(--h)}
+.ub-z button:hover{background:var(--metal);color:#0a0a0a}
+.ub-z button:focus-visible{outline:3px solid var(--s3);outline-offset:-3px}
+.ub-z svg{width:22px;height:22px}
+.ub-hint{position:absolute;left:5px;bottom:0;z-index:5;margin:0;padding:9px 16px 9px 16px;background:rgba(5,5,5,.86);color:var(--s2);font:600 13px/1.2 var(--b);opacity:0;transition:opacity .5s;pointer-events:none}
+.ub-map.on .ub-hint{opacity:1}
+.ub-at{position:absolute;right:0;bottom:0;z-index:5;margin:0;padding:5px 10px;background:rgba(5,5,5,.86);font:500 11.5px/1.2 var(--b);color:var(--s1);opacity:0;transition:opacity .5s}
+.ub-map.on .ub-at{opacity:1}
+.ub-at a{color:var(--s2)}
+.ub-err{display:none;position:absolute;left:5px;right:0;bottom:46px;z-index:6;padding:14px 18px;background:var(--k3);color:var(--s2);font:600 15px/1.35 var(--b)}
+.ub-map.off .ub-err{display:block}
+.ub-err a{color:var(--s3)}
+.ub-side{display:grid;gap:clamp(14px,2vw,24px);min-width:0}
+.ub-d{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0}
+.ub-d>div{padding:15px 18px 16px;background:var(--k3);border-left:3px solid var(--g2);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.ub-d>div:first-child{border-left-color:var(--s2);background:var(--k4)}
+.ub-d dt{margin:0;font:700 12.5px/1.2 var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--g4)}
+.ub-d dd{margin:6px 0 0;font-size:17.5px;line-height:1.4}
+.ub-d dd .src{font-size:13px}
+.ub-side .ct-c{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px;padding:clamp(22px,3vw,34px) clamp(22px,3vw,40px)}
+.ub-side .ct-c>div:first-child{flex:1 1 320px}.ub-side .ct-c p{margin:0}.ub-side .ct-c .ct-t{margin-bottom:8px}.ub-side .ct-c .row{flex:0 1 auto}
+.ub-side .ct-t{font-size:clamp(24px,2.4vw,30px)}
+@media(max-width:960px){.ub-d{grid-template-columns:repeat(2,minmax(0,1fr))}.ub-map{min-height:clamp(360px,70vw,520px)}}
+@media(max-width:600px){.ub-d{grid-template-columns:1fr}.ub-side .ct-c .row .btn{flex:1 1 auto}}
+@media(max-width:560px){.ub-z{top:44px;right:10px}.ub-z button{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.ub-tl img,.ub-vp,.ub-face,.ub-tag,.ub-z,.ub-hint,.ub-at{transition:none}}
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoDealer","name":"Zabala Automotores","description":"Intermediación y reventa de vehículos.","telephone":"+543434732110","areaServed":"Toda la región","address":{"@type":"PostalAddress","addressLocality":"Paraná","addressRegion":"Entre Ríos","addressCountry":"AR"},"openingHours":"Mo-Sa 08:00-21:30","sameAs":["https://www.instagram.com/zabala_automotores/"]}</script>
@@ -457,7 +557,7 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 <div class="hc"><a class="ic" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Zabala Automotores"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos</a></div></div></header>
 <p class="demo"><span>Demo ilustrativa construida a partir de información pública. Precios, datos y disponibilidad sujetos a confirmación por Zabala Automotores.</span></p>
 <main id="top">
-<div class="hero"><div class="hx-pass" aria-hidden="true"><ul><li><img src="images/hero/xs-8.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-5.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-6.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-13.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-27.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-7.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-10.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-6.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xs-8.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-5.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-6.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-13.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-27.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-7.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-10.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-6.webp" width="576" height="700" alt="" loading="lazy" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li></ul></div><div class="hx-veil" aria-hidden="true"></div><div class="hx-copy">
+<div class="hero"><div class="hx-pass" aria-hidden="true"><ul><li><img src="images/hero/xs-8.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-5.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-6.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-13.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-27.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-7.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-10.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-6.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xs-8.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-5.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-6.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-13.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-27.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li><li><img src="images/hero/xls-7.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XLS · 2021</i></li><li><img src="images/hero/xs-10.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Toyota Yaris XS · 2024</i></li><li><img src="images/hero/amarok-6.webp" width="576" height="700" alt="" loading="eager" decoding="async"><i>Volkswagen Amarok V6 · 2021</i></li></ul></div><div class="hx-veil" aria-hidden="true"></div><div class="hx-copy">
 <h1><span class="sr">Zabala Automotores: </span>Autos y utilitarios <em>en Paraná</em></h1>
 <p class="lead">Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable. Mirá los vehículos publicados y consultanos por WhatsApp.</p>
 <div class="row"><a class="btn p cut" href="#autos">Ver autos</a><a class="btn o" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
@@ -467,19 +567,30 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 
 <section id="horarios" class="sx b hor" aria-labelledby="hor-t"><div class="w">
 <span class="ey">Horarios</span><h2 id="hor-t">Horarios <em>de atención</em></h2>
-<p class="sec-p">Paraná, Entre Ríos. Horario tomado del perfil de nuestra tienda en Clasionce.</p>
-<p class="hor-big"><b>8:00 a 21:30</b><span>Lunes a sábados</span></p>
-<ul class="hor-l" id="hor-l">
-<li data-d="1"><b>Lunes</b><span>8:00 a 21:30</span></li>
-<li data-d="2"><b>Martes</b><span>8:00 a 21:30</span></li>
-<li data-d="3"><b>Miércoles</b><span>8:00 a 21:30</span></li>
-<li data-d="4"><b>Jueves</b><span>8:00 a 21:30</span></li>
-<li data-d="5"><b>Viernes</b><span>8:00 a 21:30</span></li>
-<li data-d="6"><b>Sábado</b><span>8:00 a 21:30</span></li>
-<li data-d="0"><b>Domingo</b><span>No figura en nuestro perfil: consultanos por WhatsApp</span></li>
-</ul>
-<p class="hor-n">Domingos y feriados no figuran en el perfil: escribinos o llamanos antes de venir y te confirmamos el horario y que el auto siga disponible.</p>
-<div class="row mt"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a><a class="btn o" href="tel:+543434732110">Llamar al 343 473-2110</a></div>
+<p class="sec-p">Paraná, Entre Ríos. Atendemos de lunes a sábados de 8:00 a 21:30, según el perfil de nuestra tienda en Clasionce.</p>
+<div class="hr-g">
+<div class="hr-now" id="hr-now" data-s="idle">
+<p class="hr-st"><i class="hr-dot" aria-hidden="true"></i><span id="hr-st">Horario de atención</span></p>
+<p class="hr-big" id="hr-big">8:00 a 21:30</p>
+<p class="hr-sub" id="hr-sub">Lunes a sábados</p>
+<div class="hr-bar" id="hr-bar" hidden><div><i id="hr-fill"></i></div><p class="hr-ends" aria-hidden="true"><span>8:00</span><span>21:30</span></p></div>
+<div class="row"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a><a class="btn o" href="tel:+543434732110">Llamar al 343 473-2110</a></div>
+<p class="hr-fu">Estado calculado con la hora de Paraná y el horario del perfil de Clasionce.</p>
+</div>
+<div class="hr-wk">
+<div class="hr-ax" aria-hidden="true"><div><span style="--p:11.11%">8</span><span style="--p:33.33%">12</span><span style="--p:55.56%">16</span><span style="--p:77.78%">20</span></div></div>
+<ol class="hr-l" id="hor-l">
+<li data-d="1" style="--i:0"><b>Lunes</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="2" style="--i:1"><b>Martes</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="3" style="--i:2"><b>Miércoles</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="4" style="--i:3"><b>Jueves</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="5" style="--i:4"><b>Viernes</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="6" style="--i:5"><b>Sábado</b><span class="hr-tr" aria-hidden="true"><i class="hr-b" style="--a:11.11%;--b:86.11%"></i></span><span class="hr-t">8:00 a 21:30</span></li>
+<li data-d="0" style="--i:6"><b>Domingo</b><span class="hr-tr" aria-hidden="true"></span><span class="hr-t">Consultá por WhatsApp</span></li>
+</ol>
+<p class="hr-n">Domingos y feriados no figuran en el perfil: escribinos o llamanos antes de venir y te confirmamos el horario y que el auto siga disponible.</p>
+</div>
+</div>
 </div></section>
 
 <section id="destacados" aria-labelledby="dest-t"><div class="w">
@@ -612,15 +723,30 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 
 <dialog id="lb" class="lb" aria-label="Foto ampliada"><figure><img alt="" width="1200" height="800"><figcaption></figcaption></figure><button type="button" class="lb-b lb-x" aria-label="Cerrar">✕</button><button type="button" class="lb-b lb-p" aria-label="Foto anterior">‹</button><button type="button" class="lb-b lb-n" aria-label="Foto siguiente">›</button></dialog>
 
-<section id="contacto" class="ct" aria-labelledby="contacto-t"><div class="w">
+<section id="contacto" class="ct ub" aria-labelledby="contacto-t"><div class="w">
 <span class="ey">Contacto</span><h2 id="contacto-t">Estamos en <em>Paraná</em></h2>
-<div class="ct-g"><dl><dt>Ubicación</dt><dd>Paraná, Entre Ríos.</dd>
-<dt>Cobertura</dt><dd>Toda la región <small class="src">(según el perfil de nuestra tienda en Clasionce)</small></dd>
-<dt>Horario</dt><dd>Lunes a sábados de 8:00 a 21:30 (según nuestro perfil en Clasionce). <a href="#horarios">Ver por día</a></dd>
-<dt>Quiénes somos</dt><dd>Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable. <small class="src">(descripción de nuestra tienda en Clasionce)</small></dd>
-<dt>Teléfono y WhatsApp</dt><dd><a href="tel:+543434732110">343 473-2110</a> <button type="button" class="chip cp" id="cp-tel" data-v="343 473-2110" hidden>Copiar número</button></dd>
-<dt>Dónde publicamos</dt><dd><a href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Tienda en Clasionce (Elonce)</a> · <a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">@zabala_automotores</a><br><span class="ok">Concesionaria con identidad verificada en Clasionce</span></dd></dl>
-<div class="ct-c"><p class="ct-t">¿Te gustó alguno?</p><p>Escribinos y te contamos disponibilidad, precio y detalles del auto que te interese.</p><div class="row"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn o" href="tel:+543434732110">Llamar</a><a class="btn o" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></div>
+<div class="ub-g">
+<div class="ub-map" id="ub-map" data-lat="-31.7333" data-lng="-60.5289" data-z="13">
+<div class="ub-vp" tabindex="0" role="application" aria-label="Mapa de Paraná, Entre Ríos. Con el teclado: flechas para mover, más y menos para acercar o alejar."><div class="ub-tl"><div class="ub-pin" hidden><span><img src="images/zabala-z.png" width="36" height="36" alt="" decoding="async"></span></div></div></div>
+<div class="ub-face"><img src="images/zabala-logo.webp" width="640" height="641" alt="" loading="lazy" decoding="async"><p class="ub-p">Entre Ríos, Argentina</p><p class="ub-c">Paraná</p><a class="btn o" href="https://www.google.com/maps/search/?api=1&amp;query=Zabala+Automotores+Paran%C3%A1+Entre+R%C3%ADos" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a><p class="ub-ld" aria-hidden="true">Cargando mapa…</p></div>
+<p class="ub-tag">Paraná, Entre Ríos</p>
+<div class="ub-z"><button type="button" data-z="1" aria-label="Acercar el mapa">+</button><button type="button" data-z="-1" aria-label="Alejar el mapa">–</button><button type="button" data-z="0" aria-label="Volver a centrar el mapa"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"/></svg></button></div>
+<p class="ub-hint" id="ub-hint">Arrastrá para mover el mapa</p>
+<p class="ub-at"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a></p>
+<p class="ub-err">No pudimos cargar el mapa. <a href="https://www.google.com/maps/search/?api=1&amp;query=Zabala+Automotores+Paran%C3%A1+Entre+R%C3%ADos" target="_blank" rel="noopener noreferrer">Abrilo en Google Maps</a>.</p>
+</div>
+<div class="ub-side">
+<dl class="ub-d">
+<div><dt>Ubicación</dt><dd>Paraná, Entre Ríos.<small class="src">La dirección exacta se suma cuando Zabala la confirme. Antes de venir, escribinos o llamanos y coordinamos.</small></dd></div>
+<div><dt>Horario</dt><dd>Lunes a sábados de 8:00 a 21:30 (según nuestro perfil en Clasionce). <a href="#horarios">Ver por día</a></dd></div>
+<div><dt>Teléfono y WhatsApp</dt><dd><a href="tel:+543434732110">343 473-2110</a> <button type="button" class="chip cp" id="cp-tel" data-v="343 473-2110" hidden>Copiar número</button></dd></div>
+<div><dt>Cobertura</dt><dd>Toda la región <small class="src">(según el perfil de nuestra tienda en Clasionce)</small></dd></div>
+<div><dt>Dónde publicamos</dt><dd><a href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Tienda en Clasionce (Elonce)</a> · <a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">@zabala_automotores</a><br><span class="ok">Concesionaria con identidad verificada en Clasionce</span></dd></div>
+<div><dt>Quiénes somos</dt><dd>Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable. <small class="src">(descripción de nuestra tienda en Clasionce)</small></dd></div>
+</dl>
+<div class="ct-c"><div><p class="ct-t">¿Te gustó alguno?</p><p>Escribinos y te contamos disponibilidad, precio y detalles del auto que te interese.</p></div><div class="row"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a><a class="btn o" href="tel:+543434732110">Llamar</a><a class="btn o" id="ub-go" href="https://www.google.com/maps/search/?api=1&amp;query=Zabala+Automotores+Paran%C3%A1+Entre+R%C3%ADos" target="_blank" rel="noopener noreferrer">Cómo llegar</a><a class="btn o" href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
+</div>
+</div>
 </div></section>
 
 <section id="como-comprar" class="sx b cc pending" aria-labelledby="cc-t"><div class="w">
@@ -825,11 +951,131 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
   lb.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
 })();
 
-/* horarios: marca el día de hoy (sin afirmar si está abierto: la fuente es una sola) */
+/* horarios: estado en vivo con la hora de Paraná y el horario del perfil de Clasionce (lunes a sábados, 8:00 a 21:30) */
 (function () {
-  var l = document.getElementById('hor-l'); if (!l) return;
-  var d = String(new Date().getDay()), li = l.querySelector('li[data-d="' + d + '"]');
-  if (li) li.classList.add('hoy');
+  var sec = document.getElementById('horarios'), l = document.getElementById('hor-l');
+  if (!sec || !l) return;
+  var OPEN = 480, CLOSE = 1290, AX0 = 360, AXN = 1080; /* minutos del día; el eje de las barras va de 6:00 a 24:00 */
+  var $ = function (id) { return document.getElementById(id); };
+  var now = $('hr-now'), elSt = $('hr-st'), elBig = $('hr-big'), elSub = $('hr-sub'), bar = $('hr-bar'), fill = $('hr-fill');
+  var DOW = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }, fmt = null;
+  try { fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Argentina/Buenos_Aires', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }); } catch (e) {}
+  function ar() {
+    var d = new Date();
+    if (fmt) {
+      var o = {}; fmt.formatToParts(d).forEach(function (p) { o[p.type] = p.value; });
+      if (DOW[o.weekday] !== undefined) return { d: DOW[o.weekday], m: (+o.hour % 24) * 60 + (+o.minute) };
+    }
+    return { d: d.getDay(), m: d.getHours() * 60 + d.getMinutes() };
+  }
+  function dur(m) { var h = Math.floor(m / 60), n = m % 60; return h ? h + ' h' + (n ? ' ' + n + ' min' : '') : n + ' min'; }
+  var nd = document.createElement('i'); nd.className = 'hr-nd'; nd.setAttribute('aria-hidden', 'true');
+  function set(el, t) { if (el && el.textContent !== t) el.textContent = t; }
+  function render() {
+    var t = ar(), rows = [].slice.call(l.children), st, big, sub, s, pct = null;
+    rows.forEach(function (li) { li.classList.toggle('hoy', +li.getAttribute('data-d') === t.d); });
+    var today = rows.filter(function (li) { return +li.getAttribute('data-d') === t.d; })[0], tr = today && today.querySelector('.hr-tr');
+    if (tr && t.m >= AX0 && t.d !== 0) { if (nd.parentNode !== tr) tr.appendChild(nd); nd.style.setProperty('--n', ((t.m - AX0) / (AXN - AX0) * 100).toFixed(2) + '%'); nd.hidden = false; }
+    else { nd.hidden = true; }
+    if (t.d === 0) { s = 'consult'; st = 'Domingo'; big = 'Consultanos'; sub = 'Los domingos no figuran en nuestro perfil: escribinos por WhatsApp. El lunes abrimos a las 8:00.'; }
+    else if (t.m < OPEN) { s = 'soon'; st = 'Todavía cerrado'; big = 'Abrimos a las 8:00'; sub = 'Faltan ' + dur(OPEN - t.m) + ' para la apertura de hoy.'; }
+    else if (t.m < CLOSE) { s = 'open'; st = 'Abierto ahora'; big = 'Abierto'; sub = 'Cerramos a las 21:30 · faltan ' + dur(CLOSE - t.m) + '.'; pct = (t.m - OPEN) / (CLOSE - OPEN) * 100; }
+    else { s = 'closed'; st = 'Cerrado por hoy'; big = 'Cerrado'; sub = t.d === 6 ? 'Los domingos no figuran en nuestro perfil: escribinos por WhatsApp.' : 'Mañana abrimos a las 8:00.'; }
+    now.setAttribute('data-s', s); set(elSt, st); set(elBig, big); set(elSub, sub);
+    if (bar) { bar.hidden = pct === null; if (pct !== null && fill) fill.style.setProperty('--w', pct.toFixed(1) + '%'); }
+  }
+  render();
+  var timer = 0;
+  function start() { if (!timer) { render(); timer = setInterval(render, 30000); } }
+  function stop() { clearInterval(timer); timer = 0; }
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window) {
+    if (!reduce) sec.classList.add('hr-anim');
+    var seen = false;
+    new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting) { start(); if (!seen) { seen = true; requestAnimationFrame(function () { sec.classList.add('in'); }); } } else stop();
+    }, { threshold: 0.15 }).observe(sec);
+  } else { start(); }
+})();
+
+
+/* mapa: mosaicos de OpenStreetMap, sin librerías. No se pide nada hasta que la sección se acerca.
+   Para fijar el local: agregar data-pin-lat y data-pin-lng (y opcionalmente data-pin-dir) a #ub-map. */
+(function () {
+  var box = document.getElementById('ub-map');
+  if (!box) return;
+  var vp = box.querySelector('.ub-vp'), tl = box.querySelector('.ub-tl'), pinEl = box.querySelector('.ub-pin'), hint = document.getElementById('ub-hint'), go = document.getElementById('ub-go');
+  var T = 256, ZMIN = 11, ZMAX = 17;
+  var pin = box.dataset.pinLat && box.dataset.pinLng ? { lat: +box.dataset.pinLat, lng: +box.dataset.pinLng } : null;
+  var home = pin || { lat: +box.dataset.lat, lng: +box.dataset.lng }, z0 = pin ? 16 : +box.dataset.z, z = z0;
+  var W = 0, H = 0, cx = 0, cy = 0, ax = 0, ay = 0, tiles = {}, loaded = 0, started = false, timer = 0, drag = null, lastWheel = 0;
+  var coarse = window.matchMedia && matchMedia('(pointer: coarse)').matches;
+  if (pin) {
+    pinEl.hidden = false;
+    var dir = box.dataset.pinDir; if (dir) box.querySelector('.ub-tag').textContent = dir;
+    if (go) go.href = 'https://www.google.com/maps/dir/?api=1&destination=' + pin.lat + ',' + pin.lng;
+  }
+  function wx(lo, zz) { return (lo + 180) / 360 * T * Math.pow(2, zz); }
+  function wy(la, zz) { var s = Math.sin(la * Math.PI / 180); return (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * T * Math.pow(2, zz); }
+  function setHint() { if (hint) hint.textContent = coarse ? (box.classList.contains('act') ? 'Mapa activo · tocá fuera para seguir bajando' : 'Tocá el mapa para moverlo') : 'Arrastrá para mover el mapa'; }
+  function place() { tl.style.transform = 'translate3d(' + (ax - (cx - W / 2)) + 'px,' + (ay - (cy - H / 2)) + 'px,0)'; need(); }
+  function reset() {
+    for (var k in tiles) { if (tiles[k].parentNode) tiles[k].parentNode.removeChild(tiles[k]); }
+    tiles = {};
+    ax = Math.round(cx - W / 2); ay = Math.round(cy - H / 2);
+    if (pin) pinEl.style.transform = 'translate3d(' + (wx(pin.lng, z) - ax) + 'px,' + (wy(pin.lat, z) - ay) + 'px,0)';
+    place();
+  }
+  function ready() { clearTimeout(timer); box.classList.add('on'); box.classList.remove('off', 'ld'); }
+  function need() {
+    if (!started || !W) return;
+    var n = Math.pow(2, z), x0 = Math.floor((cx - W / 2) / T) - 1, x1 = Math.floor((cx + W / 2) / T) + 1, y0 = Math.max(0, Math.floor((cy - H / 2) / T) - 1), y1 = Math.min(n - 1, Math.floor((cy + H / 2) / T) + 1), x, y, k;
+    for (y = y0; y <= y1; y++) for (x = x0; x <= x1; x++) {
+      k = x + '/' + y; if (tiles[k]) continue;
+      var im = new Image(); im.alt = ''; im.width = T; im.height = T; im.decoding = 'async'; im.draggable = false;
+      im.style.left = (x * T - ax) + 'px'; im.style.top = (y * T - ay) + 'px';
+      im.onload = function () { this.className = 'ok'; if (!loaded++) ready(); };
+      im.onerror = (function (im, k) { return function () { if (im.parentNode) im.parentNode.removeChild(im); delete tiles[k]; }; })(im, k);
+      im.src = 'https://tile.openstreetmap.org/' + z + '/' + (((x % n) + n) % n) + '/' + y + '.png';
+      tl.appendChild(im); tiles[k] = im;
+    }
+    for (k in tiles) { var p = k.split('/'); if (+p[0] < x0 - 2 || +p[0] > x1 + 2 || +p[1] < y0 - 2 || +p[1] > y1 + 2) { if (tiles[k].parentNode) tiles[k].parentNode.removeChild(tiles[k]); delete tiles[k]; } }
+  }
+  function zoom(d) {
+    var nz = d === 0 ? z0 : Math.min(ZMAX, Math.max(ZMIN, z + d));
+    if (d === 0) { cx = wx(home.lng, nz); cy = wy(home.lat, nz); z = nz; reset(); return; }
+    if (nz === z) return;
+    var f = Math.pow(2, nz - z); cx *= f; cy *= f; z = nz; reset();
+  }
+  function move(dx, dy) { cx -= dx; cy = Math.max(0, Math.min(cy - dy, T * Math.pow(2, z))); place(); }
+  function measure() { W = vp.clientWidth; H = vp.clientHeight; if (W) { if (!cx) { cx = wx(home.lng, z); cy = wy(home.lat, z); reset(); } else place(); } }
+  function start() {
+    if (started) return; started = true; box.classList.add('ld'); measure(); need();
+    timer = setTimeout(function () { if (!loaded) box.classList.add('off'); }, 6000);
+  }
+  if ('ResizeObserver' in window) new ResizeObserver(measure).observe(vp); else window.addEventListener('resize', measure);
+  if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); start(); } }, { rootMargin: '500px 0px' }); io.observe(box); } else start();
+  vp.addEventListener('pointerdown', function (e) { if (e.pointerType === 'mouse' && e.button !== 0) return; drag = { id: e.pointerId, x: e.clientX, y: e.clientY, moved: false }; });
+  vp.addEventListener('pointermove', function (e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.moved) { if (Math.abs(dx) + Math.abs(dy) < 4) return; drag.moved = true; try { vp.setPointerCapture(e.pointerId); } catch (x) {} box.classList.add('drg'); }
+    drag.x = e.clientX; drag.y = e.clientY; move(dx, dy);
+  });
+  function up() { box.classList.remove('drg'); setTimeout(function () { drag = null; }, 0); }
+  vp.addEventListener('pointerup', up); vp.addEventListener('pointercancel', up);
+  vp.addEventListener('click', function () { if (coarse && !box.classList.contains('act') && !(drag && drag.moved)) { box.classList.add('act'); setHint(); } });
+  document.addEventListener('pointerdown', function (e) { if (box.classList.contains('act') && !box.contains(e.target)) { box.classList.remove('act'); setHint(); } });
+  vp.addEventListener('dblclick', function () { zoom(1); });
+  vp.addEventListener('wheel', function (e) { if (!(e.ctrlKey || e.metaKey)) return; e.preventDefault(); var t = Date.now(); if (t - lastWheel < 250) return; lastWheel = t; zoom(e.deltaY < 0 ? 1 : -1); }, { passive: false });
+  vp.addEventListener('keydown', function (e) {
+    var k = e.key, s = 90, used = true;
+    if (k === 'ArrowLeft') move(s, 0); else if (k === 'ArrowRight') move(-s, 0); else if (k === 'ArrowUp') move(0, s); else if (k === 'ArrowDown') move(0, -s);
+    else if (k === '+' || k === '=') zoom(1); else if (k === '-' || k === '_') zoom(-1); else used = false;
+    if (used) e.preventDefault();
+  });
+  [].forEach.call(box.querySelectorAll('.ub-z button'), function (b) { b.addEventListener('click', function () { zoom(+b.getAttribute('data-z')); }); });
+  setHint();
 })();
 
 /* copiar teléfono y imprimir planilla: solo se muestran si el navegador los soporta */
@@ -951,11 +1197,39 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
   dlg.addEventListener('close', function () { img.removeAttribute('src'); if (opener) opener.focus(); });
 })();
 
-/* hero: la pasada solo corre mientras el hero está a la vista */
+/* hero: la pasada se mueve por js, a velocidad fija (px/s), y solo mientras el hero se ve */
 (function () {
   var p = document.querySelector('.hx-pass'), h = document.querySelector('.hero');
-  if (!p || !h || !('IntersectionObserver' in window)) return;
-  new IntersectionObserver(function (e) { p.classList.toggle('pausa', !e[0].isIntersecting); }, { threshold: 0 }).observe(h);
+  var ul = p && p.querySelector('ul');
+  if (!ul || !h) return;
+  var lis = ul.children, n = Math.floor(lis.length / 2);
+  if (n < 2) return;
+  var reduce = window.matchMedia ? matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var period = 0, x = 0, last = 0, raf = 0, vis = true, tab = !document.hidden;
+  function measure() { period = lis[n].offsetLeft - lis[0].offsetLeft; }
+  function vel() { return window.innerWidth <= 1000 ? 30 : 38; } /* px por segundo */
+  function run() { return vis && tab && !reduce.matches && period > 0; }
+  function frame(t) {
+    raf = 0;
+    if (!run()) return;
+    var dt = Math.min(t - last, 64) / 1000; last = t;
+    x = (x + vel() * dt) % period;
+    ul.style.transform = 'translate3d(' + (-x).toFixed(2) + 'px,0,0)';
+    raf = requestAnimationFrame(frame);
+  }
+  function kick() { if (run() && !raf) { last = performance.now(); raf = requestAnimationFrame(frame); } }
+  function relayout() { measure(); if (period) x = x % period; kick(); }
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { vis = e[0].isIntersecting; p.classList.toggle('pausa', !vis); kick(); }, { threshold: 0 }).observe(h);
+  document.addEventListener('visibilitychange', function () { tab = !document.hidden; kick(); });
+  window.addEventListener('resize', relayout);
+  if (reduce.addEventListener) reduce.addEventListener('change', kick);
+  /* las 16 fotos son 8 archivos: se decodifican en una pausa, antes de que entren en pantalla */
+  function warm() {
+    [].forEach.call(ul.querySelectorAll('img'), function (im) { if (im.loading === 'lazy') im.loading = 'eager'; if (im.decode) im.decode().catch(function () {}); });
+  }
+  function boot() { relayout(); (window.requestIdleCallback || function (f) { setTimeout(f, 300); })(warm); }
+  if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+  relayout();
 })();
 
 /* reels de las fichas: suenan solo si la persona lo pide; corren solo mientras se ven */
