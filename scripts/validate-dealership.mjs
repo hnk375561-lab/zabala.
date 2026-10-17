@@ -33,9 +33,9 @@ if (d) {
   if (!idx.includes('<title>Zabala Automotores')) errors.push('index.html: title');
   // Datos sin fuente: no pueden aparecer en el sitio
   const visible = pages.map(rd).join('\n').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '');
-  // Las tarjetas de avisos y del historial llevan precios y kilometraje tomados de cada aviso de Clasionce (fuente y fecha en la página); el resto del sitio no puede tenerlos.
+  // Las tarjetas de avisos, destacados e historial llevan precios y kilometraje tomados de cada aviso de Clasionce (fuente y fecha en la página); el resto del sitio no puede tenerlos.
   // Las secciones marcadas como pending son formularios/avisos de consulta, no afirmaciones de servicios publicados.
-  const visNoCars = visible.replace(/<li class="(?:car|hr)\b[^\"]*"[\s\S]*?<\/li>/g, '').replace(/<section[^>]*class="[^"]*\bpending\b[^"]*"[\s\S]*?<\/section>/gi, '').replace(/<nav[^>]*class="[^"]*\bmega\b[^"]*"[\s\S]*?<\/nav>/gi, '');
+  const visNoCars = visible.replace(/<li class="(?:car|hr|fi)\b[^\"]*"[\s\S]*?<\/li>/g, '').replace(/<section[^>]*class="[^"]*\bpending\b[^"]*"[\s\S]*?<\/section>/gi, '').replace(/<nav[^>]*class="[^"]*\bmega\b[^"]*"[\s\S]*?<\/nav>/gi, '');
   for (const [re, why] of [[/\b(financiaci[oó]n|cuotas|tasa fija|garant[ií]a|permut|consignaci[oó]n|gestor[ií]a|taller)/i, 'servicio sin fuente'], [/\b\d{1,3}(\.\d{3})+ ?km\b/i, 'kilometraje'], [/\$\s?\d|US\$/, 'precio'], [/rese[ñn]as?|calificaci[oó]n|★/i, 'reseñas'], [/desde \d{4}|\d+ años/i, 'antigüedad']]) {
     if (re.test(visNoCars.replace(/©\s*2026/g, ''))) errors.push(`Texto no permitido en el sitio (${why}): ${re}`);
   }

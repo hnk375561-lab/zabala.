@@ -17,19 +17,18 @@ Actualizado 11/10/2026. Cada línea indica qué dice el sitio, de dónde sale y 
 ## NO publicado (sin respaldo)
 Financiación, recepción de usados/permuta, consignación, gestoría, 0 km, años de trayectoria, dirección, mapa, reseñas, fotos, titular, razón social, CUIT.
 
-## Secciones agregadas el 12/10/2026 (equivalentes a las de la plantilla anterior)
-Todas llevan la clase `pending` en `index.html`: son avisos de consulta o formularios que arman un mensaje de WhatsApp, no afirmaciones de servicios.
+## Secciones del sitio (actualizado 16/10/2026)
+Las secciones con consulta o formulario llevan la clase `pending` en `index.html`: arman un mensaje de WhatsApp y no afirman servicios.
 
 | Sección | Qué muestra | Qué falta del dueño |
 |---|---|---|
-| Entregas | Los 2 avisos que Clasionce marca como vendidos + espacio «FOTO A CARGAR» | Fotos de entregas con permiso de los clientes |
 | Horarios | Lunes a sábados 8:00–21:30 por día (perfil Clasionce). Domingo: «no figura» | Domingos, feriados y vigencia |
-| El lugar / mapa | Espacios «FOTO A CARGAR» y «MAPA A CARGAR»; enlace a una búsqueda genérica de Paraná | Dirección exacta, ficha de Maps, fotos y video |
-| Reseñas | «Sin valoraciones» (solo describe la ficha de Clasionce); sin puntaje | Ficha de Google u otra fuente de reseñas |
 | Cómo comprar | Pasos generales (ver, consultar, visitar, precio y pago) | Confirmar el proceso real |
-| Financiación y tu usado | «A confirmar»; sin cuotas, tasas ni condiciones | Si financian y si reciben usados |
-| Comprar, vender, permutar, consignar | Formulario que arma el mensaje; condiciones «a confirmar» | Qué operaciones ofrece realmente |
+| Comprar, vender, permutar, consignar | Formulario que arma el mensaje | Qué operaciones ofrece realmente |
 | Coordiná tu visita | Formulario que arma el mensaje; enlaza a `reserva.html` | Dirección y días de atención reales |
-| Guía para comprar un usado | Lista general de control (contenido de orientación, no asesoramiento legal) | Revisar vigencia de trámites antes de publicar |
-| Preguntas | Respuestas prudentes; lo no confirmado se dice | Respuestas definitivas del dueño |
+| Guía para comprar un usado | Lista general de control (orientación, no asesoramiento legal) | Revisar vigencia de trámites antes de publicar |
+| Preguntas | Respuestas que remiten a Zabala | Respuestas definitivas del dueño |
+| En preparación | Lámina única al final: entregas y local, reseñas, dirección y mapa, financiación y usados | Todo el material de esas áreas; al publicar, borrar la sección `#activar` |
 | Ficha del auto («Ver detalles») | Fotos y datos del aviso de Clasionce | — |
+
+Entregas, reseñas y financiación ya no son secciones del cuerpo del sitio: se muestran solo dentro de la lámina «En preparación».

@@ -7,3 +7,6 @@ exclude:
   - package.json
   - netlify.toml
   - LICENSE
+  - golive
+  - zabala-audit.md
+  - BORRAR.txt
