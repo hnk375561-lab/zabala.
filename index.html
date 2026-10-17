@@ -383,11 +383,11 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 @media(prefers-reduced-motion:reduce){.hx-pass ul{animation:none}}
 #autos .w{width:min(1560px,100% - 48px)}
 /* ===== v68b ===== */
-.hx-pass ul{animation-duration:46s}
-.hx-pass li{width:clamp(200px,23vw,360px)}
+.hx-pass ul{animation-duration:24s}
+.hx-pass li{width:clamp(340px,38vw,600px)}
 .hx-veil{background:radial-gradient(ellipse 20% 36% at 76% 50%,rgba(5,5,5,.62),rgba(5,5,5,.3) 62%,transparent 100%),linear-gradient(90deg,rgba(5,5,5,.5) 0%,rgba(5,5,5,.14) 45%,rgba(5,5,5,0) 70%)}
 .hx-copy{background:rgba(13,13,13,.86)}
-@media(max-width:1000px){.hx-pass ul{animation-duration:38s}}
+@media(max-width:1000px){.hx-pass ul{animation-duration:18s;height:min(100vw,460px)}.hx-pass li{width:clamp(240px,78vw,340px)}}
 /* fichas: panel completo */
 .fi{grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:clamp(22px,3.4vw,52px);align-items:center;padding:clamp(18px,2.4vw,34px);background:var(--k2);border-left:5px solid var(--g3);clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}
 .fi:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,440px)}
@@ -428,7 +428,7 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 <h1><span class="sr">Zabala Automotores: </span>Autos y utilitarios <em>en Paraná</em></h1>
 <p class="lead">Nos dedicamos a la intermediación y reventa de vehículos. Brindamos un servicio transparente y confiable. Mirá los vehículos publicados y consultanos por WhatsApp.</p>
 <div class="row"><a class="btn p cut" href="#autos">Ver autos</a><a class="btn o" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a></div>
-<a class="proof" href="#autos"><b>50</b><span>vehículos publicados en Clasionce</span></a></div>
+</div>
 <figure class="hx-logo"><img src="images/zabala-logo.webp" width="640" height="641" alt="Logotipo de Zabala Automotores: una Z que combina un auto y una lancha" fetchpriority="high" decoding="async"></figure>
 </div>
 
@@ -447,28 +447,6 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 </ul>
 <p class="hor-n">Domingos y feriados no figuran en el perfil: escribinos o llamanos antes de venir y te confirmamos el horario y que el auto siga disponible.</p>
 <div class="row mt"><a class="btn p cut" href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a><a class="btn o" href="tel:+543434732110">Llamar al 343 473-2110</a></div>
-</div></section>
-
-<section id="stock" class="st" aria-labelledby="stock-t"><div class="w">
-<span class="ey">Stock</span><h2 id="stock-t">Stock <em>de un vistazo</em></h2>
-<div class="tb">
-<ul class="tb-k">
-<li><b>50</b><span>vehículos publicados en Clasionce</span></li>
-<li><b>47</b><span>autos, camionetas y utilitarios</span></li>
-<li><b>16</b><span>con precio rebajado<small>precio anterior tachado</small></span></li>
-<li><b>3</b><span>1 moto y 2 embarcaciones</span></li>
-</ul>
-<div class="tb-p">
-<div class="tb-c"><p class="tb-t">Marcas con más unidades</p><ul class="bars"><li><span>Volkswagen</span><i class="bar"><u style="width:100%"></u></i><b>15</b></li><li><span>Toyota</span><i class="bar"><u style="width:73%"></u></i><b>11</b></li><li><span>Honda</span><i class="bar"><u style="width:33%"></u></i><b>5</b></li><li><span>Fiat</span><i class="bar"><u style="width:20%"></u></i><b>3</b></li><li class="mas"><span>Otras 10 marcas</span><i class="bar"><u style="width:107%"></u></i><b>16</b></li></ul></div>
-<div class="tb-c"><p class="tb-t">Localidad de los avisos</p><ul class="bars"><li><span>Paraná</span><i class="bar"><u style="width:100%"></u></i><b>48</b></li><li><span>Federal</span><i class="bar"><u style="width:3%"></u></i><b>1</b></li><li><span>María Grande</span><i class="bar"><u style="width:3%"></u></i><b>1</b></li></ul></div>
-</div>
-</div>
-<ul class="tb-n">
-<li>Relevado de nuestra tienda en Clasionce el 12/10/2026.</li>
-<li>7 avisos figuran como negociables. 30 publican el precio en pesos y 19 en dólares, y no se convierten.</li>
-<li>La localidad es la que declara cada aviso y no implica sucursales.</li>
-<li>La cantidad cambia según el momento de la consulta. Los 2 avisos marcados como vendidos están en el <a href="#historial">historial</a>.</li>
-</ul>
 </div></section>
 
 <section id="destacados" aria-labelledby="dest-t"><div class="w">
@@ -601,35 +579,6 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 
 <dialog id="lb" class="lb" aria-label="Foto ampliada"><figure><img alt="" width="1200" height="800"><figcaption></figcaption></figure><button type="button" class="lb-b lb-x" aria-label="Cerrar">✕</button><button type="button" class="lb-b lb-p" aria-label="Foto anterior">‹</button><button type="button" class="lb-b lb-n" aria-label="Foto siguiente">›</button></dialog>
 
-<section id="historial" class="hist" aria-labelledby="hist-t"><div class="w">
-<span class="ey">Historial</span><h2 id="hist-t">Historial <em>de avisos</em></h2>
-<p class="sec-p">Acá no hay stock: son avisos que ya no figuran como disponibles o que solo se vieron en capturas anteriores del portal. Se muestran para que quede el registro completo y no se ofrecen como unidades en venta.</p>
-<details><summary>Marcados como vendidos en Clasionce (2)</summary>
-<div class="dt-b"><ul class="cars">
-<li class="car t1 vend" data-m="Jeep" data-tr="Automático" data-tp="Auto o utilitario" data-y="2025" data-i="19" data-mo="USD" data-pm="30000" data-of="0" data-ng="0" data-q="jeep compass limited t270 at6 4x2 2025"><div class="car-art"><img src="images/stock/N1166231-1.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Foto del aviso: Jeep Compass Limited T270 AT6 4x2 2025"><i class="car-tag">Jeep</i></div><div class="car-b"><div class="bds"><i class="bd v">Vendido</i></div><h3>Jeep Compass Limited T270 AT6 4x2</h3><p class="car-meta">2025 · Automático · 18.000 km · Nafta · Beige · 5 puertas</p><p class="car-p"><b>US$ 30.000</b></p><p class="car-n">El aviso decía: cadenero, techo panorámico, sonido premium Beats, service al día. Aviso marcado como vendido.</p><div class="car-act"><button type="button" class="btn o sm" data-ficha="N1166231" aria-label="Ver detalles de Jeep Compass Limited T270 AT6 4x2 2025" hidden>Ver detalles</button><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166231" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Jeep Compass Limited T270 AT6 4x2 2025 en Clasionce">Ver aviso ↗</a></div><p class="car-s">Fuente: Clasionce, 12/10/2026</p></div></li>
-<li class="car t0 vend" data-m="Mercedes-Benz" data-tr="Manual" data-tp="Auto o utilitario" data-y="2018" data-i="21" data-mo="ARS" data-pm="36500000" data-of="0" data-ng="1" data-q="mercedes-benz sprinter 411 cdi/3250 street furgón 2018"><div class="car-art"><img src="images/stock/N1166145-1.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Foto del aviso: Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón 2018"><i class="car-tag">Mercedes-Benz</i></div><div class="car-b"><div class="bds"><i class="bd v">Vendido</i></div><h3>Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón</h3><p class="car-meta">2018 · Manual</p><p class="car-p"><b>$ 36.500.000</b></p><div class="car-act"><button type="button" class="btn o sm" data-ficha="N1166145" aria-label="Ver detalles de Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón 2018" hidden>Ver detalles</button><a class="btn p sm" href="https://clasificados.elonce.com/aviso/N1166145" target="_blank" rel="noopener noreferrer" aria-label="Ver aviso de Mercedes-Benz Sprinter 411 CDI/3250 Street Furgón 2018 en Clasionce">Ver aviso ↗</a></div><p class="car-s">Fuente: Clasionce, 12/10/2026</p></div></li>
-</ul></div></details>
-<details><summary>Vistos en capturas anteriores del portal (15)</summary>
-<div class="dt-b"><p class="dt-n">No figuran en el listado del 12/10/2026: pueden estar vendidos, pausados o dados de baja. Se conserva el último precio visto, en su moneda original, y no tienen enlace de aviso. Para saber si hay algo parecido disponible, escribinos.</p>
-<ul class="hl">
-<li class="hr"><b>Chevrolet Captiva 2.2 LTZ AT 184 CV</b><span>2018 · Automático</span><span class="hr-p">$ 32.800.000</span></li>
-<li class="hr alt"><b>Fiat 125 Coupé 1.6</b><span>1977 · Manual</span><span class="hr-p">US$ 6.300</span></li>
-<li class="hr"><b>Renault Logan II 1.6 8v Expression</b><span>2017 · Manual</span><span class="hr-p">$ 15.000.000</span></li>
-<li class="hr alt"><b>Ford Fiesta Titanium KD 1.6 Powershift 4P</b><span>2014 · Automático</span><span class="hr-p">$ 13.600.000</span><i>Negociable</i></li>
-<li class="hr"><b>Honda HR-V 1.5 EXL CVT</b><span>2024 · Automático</span><span class="hr-p">$ 43.000.000</span></li>
-<li class="hr alt"><b>Fiat Fiorino Furgón 1.4 EVO</b><span>2019 · Manual · Crespo</span><span class="hr-p">$ 15.500.000</span></li>
-<li class="hr"><b>Nissan March 1.6 Active Pure Drive F2 M/T</b><span>2019 · Manual</span><span class="hr-p">US$ 11.600</span><i>Negociable · Vendido en la captura</i></li>
-<li class="hr alt"><b>Honda CR-V 1.5 EX 2WD CVT</b><span>2021 · Automático</span><span class="hr-p">US$ 35.000 <s>US$ 37.000</s></span><i>Oferta</i></li>
-<li class="hr"><b>Ford Ranger 2.0 TD DC 4x2 XL 6MT</b><span>2024 · Manual</span><span class="hr-p">$ 37.000.000</span></li>
-<li class="hr alt"><b>Chevrolet Cruze 1.4 LTZ AT 4P</b><span>2023 · Automático</span><span class="hr-p">$ 27.000.000 <s>$ 28.700.000</s></span><i>Oferta</i></li>
-<li class="hr"><b>Renault Fluence 2.0 Dynamique</b><span>2011 · Manual</span><span class="hr-p">$ 9.000.000 <s>$ 9.700.000</s></span><i>Oferta</i></li>
-<li class="hr alt"><b>Ford Territory 1.8T Titanium</b><span>2024 · Automático · Federal</span><span class="hr-p">$ 45.000.000</span></li>
-<li class="hr"><b>Jeep Renegade 1.3T 4x2 Serie S L/24 AT</b><span>2025 · Automático</span><span class="hr-p">US$ 31.000</span></li>
-<li class="hr alt"><b>Peugeot 208 1.5 Allure Touchscreen</b><span>2015 · Manual</span><span class="hr-p">$ 12.500.000</span></li>
-<li class="hr"><b>Chevrolet Prisma 1.4 LT</b><span>2018 · Manual</span><span class="hr-p">$ 13.800.000</span><i>Vendido en la captura</i></li>
-</ul></div></details>
-</div></section>
-
 <section id="contacto" class="ct" aria-labelledby="contacto-t"><div class="w">
 <span class="ey">Contacto</span><h2 id="contacto-t">Estamos en <em>Paraná</em></h2>
 <div class="ct-g"><dl><dt>Ubicación</dt><dd>Paraná, Entre Ríos.</dd>
@@ -745,7 +694,7 @@ footer p{margin:4px 0}footer a{color:var(--s3)}
 </main>
 <footer><div class="w ft">
 <div><p class="ft-n">Zabala Automotores</p><p>Paraná, Entre Ríos</p><p>© 2026 Zabala Automotores</p></div>
-<nav class="mega" aria-label="Navegación"><p class="ft-t">Navegación</p><ul><li><a href="#top">Inicio</a></li><li><a href="#autos">Autos</a></li><li><a href="#stock">Stock</a></li><li><a href="#historial">Historial</a></li><li><a href="#horarios">Horarios</a></li><li><a href="#visita">Coordiná tu visita</a></li><li><a href="#operaciones">Vender o permutar</a></li><li><a href="#guia">Guía para comprar o permutar</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="reserva.html">Elegir día y horario</a></li><li><a href="privacidad.html">Privacidad y avisos</a></li></ul></nav>
+<nav class="mega" aria-label="Navegación"><p class="ft-t">Navegación</p><ul><li><a href="#top">Inicio</a></li><li><a href="#autos">Autos</a></li><li><a href="#horarios">Horarios</a></li><li><a href="#visita">Coordiná tu visita</a></li><li><a href="#operaciones">Vender o permutar</a></li><li><a href="#guia">Guía para comprar o permutar</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="reserva.html">Elegir día y horario</a></li><li><a href="privacidad.html">Privacidad y avisos</a></li></ul></nav>
 <div><p class="ft-t">Contacto</p><ul><li><a href="tel:+543434732110">343 473-2110</a></li><li><a href="https://wa.me/5493434732110?text=Hola!%20Quiero%20consultar%20por%20los%20autos%20disponibles." target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a></li><li><a href="https://www.instagram.com/zabala_automotores/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://clasificados.elonce.com/concesionarias/zabala-automotores" target="_blank" rel="noopener noreferrer">Tienda en Clasionce</a></li></ul></div>
 <div class="ft-l"><p>Demo ilustrativa construida a partir de información pública. Precios, datos y disponibilidad sujetos a confirmación por Zabala Automotores.</p><p class="demo-note" data-demo-note>Versión de demostración · No es el sitio oficial · Datos pendientes de confirmación</p><p>Datos tomados de la tienda de Zabala en Clasionce el 12/10/2026. La etiqueta «identidad verificada» es de Clasionce, no una certificación oficial.</p></div>
 </div></footer>

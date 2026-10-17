@@ -40,10 +40,13 @@ if (d) {
     if (re.test(visNoCars.replace(/©\s*2026/g, ''))) errors.push(`Texto no permitido en el sitio (${why}): ${re}`);
   }
   if (/Verificado|Confirmado/.test(visible)) errors.push('Texto "verificado/confirmado" no permitido');
+  // Los avisos que Clasionce marca como vendidos no se muestran en el sitio: se exigen tarjetas solo para los publicados.
+  const vend = new Set(JSON.parse(rd('data/vehicles.json')).vehicles.filter((v) => v.sold || v.published === false).map((v) => v.id));
   const aj = JSON.parse(rd('data/autos.json')).autos;
+  const ajPub = aj.filter((v) => !vend.has(v.id));
   const nCards = (idx.match(/<li class="car\b/g) || []).length;
-  if (nCards !== aj.length) errors.push(`index.html tiene ${nCards} tarjetas y data/autos.json tiene ${aj.length} avisos`);
-  for (const v of aj) if (!idx.includes(v.url)) errors.push(`index.html: falta el aviso ${v.id}`);
+  if (nCards !== ajPub.length) errors.push(`index.html tiene ${nCards} tarjetas y data/autos.json tiene ${ajPub.length} avisos publicados`);
+  for (const v of ajPub) if (!idx.includes(v.url)) errors.push(`index.html: falta el aviso ${v.id}`);
   const vids = new Set(JSON.parse(rd('data/vehicles.json')).vehicles.map((v) => v.id));
   if (vids.size !== aj.length || aj.some((v) => !vids.has(v.id))) errors.push('data/vehicles.json no tiene los mismos avisos que data/autos.json');
   if (!idx.includes('Paraná, Entre Ríos')) errors.push('index.html: falta la ciudad');

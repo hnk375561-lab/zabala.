@@ -7,7 +7,7 @@ Fecha de revisión: 16/10/2026.
 | Sección | Fuente | Estado |
 |---|---|---|
 | Portada, logo y galería de Instagram | Material de `@zabala_automotores` | Demo; autorización escrita pendiente |
-| Stock (50 avisos), destacados, historial | Tienda de Zabala en Clasionce, 12/10/2026 | Respaldado; precios con fecha |
+| Catálogo (50 avisos) y destacados | Tienda de Zabala en Clasionce, 12/10/2026 | Respaldado; precios con fecha |
 | Horarios por día | Perfil de Clasionce (lunes a sábados 8:00–21:30) | Una sola fuente; domingos y feriados no figuran |
 | Contacto, WhatsApp, Instagram | Perfil de Clasionce | Respaldado |
 | Cómo comprar, guía de usados | Orientación general | Sin promesas comerciales |

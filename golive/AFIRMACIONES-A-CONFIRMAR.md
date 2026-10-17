@@ -9,7 +9,7 @@ Actualizado 11/10/2026. Cada línea indica qué dice el sitio, de dónde sale y 
 | Horario lunes a sábados 8:00–21:30 | Perfil Clasionce («según nuestro perfil») | Una sola fuente; confirmar con el dueño |
 | «Intermediación y reventa de vehículos… servicio transparente y confiable» | Descripción de la tienda en Clasionce | Respaldado (texto propio del negocio) |
 | Concesionaria con identidad verificada | Insignia de Clasionce | Es verificación de Clasionce, no un dato legal. El sitio la nombra solo como «según Clasionce» |
-| 50 vehículos publicados (+3 vendidos) | Listado de la tienda 11/10/2026 | Cambia a diario |
+| 50 vehículos publicados (los vendidos no se muestran) | Listado de la tienda 11/10/2026 | Cambia a diario |
 | Precios de cada unidad | Cada aviso, 11/10/2026 | Respaldado, con aclaración de fecha. Hilux SRX sin precio (ambiguo) |
 | «Oferta» / «Negociable» en las tarjetas | Etiquetas del aviso | Respaldado por aviso |
 | Km, color y notas del Focus; notas del Passat | Ficha del aviso | Solo esas unidades |
